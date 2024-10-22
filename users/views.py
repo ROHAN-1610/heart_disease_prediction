@@ -5,7 +5,7 @@ from .forms import RegisterForm
 from .models import UserProfile
 from django.contrib.auth.forms import AuthenticationForm
 
-def home_page(request):
+def home(request):
     return render(request, 'home.html')
 
 def register(request):
