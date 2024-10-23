@@ -1,3 +1,4 @@
+# users/urls.py
 from django.urls import path
 from . import views
 
@@ -7,4 +8,6 @@ urlpatterns = [
     path('login/', views.login_view, name='login'),
     path('successfully_registered/', views.successfully_registered, name='successfully_registered'),
     path('successfully_logged_in/', views.successfully_logged_in, name='successfully_logged_in'),
+    path('patient_entry/', views.patient_entry, name='patient_entry'),
+    path('history/', views.history, name='history'),
 ]
