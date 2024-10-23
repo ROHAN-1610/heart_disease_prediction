@@ -1,18 +1,18 @@
-<!-- users/templates/users/register.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    
+    <title>Register</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
 </head>
 <body>
-    <h1>User Registration</h1>
+    <h2>Register</h2>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Register</button>
     </form>
-    <p>Already have an account? <a href="{% url 'login' %}">Login here</a>.</p>
 </body>
 </html>
