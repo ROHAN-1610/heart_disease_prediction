@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AddField(
             model_name='userprofile',
-            name='Hospital_name',
+            name='hospital_name',
             field=models.CharField(blank=True, max_length=100),
         ),
     ]
