@@ -91,43 +91,42 @@
 <body>
     <div class="container">
         <h2>Patient History</h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Select</th>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Gender</th>
-                    <th>Symptoms</th>
-                    <th>Registration Date</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for patient in patients %}
+    
+        <form method="POST" style="display: inline;">
+            {% csrf_token %}
+            <table>
+                <thead>
                     <tr>
-                        <td><input type="checkbox" name="patient_ids" value="{{ patient.id }}"></td>
-                        <td>{{ patient.name }}</td>
-                        <td>{{ patient.age }}</td>
-                        <td>{{ patient.gender }}</td>
-                        <td>{{ patient.symptoms }}</td>
-                        <td>{{ patient.registration_date }}</td>
-                        <td>
-                            <a href="{% url 'edit_patient' patient.id %}">Edit</a>
-                        </td>
+                        <th>Select</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Symptoms</th>
+                        <th>Registration Date</th>
+                        <th>Actions</th>
                     </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-
-        <div class="action-buttons">
-            <a href="{% url 'patient_entry' %}">Register New Patient</a>
-            <form method="POST" style="display: inline;">
-                {% csrf_token %}
+                </thead>
+                <tbody>
+                    {% for patient in patients %}
+                        <tr>
+                            <td><input type="checkbox" name="patient_ids" value="{{ patient.id }}"></td>
+                            <td>{{ patient.name }}</td>
+                            <td>{{ patient.age }}</td>
+                            <td>{{ patient.gender }}</td>
+                            <td>{{ patient.symptoms }}</td>
+                            <td>{{ patient.registration_date }}</td>
+                            <td>
+                                <a href="{% url 'edit_patient' patient.id %}">Edit</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+    
+            <div class="action-buttons">
+                <a href="{% url 'patient_entry' %}">Register New Patient</a>
                 <button type="submit" class="delete-button">Delete Selected Records</button>
-            </form>
-        </div>
+            </div>
+        </form>
     </div>
-</body>
-</html>
+    

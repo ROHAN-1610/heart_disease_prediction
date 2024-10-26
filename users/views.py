@@ -65,6 +65,15 @@ def patient_entry(request):
 # View to display patient history
 @login_required
 def history(request):
+    if request.method == 'POST':
+        # Get the list of patient IDs from the submitted form
+        patient_ids = request.POST.getlist('patient_ids')  
+        if patient_ids:  # Check if any IDs were selected
+            Patient.objects.filter(id__in=patient_ids).delete()
+            # Optionally add a success message here
+            return redirect('history')  # Redirect after deletion
+
+    # Retrieve all patients to display in the table
     patients = Patient.objects.all()
     return render(request, 'users/history.html', {'patients': patients})
 
