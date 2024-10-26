@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', user_views.home, name='home'), # we made home page as a root url here.
     path('users/', include('users.urls')),
+
 ]

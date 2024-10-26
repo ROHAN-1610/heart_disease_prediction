@@ -10,4 +10,8 @@ urlpatterns = [
     path('successfully_logged_in/', views.successfully_logged_in, name='successfully_logged_in'),
     path('patient_entry/', views.patient_entry, name='patient_entry'),
     path('history/', views.history, name='history'),
+    path('delete_patients/', views.delete_patients, name='delete_patients'),
+    path('edit-patient/<int:patient_id>/', views.edit_patient, name='edit_patient'),
+
+
 ]

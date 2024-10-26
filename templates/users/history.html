@@ -55,19 +55,36 @@
             background-color: #f2f2f2;
         }
 
-        a {
-            display: inline-block;
-            margin-top: 20px;
+        a, button {
             padding: 10px 20px;
             background-color: #4CAF50;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            border: none;
+            cursor: pointer;
             transition: background-color 0.3s ease;
+            margin: 5px; /* Added margin for spacing */
         }
 
-        a:hover {
+        a:hover, button:hover {
             background-color: #45a049;
+        }
+
+        .delete-button {
+            background-color: #c92b2b;
+            font-size: 16px; /* Increased font size for the delete button */
+            padding: 12px 24px; /* Adjusted padding for better appearance */
+        }
+
+        .delete-button:hover {
+            background-color: #a72222;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center; /* Center the buttons */
+            margin-top: 20px; /* Space above buttons */
         }
     </style>
 </head>
@@ -78,27 +95,39 @@
         <table>
             <thead>
                 <tr>
+                    <th>Select</th>
                     <th>Name</th>
                     <th>Age</th>
                     <th>Gender</th>
                     <th>Symptoms</th>
                     <th>Registration Date</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
                 {% for patient in patients %}
                     <tr>
+                        <td><input type="checkbox" name="patient_ids" value="{{ patient.id }}"></td>
                         <td>{{ patient.name }}</td>
                         <td>{{ patient.age }}</td>
                         <td>{{ patient.gender }}</td>
                         <td>{{ patient.symptoms }}</td>
                         <td>{{ patient.registration_date }}</td>
+                        <td>
+                            <a href="{% url 'edit_patient' patient.id %}">Edit</a>
+                        </td>
                     </tr>
                 {% endfor %}
             </tbody>
         </table>
 
-        <a href="{% url 'patient_entry' %}">Register New Patient</a>
+        <div class="action-buttons">
+            <a href="{% url 'patient_entry' %}">Register New Patient</a>
+            <form method="POST" style="display: inline;">
+                {% csrf_token %}
+                <button type="submit" class="delete-button">Delete Selected Records</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
