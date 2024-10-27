@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Patient</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> <!-- Modern font -->
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f7f6;
+            font-family: 'Roboto', sans-serif; /* Updated font */
+            background-image: url('/static/images/edit_patient.jpg'); /* Add your image path here */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center;
+            background-repeat: no-repeat;
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,17 +22,18 @@
         }
 
         .container {
-            width: 80%;
-            max-width: 600px;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px; /* Slightly smaller max width */
+            background-color: rgba(255, 255, 255, 0.9); /* More opaque background for better readability */
+            padding: 20px; /* Reduced padding for compactness */
+            border-radius: 5px; /* Smaller border radius */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
         }
 
         h2 {
-            margin-bottom: 20px;
+            margin-bottom: 10px; /* Reduced margin */
             color: #333;
+            font-weight: 500; /* Slightly bolder */
         }
 
         form {
@@ -37,29 +42,35 @@
 
         form label {
             display: block;
-            margin: 15px 0 5px 0;
-            font-weight: bold;
+            margin: 5px 0; /* Adjusted margin */
+            font-weight: 500; /* Slightly bolder */
             color: #555;
             text-align: left;
         }
 
         input[type="text"], input[type="number"], select, textarea {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            padding: 10px; /* Consistent padding */
+            margin-bottom: 10px; /* Reduced margin for compactness */
+            border: 1px solid #ccc; /* Softer border color */
+            border-radius: 4px; /* Smaller border radius */
             box-sizing: border-box;
+            transition: border-color 0.3s ease; /* Smooth border color transition */
+        }
+
+        input:focus, textarea:focus {
+            border-color: #4CAF50; /* Green border on focus */
+            outline: none; /* Remove default outline */
         }
 
         button {
-            padding: 12px 20px;
+            padding: 10px; /* Consistent padding */
             background-color: #4CAF50;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 4px; /* Smaller border radius */
             cursor: pointer;
-            font-size: 16px;
+            font-size: 14px; /* Reduced font size */
             transition: background-color 0.3s ease;
         }
 
@@ -69,12 +80,12 @@
 
         a {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
+            margin-top: 15px; /* Reduced margin */
+            padding: 8px 15px; /* Consistent padding */
             background-color: #c92b2b;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 4px; /* Smaller border radius */
             transition: background-color 0.3s ease;
         }
 

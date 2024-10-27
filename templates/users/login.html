@@ -6,6 +6,7 @@
     <title>User Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
+        /* General Styling */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -19,12 +20,13 @@
             background-position: center;
         }
 
+        /* Login Box Styling */
         .login-box {
             max-width: 480px;
             width: 100%;
-            margin-left: 50px;
+            margin: 0 20px 0 50px;
             padding: 30px 25px;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.95);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             text-align: center;
@@ -36,9 +38,18 @@
             margin-bottom: 25px;
         }
 
+        /* Login Form Styling */
         .login-form {
             display: flex;
             flex-direction: column;
+            width: 100%;
+        }
+
+        .login-form label {
+            text-align: left;
+            margin-bottom: 5px;
+            color: #444;
+            font-size: 0.95rem;
         }
 
         .login-form input {
@@ -49,6 +60,13 @@
             margin-bottom: 15px;
             width: 100%;
             box-sizing: border-box;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .login-form input:focus {
+            border-color: #27ae60;
+            outline: none;
+            box-shadow: 0 0 6px rgba(39, 174, 96, 0.2);
         }
 
         .login-form button {
@@ -66,9 +84,11 @@
             background-color: #229954;
         }
 
+        /* Register Link Styling */
         .register-link {
             font-size: 0.95rem;
             color: #444;
+            margin-top: 10px;
         }
 
         .register-link a {
@@ -81,6 +101,7 @@
             color: #1f8c4e;
         }
 
+        /* Media Query for Mobile Devices */
         @media (max-width: 768px) {
             .login-box {
                 margin: 0 20px;
@@ -98,11 +119,20 @@
     </style>
 </head>
 <body>
-    <div class="login-box">
-        <h2>Welcome Back!</h2>
-        <form method="POST" class="login-form">
+    <div class="login-box" role="form" aria-labelledby="login-heading">
+        <h2 id="login-heading">Welcome Back!</h2>
+        <form method="POST" class="login-form" autocomplete="off">
             {% csrf_token %}
-            {{ form.as_p }}
+
+            <!-- Username Input Field with Label -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required aria-required="true" aria-label="Username">
+
+            <!-- Password Input Field with Label -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required aria-required="true" aria-label="Password" minlength="8">
+
+            <!-- Submit Button -->
             <button type="submit">Sign In</button>
         </form>
         <p class="register-link">New here? <a href="{% url 'register' %}">Create an account</a></p>

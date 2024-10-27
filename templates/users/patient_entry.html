@@ -20,77 +20,98 @@
 
         .signup-box {
             background-color: rgba(255, 255, 255, 0.95);
-            padding: 35px 25px;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-            max-width: 520px;
+            padding: 20px 30px; /* Padding for a compact feel */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+            max-width: 500px; /* Width for a horizontal box */
             width: 100%;
-            margin: 0 20px;
+            margin: 20px; /* Margin for spacing */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            border: none; /* No border */
+            border-radius: 12px; /* Rounded corners */
         }
 
         .signup-box h2 {
             text-align: center;
-            margin-bottom: 25px;
-            color: #333;
-            font-size: 1.9rem;
+            margin-bottom: 10px; /* Reduced bottom margin */
+            color: #2c3e50; /* Darker color for professionalism */
+            font-size: 2rem;
+            font-weight: 600; /* Increased font weight */
         }
 
         .registration-form {
             display: flex;
             flex-direction: column;
+            width: 100%; /* Ensure form takes full width */
+        }
+
+        .registration-form label {
+            margin-bottom: 5px; /* Small space between label and input */
+            font-weight: bold;
+            color: #34495e; /* Slightly darker for contrast */
         }
 
         .registration-form input,
         .registration-form textarea,
         .registration-form select {
-            padding: 12px;
-            margin-bottom: 18px;
-            border: 1px solid #bbb;
-            border-radius: 8px;
+            padding: 10px; /* Reduced padding for compactness */
+            margin-bottom: 15px; /* Margin below each input field */
+            border: 1px solid #bdc3c7; /* Lighter border color */
+            border-radius: 8px; /* Rounded corners */
             font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .registration-form input:focus,
+        .registration-form textarea:focus,
+        .registration-form select:focus {
+            border-color: #3498db; /* Blue focus color for professionalism */
+            outline: none;
         }
 
         .registration-form button {
-            background-color: #1e90ff;
+            background-color: #3498db; /* Blue background */
             color: white;
             border: none;
-            padding: 14px;
-            border-radius: 8px;
+            padding: 12px; /* Slightly reduced padding */
+            border-radius: 8px; /* Rounded corners */
             cursor: pointer;
             font-size: 1.1rem;
             transition: background-color 0.3s;
+            font-weight: 500; /* Medium font weight for button */
         }
 
         .registration-form button:hover {
-            background-color: #1c86ee;
+            background-color: #2980b9; /* Darker blue on hover */
         }
 
         .history-link {
             display: block;
             text-align: center;
-            margin-top: 20px;
+            margin-top: 10px; /* Slightly reduced margin */
             font-size: 1rem;
-            color: #1e90ff;
+            color: #3498db; /* Consistent blue color */
             text-decoration: none;
             transition: color 0.3s;
         }
 
         .history-link:hover {
-            color: #1c86ee;
+            color: #2980b9; /* Darker blue on hover */
         }
 
         @media (max-width: 768px) {
             .signup-box {
-                margin: 0 15px;
-                padding: 25px 20px;
+                padding: 20px 20px; /* Consistent padding on smaller screens */
+                margin: 10px; /* Adjusted margin for smaller screens */
             }
 
             .signup-box h2 {
-                font-size: 1.7rem;
+                font-size: 1.8rem; /* Slightly smaller heading */
             }
 
             .registration-form button {
-                font-size: 1rem;
+                font-size: 1rem; /* Button font size adjustment */
             }
         }
     </style>
@@ -99,9 +120,25 @@
     <div class="signup-box">
         <h2>New Patient Signup</h2>
 
-        <form method="POST" class="registration-form">
+        <form method="POST" class="registration-form" aria-label="Patient Registration Form">
             {% csrf_token %}
-            {{ form.as_p }} <!-- Renders form fields dynamically -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="symptoms">Symptoms:</label>
+            <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
+
             <button type="submit">Register</button>
         </form>
 
