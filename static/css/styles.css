@@ -1,0 +1,97 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://wallpapers.com/images/hd/medical-background-cjge7e89adg6ub8x.jpg'); /* Medical background image */
+    background-size: cover;
+    background-position: center; /* Center the background image */
+}
+
+.container {
+    text-align: center;
+    padding: 60px;
+    border-radius: 15px; /* More rounded corners */
+    background: rgba(255, 255, 255, 0.9); /* Added a translucent white background */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 500px;
+    width: 90%; /* Responsive width */
+}
+
+h1 {
+    font-size: 2.8rem; /* Slightly larger font size */
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #34495e;
+    margin-bottom: 25px;
+    font-style: italic; /* Italicized for emphasis */
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px; /* More rounded button */
+    font-size: 1.1rem; /* Slightly larger font size */
+    transition: background-color 0.3s ease, transform 0.2s; /* Added transform for hover effect */
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.btn-secondary {
+    background-color: #2ecc71;
+}
+
+.btn-secondary:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 40px; /* Reduced padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2.2rem; /* Adjusted font size for smaller screens */
+    }
+
+    .btn {
+        padding: 12px 25px; /* Reduced button padding */
+        font-size: 0.9rem; /* Smaller font size for buttons */
+    }
+}
+ /* Loading Spinner Style */
+.loading {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Make sure it is on top */
+}
+.spinner {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #87CEEB; /* Light blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
