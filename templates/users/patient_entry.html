@@ -16,133 +16,105 @@
             background-image: url('https://img.freepik.com/free-photo/top-view-doctor-desktop-with-stethoscope-clipboard-with-medical-records-form-computer-laptop_1421-698.jpg'); /* Medical-themed image */
             background-size: cover;
             background-position: center;
+            position: relative; /* Allow absolute positioning */
         }
 
         .signup-box {
             background-color: rgba(255, 255, 255, 0.95);
             padding: 20px 30px; /* Padding for a compact feel */
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
-            max-width: 500px; /* Width for a horizontal box */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; /* Rounded corners */
+            width: 90%;
+            max-width: 400px; /* Restricting maximum width */
+            margin: auto; /* Center the box */
+        }
+
+        h2 {
+            margin: 0 0 20px; /* Adjusted margin for spacing */
+            color: #2980b9; /* Color for the heading */
+        }
+
+        .form-group {
+            margin-bottom: 15px; /* Space between form elements */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333; /* Label color */
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        select {
             width: 100%;
-            margin: 20px; /* Margin for spacing */
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Center content horizontally */
-            border: none; /* No border */
-            border-radius: 12px; /* Rounded corners */
+            padding: 10px;
+            border: 1px solid #ccc; /* Border for inputs */
+            border-radius: 5px; /* Rounded corners */
+            box-sizing: border-box; /* Box model */
         }
 
-        .signup-box h2 {
-            text-align: center;
-            margin-bottom: 10px; /* Reduced bottom margin */
-            color: #2c3e50; /* Darker color for professionalism */
-            font-size: 2rem;
-            font-weight: 600; /* Increased font weight */
-        }
-
-        .registration-form {
-            display: flex;
-            flex-direction: column;
-            width: 100%; /* Ensure form takes full width */
-        }
-
-        .registration-form label {
-            margin-bottom: 5px; /* Small space between label and input */
-            font-weight: bold;
-            color: #34495e; /* Slightly darker for contrast */
-        }
-
-        .registration-form input,
-        .registration-form textarea,
-        .registration-form select {
-            padding: 10px; /* Reduced padding for compactness */
-            margin-bottom: 15px; /* Margin below each input field */
-            border: 1px solid #bdc3c7; /* Lighter border color */
-            border-radius: 8px; /* Rounded corners */
-            font-size: 1rem;
-            transition: border-color 0.3s;
-        }
-
-        .registration-form input:focus,
-        .registration-form textarea:focus,
-        .registration-form select:focus {
-            border-color: #3498db; /* Blue focus color for professionalism */
-            outline: none;
-        }
-
-        .registration-form button {
-            background-color: #3498db; /* Blue background */
+        button {
+            background-color: #3498db; /* Button color */
             color: white;
             border: none;
-            padding: 12px; /* Slightly reduced padding */
-            border-radius: 8px; /* Rounded corners */
-            cursor: pointer;
-            font-size: 1.1rem;
-            transition: background-color 0.3s;
-            font-weight: 500; /* Medium font weight for button */
+            padding: 10px 15px;
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            width: 100%; /* Full width button */
+            transition: background-color 0.3s ease; /* Transition for hover */
         }
 
-        .registration-form button:hover {
-            background-color: #2980b9; /* Darker blue on hover */
+        button:hover {
+            background-color: #2980b9; /* Darker shade for hover */
         }
 
-        .history-link {
-            display: block;
-            text-align: center;
-            margin-top: 10px; /* Slightly reduced margin */
-            font-size: 1rem;
-            color: #3498db; /* Consistent blue color */
+        .logout-btn {
+            position: absolute; /* Fix position */
+            top: 20px; /* Space from the top */
+            right: 20px; /* Space from the right */
+            padding: 10px 15px;
+            background-color: #c92b2b;
+            color: white;
             text-decoration: none;
-            transition: color 0.3s;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-
-        .history-link:hover {
-            color: #2980b9; /* Darker blue on hover */
-        }
-
-        @media (max-width: 768px) {
-            .signup-box {
-                padding: 20px 20px; /* Consistent padding on smaller screens */
-                margin: 10px; /* Adjusted margin for smaller screens */
-            }
-
-            .signup-box h2 {
-                font-size: 1.8rem; /* Slightly smaller heading */
-            }
-
-            .registration-form button {
-                font-size: 1rem; /* Button font size adjustment */
-            }
+        .logout-btn:hover {
+            background-color: #a72222; /* Darker shade for hover */
         }
     </style>
 </head>
 <body>
+    <a href="{% url 'logout' %}" class="logout-btn">Logout</a>
     <div class="signup-box">
         <h2>New Patient Signup</h2>
-
-        <form method="POST" class="registration-form" aria-label="Patient Registration Form">
+        <form method="POST">
             {% csrf_token %}
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" required>
-
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender" required>
-                <option value="">Select</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
-
-            <label for="symptoms">Symptoms:</label>
-            <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
-
-            <button type="submit">Register</button>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="symptoms">Symptoms:</label>
+                <input type="text" name="symptoms" id="symptoms" required>
+            </div>
+            <button type="submit">Register Patient</button>
         </form>
-
-        <a href="{% url 'history' %}" class="history-link">Check Medical History</a> <!-- Link to patient history -->
     </div>
 </body>
 </html>

@@ -4,6 +4,9 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile, Patient
+from django.contrib.auth import logout
+from django.views import View
+from django.urls import reverse_lazy
 
 # Home view
 def home(request):
@@ -99,3 +102,8 @@ def edit_patient(request, patient_id):
         form = PatientForm(instance=patient)  # Load form with patient instance data
 
     return render(request, 'users/edit_patient.html', {'form': form, 'patient': patient})
+
+class CustomLogoutView(View):
+    def get(self, request):
+        logout(request)
+        return redirect(reverse_lazy('login'))  # Redirect to the logout success page
