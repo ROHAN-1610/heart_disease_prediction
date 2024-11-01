@@ -74,24 +74,12 @@ p {
         font-size: 0.9rem; /* Smaller font size for buttons */
     }
 }
- /* Loading Spinner Style */
-.loading {
+ /* Basic styles for the loading spinner */
+ #spinner {
     display: none; /* Hidden by default */
     position: fixed;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 9999; /* Make sure it is on top */
-}
-.spinner {
-    border: 8px solid #f3f3f3; /* Light grey */
-    border-top: 8px solid #87CEEB; /* Light blue */
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
-}
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    z-index: 1000;
 }
