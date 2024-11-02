@@ -101,6 +101,23 @@
             color: #1f8c4e;
         }
 
+        /* Reset Password Link Styling */
+        .reset-password-link {
+            font-size: 0.95rem;
+            color: #444;
+            margin-top: 10px;
+        }
+
+        .reset-password-link a {
+            color: #27ae60;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .reset-password-link a:hover {
+            color: #1f8c4e;
+        }
+
         /* Media Query for Mobile Devices */
         @media (max-width: 768px) {
             .login-box {
@@ -133,9 +150,29 @@
             <input type="password" id="password" name="password" placeholder="Enter your password" required aria-required="true" aria-label="Password" minlength="8">
 
             <!-- Submit Button -->
-            <button type="submit">Sign In</button>
+            <button type="submit">Log In</button>
+
+            <!-- Alert Message for Wrong Password -->
+            {% if error_message %}
+                <div class="alert" style="color: red; margin-top: 15px;">{{ error_message }}</div>
+            {% endif %}
+
+            <!-- Display form errors if any -->
+            {% if form.errors %}
+                <div class="alert" style="color: red;">
+                    {% for field in form %}
+                        {% for error in field.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    {% endfor %}
+                    {% for error in form.non_field_errors %}
+                        <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
         </form>
         <p class="register-link">New here? <a href="{% url 'register' %}">Create an account</a></p>
+        <p class="reset-password-link"><a href="{% url 'reset_password' %}">Forgot your password? Reset it here.</a></p>
     </div>
 </body>
 </html>

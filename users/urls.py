@@ -2,7 +2,7 @@
 from django.urls import path
 from . import views
 from .views import CustomLogoutView
-
+from .views import login_view,reset_password
 urlpatterns = [
     path('register/', views.register, name='register'),
     path('home/', views.home, name='home'),
@@ -14,5 +14,6 @@ urlpatterns = [
     path('delete_patients/', views.delete_patients, name='delete_patients'),
     path('edit-patient/<int:patient_id>/', views.edit_patient, name='edit_patient'),
     path('logout/', CustomLogoutView.as_view(), name='logout'),
+    path('reset-password/', reset_password, name='reset_password'),
 
 ]

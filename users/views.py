@@ -2,11 +2,14 @@ from django.shortcuts import render, redirect
 from .forms import RegisterForm, PatientForm
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile, Patient
 from django.contrib.auth import logout
 from django.views import View
 from django.urls import reverse_lazy
+from django.contrib import messages
+import random,string
 
 # Home view
 def home(request):
@@ -35,6 +38,7 @@ def successfully_registered(request):
 
 # Login view
 def login_view(request):
+    error_message = None  # Initialize error message
     if request.method == 'POST':
         form = AuthenticationForm(data=request.POST)
         if form.is_valid():
@@ -44,9 +48,12 @@ def login_view(request):
             if user is not None:
                 login(request, user)
                 return redirect('successfully_logged_in')
+            else:
+                error_message = "Invalid username or password."  # Set error message if authentication fails
     else:
         form = AuthenticationForm()
-    return render(request, 'users/login.html', {'form': form})
+
+    return render(request, 'users/login.html', {'form': form, 'error_message': error_message})
 
 # View after successful login
 @login_required
@@ -107,3 +114,26 @@ class CustomLogoutView(View):
     def get(self, request):
         logout(request)
         return redirect(reverse_lazy('login'))  # Redirect to the logout success page
+    
+def reset_password(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        new_password = request.POST.get('new_password')
+        confirm_password = request.POST.get('confirm_password')
+
+        if new_password == confirm_password:
+            try:
+                user = User.objects.get(username=username)
+                print(f"Resetting password for user: {username}")  # Debugging log
+                user.set_password(new_password)
+                user.save()
+                messages.success(request, 'Your password has been reset successfully.')
+                return redirect('login')  # Redirect to the login page after reset
+            except User.DoesNotExist:
+                messages.error(request, 'User does not exist')
+                print("User does not exist")  # Debugging log
+        else:
+            messages.error(request, 'Passwords do not match. Please try again.')
+            print("Passwords do not match")  # Debugging log
+
+    return render(request, 'reset_password.html')
