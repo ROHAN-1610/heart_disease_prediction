@@ -3,60 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greetings Medical Professional</title>
-    <style>   
+    <title>Patient Record</title>
+    <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             height: 100vh;
             display: flex;
-            justify-content: center; /* Centering the content */
+            justify-content: center;
             align-items: center;
-            background-size: cover;
             background-image: url('https://img.freepik.com/premium-photo/medical-background-illustration_1282306-1144.jpg?semt=ais_hybrid');
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            position: relative; /* Allow absolute positioning inside */
+            position: relative;
         }
         .container {
-            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
-            padding: 3em;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 2.5em;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+            max-width: 500px; /* Restricting maximum width for larger screens */
+            text-align: center; /* Centered text for better alignment */
+            animation: fadeIn 0.5s; /* Fade-in animation for the container */
         }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         h2 {
-            color: #2980b9; /* Changed color for emphasis */
+            color: #2980b9;
             margin-bottom: 0.5em;
+            font-size: 2em; /* Larger font size for emphasis */
         }
         p {
-            font-size: 1.3em;
+            font-size: 1.25em;
             color: #34495e;
             margin-bottom: 2em;
-            text-align: center; /* Centered text for better alignment */
         }
         .btn-group {
-            margin-top: 20px;
             display: flex;
-            justify-content: center; /* Center buttons horizontally */
+            justify-content: center;
+            gap: 20px; /* Space between buttons */
         }
         .btn {
-            padding: 12px 24px;
+            padding: 12px 30px;
             background-color: #3498db;
             color: white;
             text-decoration: none;
-            border-radius: 8px;
-            margin: 0 10px;
+            border-radius: 50px; /* Rounded buttons */
             font-size: 1.1em;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden; /* To contain the pseudo-element */
+        }
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.3);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 50px; /* Match the border radius of the button */
+            z-index: 0; /* Behind the text */
         }
         .btn:hover {
-            background-color: #2980b9; /* Darker shade for hover effect */
+            background-color: #2980b9;
+        }
+        .btn:hover::before {
+            opacity: 1; /* Show overlay on hover */
         }
         .logout-btn {
-            position: absolute; /* Fix position */
-            top: 20px; /* Space from the top */
-            right: 20px; /* Space from the right */
+            position: absolute;
+            top: 20px;
+            right: 20px;
             padding: 10px 15px;
             background-color: #c92b2b;
             color: white;
@@ -65,7 +91,7 @@
             transition: background-color 0.3s ease;
         }
         .logout-btn:hover {
-            background-color: #a72222; /* Darker shade for hover */
+            background-color: #a72222;
         }
     </style>
 </head>
@@ -74,8 +100,6 @@
     <div class="container">
         <h2>Welcome to the Patient Record</h2>
         <p>You have successfully logged into the system.</p>
-
-        <!-- Buttons for Register and History -->
         <div class="btn-group">
             <a href="{% url 'patient_entry' %}" class="btn">Add New Patient</a>
             <a href="{% url 'history' %}" class="btn">View Patient History</a>

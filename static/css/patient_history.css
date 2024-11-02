@@ -1,0 +1,210 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/images/heart_photo.png');
+    background-size: cover;
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    color: #444;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Animation on hover */
+}
+.container:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+/* Heading Styles */
+h2 {
+    text-align: center;
+    color: #e74c3c;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
+}
+
+/* Logout Button */
+.logout-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 8px 15px;
+    background-color: #e74c3c;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+    font-size: 0.85rem;
+}
+.logout-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Form and Search */
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)); /* Gradient background */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Transition for the shadow */
+}
+.search-form:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+}
+.search-form input[type="text"], 
+.search-form select, 
+.search-form button {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+}
+.search-form input[type="text"]:focus, 
+.search-form select:focus {
+    border-color: #3498db;
+    box-shadow: 0px 0px 5px rgba(52, 152, 219, 0.5); /* Focus effect */
+}
+.search-form button {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.search-form button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #f1f1f1;
+    color: #333;
+    transition: background-color 0.3s ease; /* Transition for row background */
+}
+th {
+    background-color: #f7f9fb;
+    color: #555;
+    font-weight: bold;
+    font-size: 0.95rem;
+    position: sticky;
+    top: 0;
+}
+tr:hover {
+    background-color: #ffecb3; /* Light yellow on row hover */
+}
+
+/* Action Links and Buttons */
+.table-actions a, 
+.action-buttons a, 
+.delete-button {
+    display: inline-block;
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    margin: 5px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.table-actions a {
+    background-color: #3498db;
+}
+.table-actions a:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); /* Lift effect */
+}
+.action-buttons a {
+    background-color: #27ae60;
+    font-weight: bold;
+}
+.action-buttons a:hover {
+    background-color: #1e8449;
+    transform: translateY(-2px); /* Lift effect */
+}
+.delete-button {
+    background-color: #e74c3c;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.delete-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px); /* Lift effect */
+}
+
+/* Action Buttons Wrapper */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    .search-form {
+        flex-direction: column;
+    }
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    table, th, td {
+        font-size: 0.8rem;
+    }
+}
+.suggestions-box {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto; /* Scrollable if too many suggestions */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.suggestions-box div {
+    padding: 10px;
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+}
+
+.suggestions-box div:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}

@@ -3,6 +3,7 @@ from django.urls import path
 from . import views
 from .views import CustomLogoutView
 from .views import login_view,reset_password
+
 urlpatterns = [
     path('register/', views.register, name='register'),
     path('home/', views.home, name='home'),

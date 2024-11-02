@@ -4,113 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patient History</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('/static/images/medical_records.jpg'); 
-            background-color: #f4f7f6;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            position: relative; /* Allow absolute positioning */
-        }
-
-        .container {
-            width: 80%;
-            max-width: 1200px;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #c92b2b;
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        a, button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin: 5px; /* Added margin for spacing */
-        }
-
-        a:hover, button:hover {
-            background-color: #45a049;
-        }
-
-        .delete-button {
-            background-color: #c92b2b;
-            font-size: 16px; /* Increased font size for the delete button */
-            padding: 12px 24px; /* Adjusted padding for better appearance */
-        }
-
-        .delete-button:hover {
-            background-color: #a72222;
-        }
-
-        .action-buttons {
-            display: flex;
-            justify-content: center; /* Center the buttons */
-            margin-top: 20px; /* Space above buttons */
-        }
-        
-        .logout-btn {
-            position: absolute; /* Fix position */
-            top: 20px; /* Space from the top */
-            right: 20px; /* Space from the right */
-            padding: 10px 15px;
-            background-color: #c92b2b;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .logout-btn:hover {
-            background-color: #a72222; /* Darker shade for hover */
-        }
-    </style>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/patient_history.css' %}">
 </head>
 <body>
     <a href="{% url 'logout' %}" class="logout-btn">Logout</a>
     <div class="container">
         <h2>Patient History</h2>
-    
-        <form method="POST" style="display: inline;">
+
+        <!-- Search and Filter Form -->
+<form class="search-form" method="GET" action="{% url 'history' %}">
+    <input type="text" id="search" name="search" placeholder="Search by name" value="{{ search_query }}" oninput="fetchSuggestions()">
+    <div id="suggestions" class="suggestions-box"></div> <!-- Suggestions box -->
+    <select name="gender">
+        <option value="">All Genders</option>
+        <option value="Male" {% if gender_filter == "Male" %}selected{% endif %}>Male</option>
+        <option value="Female" {% if gender_filter == "Female" %}selected{% endif %}>Female</option>
+    </select>
+    <button type="submit">Search</button>
+</form>
+        <!-- Patient History Table -->
+        <form method="POST" action="{% url 'delete_patients' %}">
             {% csrf_token %}
             <table>
                 <thead>
@@ -134,18 +48,58 @@
                             <td>{{ patient.symptoms }}</td>
                             <td>{{ patient.registration_date }}</td>
                             <td>
-                                <a href="{% url 'edit_patient' patient.id %}">Edit</a>
+                                <div class="table-actions">
+                                    <a href="{% url 'edit_patient' patient.id %}">Edit</a>
+                                </div>
                             </td>
+                        </tr>
+                    {% empty %}
+                        <tr>
+                            <td colspan="7" style="text-align: center; color: #888;">No patients found.</td>
                         </tr>
                     {% endfor %}
                 </tbody>
             </table>
-    
+
+            <!-- Action Buttons -->
             <div class="action-buttons">
                 <a href="{% url 'patient_entry' %}">Register New Patient</a>
                 <button type="submit" class="delete-button">Delete Selected Records</button>
             </div>
         </form>
     </div>
+    <script>
+        function fetchSuggestions() {
+            const input = document.getElementById('search').value;
+            const suggestionsBox = document.getElementById('suggestions');
+        
+            // Clear previous suggestions
+            suggestionsBox.innerHTML = '';
+        
+            if (input.length < 2) {
+                // Avoid too many requests
+                return;
+            }
+        
+            // Fetch suggestions from the server
+            fetch(`/search-suggestions/?query=${input}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.length > 0) {
+                        data.forEach(item => {
+                            const div = document.createElement('div');
+                            div.textContent = item; // Assuming 'item' is the suggestion
+                            div.onclick = () => {
+                                document.getElementById('search').value = item; // Populate input
+                                suggestionsBox.innerHTML = ''; // Clear suggestions
+                            };
+                            suggestionsBox.appendChild(div);
+                        });
+                    }
+                })
+                .catch(error => console.error('Error fetching suggestions:', error));
+        }
+        </script>
+        
 </body>
 </html>

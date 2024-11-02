@@ -73,19 +73,28 @@ def patient_entry(request):
     return render(request, 'users/patient_entry.html', {'form': form})
 
 # View to display patient history
+# View to display patient history with search and filter options
 @login_required
 def history(request):
-    if request.method == 'POST':
-        # Get the list of patient IDs from the submitted form
-        patient_ids = request.POST.getlist('patient_ids')  
-        if patient_ids:  # Check if any IDs were selected
-            Patient.objects.filter(id__in=patient_ids).delete()
-            # Optionally add a success message here
-            return redirect('history')  # Redirect after deletion
+    search_query = request.GET.get('search', '')
+    gender_filter = request.GET.get('gender', '')
 
-    # Retrieve all patients to display in the table
+    # Filter patients based on search query and gender filter
     patients = Patient.objects.all()
-    return render(request, 'users/history.html', {'patients': patients})
+    if search_query:
+        patients = patients.filter(name__icontains=search_query)
+    if gender_filter:
+        patients = patients.filter(gender=gender_filter)
+
+    if request.method == 'POST':
+        # Handle deletion of selected patients
+        patient_ids = request.POST.getlist('patient_ids')
+        if patient_ids:
+            Patient.objects.filter(id__in=patient_ids).delete()
+            return redirect('history')  # Refresh the page after deletion
+
+    return render(request, 'users/history.html', {'patients': patients, 'search_query': search_query, 'gender_filter': gender_filter})
+
 
 # View to handle deletion of selected patients
 @login_required
