@@ -1,3 +1,5 @@
+<!--templates/users/history.html-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,16 +15,30 @@
         <h2>Patient History</h2>
 
         <!-- Search and Filter Form -->
-<form class="search-form" method="GET" action="{% url 'history' %}">
-    <input type="text" id="search" name="search" placeholder="Search by name" value="{{ search_query }}" oninput="fetchSuggestions()">
-    <div id="suggestions" class="suggestions-box"></div> <!-- Suggestions box -->
-    <select name="gender">
-        <option value="">All Genders</option>
-        <option value="Male" {% if gender_filter == "Male" %}selected{% endif %}>Male</option>
-        <option value="Female" {% if gender_filter == "Female" %}selected{% endif %}>Female</option>
-    </select>
-    <button type="submit">Search</button>
-</form>
+        <form id="searchForm" class="search-form" method="GET" action="{% url 'history' %}">
+            <input type="text" id="search" name="search" placeholder="Search by name" value="{{ search_query }}" oninput="fetchSuggestions()">
+            <input type="text" id="symptoms" name="symptoms" placeholder="Search by symptoms" value="{{ symptoms_query }}">
+            <div id="suggestions" class="suggestions-box"></div> <!-- Suggestions box -->
+            <select name="gender">
+                <option value="">All Genders</option>
+                <option value="Male" {% if gender_filter == "Male" %}selected{% endif %}>Male</option>
+                <option value="Female" {% if gender_filter == "Female" %}selected{% endif %}>Female</option>
+            </select>
+            <button type="submit">Search</button>
+            <input type="button" value="Reset" class="reset-button" id="resetButton"> <!-- Reset button -->
+        </form>
+
+        <!-- Download Button -->
+        {% if search_query %}
+            <div class="download-button">
+                {% if gender_filter %}
+                    <a href="{% url 'download_patient_records' search_query gender_filter %}" class="btn btn-primary">Download Patient Records</a>
+                {% else %}
+                    <a href="{% url 'download_patient_records_no_gender' search_query %}" class="btn btn-primary">Download Patient Records</a>
+                {% endif %}
+            </div>
+        {% endif %}
+
         <!-- Patient History Table -->
         <form method="POST" action="{% url 'delete_patients' %}">
             {% csrf_token %}
@@ -68,38 +84,21 @@
             </div>
         </form>
     </div>
+
     <script>
-        function fetchSuggestions() {
-            const input = document.getElementById('search').value;
-            const suggestionsBox = document.getElementById('suggestions');
-        
-            // Clear previous suggestions
-            suggestionsBox.innerHTML = '';
-        
-            if (input.length < 2) {
-                // Avoid too many requests
-                return;
-            }
-        
-            // Fetch suggestions from the server
-            fetch(`/search-suggestions/?query=${input}`)
-                .then(response => response.json())
-                .then(data => {
-                    if (data.length > 0) {
-                        data.forEach(item => {
-                            const div = document.createElement('div');
-                            div.textContent = item; // Assuming 'item' is the suggestion
-                            div.onclick = () => {
-                                document.getElementById('search').value = item; // Populate input
-                                suggestionsBox.innerHTML = ''; // Clear suggestions
-                            };
-                            suggestionsBox.appendChild(div);
-                        });
-                    }
-                })
-                .catch(error => console.error('Error fetching suggestions:', error));
-        }
-        </script>
-        
+        // JavaScript for reset functionality
+        document.getElementById('resetButton').addEventListener('click', function() {
+            document.getElementById('search').value = '';
+            document.getElementById('symptoms').value = '';
+            document.querySelector('select[name="gender"]').selectedIndex = 0;
+
+            // Update the URL
+            const url = new URL(window.location.href);
+            url.searchParams.delete('search');
+            url.searchParams.delete('symptoms');
+            url.searchParams.delete('gender');
+            window.history.replaceState({}, document.title, url);
+        });
+    </script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+# This is settings.py
 """
 Django settings for heart_disease_prediction project.
 

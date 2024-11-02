@@ -1,4 +1,5 @@
-/* Base Styles */
+/* patient_history.css */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -207,4 +208,15 @@ tr:hover {
 
 .suggestions-box div:hover {
     background-color: #f0f0f0; /* Highlight on hover */
+}
+.reset-button {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    border: none; /* Remove borders */
+    padding: 10px 15px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 4px; /* Rounded corners */
+}
+.reset-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
 }

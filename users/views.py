@@ -1,3 +1,4 @@
+# This is users/views.py
 from django.shortcuts import render, redirect
 from .forms import RegisterForm, PatientForm
 from django.contrib.auth import authenticate, login
@@ -9,7 +10,8 @@ from django.contrib.auth import logout
 from django.views import View
 from django.urls import reverse_lazy
 from django.contrib import messages
-import random,string
+import csv
+from django.http import HttpResponse
 
 # Home view
 def home(request):
@@ -21,10 +23,12 @@ def register(request):
         form = RegisterForm(request.POST)
         if form.is_valid():
             user = form.save()
-            phone_number = form.cleaned_data.get('phone_number')
-            dob = form.cleaned_data.get('dob')
-            hospital_name = form.cleaned_data.get('hospital_name')
-            profile = UserProfile(user=user, phone_number=phone_number, dob=dob, hospital_name=hospital_name)
+            profile = UserProfile(
+                user=user,
+                phone_number=form.cleaned_data.get('phone_number'),
+                dob=form.cleaned_data.get('dob'),
+                hospital_name=form.cleaned_data.get('hospital_name')
+            )
             profile.save()
             login(request, user)
             return redirect('successfully_registered')
@@ -38,7 +42,7 @@ def successfully_registered(request):
 
 # Login view
 def login_view(request):
-    error_message = None  # Initialize error message
+    error_message = None
     if request.method == 'POST':
         form = AuthenticationForm(data=request.POST)
         if form.is_valid():
@@ -49,7 +53,7 @@ def login_view(request):
                 login(request, user)
                 return redirect('successfully_logged_in')
             else:
-                error_message = "Invalid username or password."  # Set error message if authentication fails
+                error_message = "Invalid username or password."
     else:
         form = AuthenticationForm()
 
@@ -72,29 +76,35 @@ def patient_entry(request):
         form = PatientForm()
     return render(request, 'users/patient_entry.html', {'form': form})
 
-# View to display patient history
 # View to display patient history with search and filter options
 @login_required
 def history(request):
     search_query = request.GET.get('search', '')
+    symptoms_query = request.GET.get('symptoms', '')
     gender_filter = request.GET.get('gender', '')
 
-    # Filter patients based on search query and gender filter
+    # Initialize queryset
     patients = Patient.objects.all()
+
+    # Filter by name if search_query is provided
     if search_query:
         patients = patients.filter(name__icontains=search_query)
+
+    # Filter by symptoms if symptoms_query is provided
+    if symptoms_query:
+        patients = patients.filter(symptoms__icontains=symptoms_query)
+
+    # Filter by gender if gender_filter is provided
     if gender_filter:
         patients = patients.filter(gender=gender_filter)
 
-    if request.method == 'POST':
-        # Handle deletion of selected patients
-        patient_ids = request.POST.getlist('patient_ids')
-        if patient_ids:
-            Patient.objects.filter(id__in=patient_ids).delete()
-            return redirect('history')  # Refresh the page after deletion
-
-    return render(request, 'users/history.html', {'patients': patients, 'search_query': search_query, 'gender_filter': gender_filter})
-
+    context = {
+        'patients': patients,
+        'search_query': search_query,
+        'symptoms_query': symptoms_query,
+        'gender_filter': gender_filter,
+    }
+    return render(request, 'history.html', context)
 
 # View to handle deletion of selected patients
 @login_required
@@ -107,23 +117,23 @@ def delete_patients(request):
 
 @login_required
 def edit_patient(request, patient_id):
-    patient = Patient.objects.get(id=patient_id)  # Get the patient to be edited
+    patient = Patient.objects.get(id=patient_id)
 
     if request.method == 'POST':
-        form = PatientForm(request.POST, instance=patient)  # Load form with patient instance data
+        form = PatientForm(request.POST, instance=patient)
         if form.is_valid():
-            form.save()  # Save the updated patient details
-            return redirect('history')  # Redirect to the history page after editing
+            form.save()
+            return redirect('history')
     else:
-        form = PatientForm(instance=patient)  # Load form with patient instance data
+        form = PatientForm(instance=patient)
 
     return render(request, 'users/edit_patient.html', {'form': form, 'patient': patient})
 
 class CustomLogoutView(View):
     def get(self, request):
         logout(request)
-        return redirect(reverse_lazy('login'))  # Redirect to the logout success page
-    
+        return redirect(reverse_lazy('login'))
+
 def reset_password(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -133,16 +143,40 @@ def reset_password(request):
         if new_password == confirm_password:
             try:
                 user = User.objects.get(username=username)
-                print(f"Resetting password for user: {username}")  # Debugging log
                 user.set_password(new_password)
                 user.save()
                 messages.success(request, 'Your password has been reset successfully.')
-                return redirect('login')  # Redirect to the login page after reset
+                return redirect('login')
             except User.DoesNotExist:
                 messages.error(request, 'User does not exist')
-                print("User does not exist")  # Debugging log
         else:
             messages.error(request, 'Passwords do not match. Please try again.')
-            print("Passwords do not match")  # Debugging log
 
     return render(request, 'reset_password.html')
+
+def download_patient_records(request, search_query, gender=None):
+    # Create a CSV response
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = f'attachment; filename="patient_records_{search_query}.csv"'
+
+    writer = csv.writer(response)
+    writer.writerow(['Patient ID', 'Name', 'Age', 'Gender', 'Symptoms', 'Registration Date'])
+
+    # Filter patients based on the search query and optional gender
+    if gender:
+        patients = Patient.objects.filter(name__icontains=search_query, gender=gender)
+    else:
+        patients = Patient.objects.filter(name__icontains=search_query)
+
+    # Write patient data to the CSV
+    for patient in patients:
+        writer.writerow([
+            patient.id,
+            patient.name,
+            patient.age,
+            patient.gender,
+            patient.symptoms,
+            patient.registration_date,
+        ])
+
+    return response
