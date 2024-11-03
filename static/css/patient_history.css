@@ -220,3 +220,19 @@ tr:hover {
 .reset-button:hover {
     background-color: #d32f2f; /* Darker red on hover */
 }
+
+/* Back Button Styles */
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px; /* Space below the button */
+    padding: 10px 15px;
+    background-color: #3498db; /* Same color as other buttons */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+}

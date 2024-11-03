@@ -1,5 +1,3 @@
-<!--templates/users/history.html-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +6,36 @@
     <title>Patient History</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/patient_history.css' %}">
+    <style>
+        .back-btn {
+            position: absolute; /* Position it absolutely */
+            top: 20px; /* Distance from the top */
+            left: 20px; /* Distance from the left */
+            display: inline-block; /* Make it an inline-block for padding */
+            padding: 10px 15px; /* Padding for a better click area */
+            background-color: #3498db; /* Background color */
+            color: white; /* Text color */
+            text-decoration: none; /* No underline */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition for hover */
+            z-index: 10; /* Make sure it stays above other elements */
+        }
+
+        .back-btn:hover {
+            background-color: #2980b9; /* Darker background on hover */
+        }
+
+        /* Additional styles for the container */
+        .container {
+            position: relative; /* Set position to relative for absolute positioning to work */
+            padding-top: 60px; /* Optional: add padding to avoid content overlap */
+        }
+    </style>
 </head>
 <body>
     <a href="{% url 'logout' %}" class="logout-btn">Logout</a>
     <div class="container">
+        <a href="javascript:history.back()" class="back-btn">Back</a> <!-- Back button -->
         <h2>Patient History</h2>
 
         <!-- Search and Filter Form -->
