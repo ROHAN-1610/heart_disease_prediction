@@ -7,6 +7,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/patient_history.css' %}">
     <style>
+        /* Back Button Styles */
         .back-btn {
             position: absolute; /* Position it absolutely */
             top: 20px; /* Distance from the top */
@@ -25,6 +26,24 @@
             background-color: #2980b9; /* Darker background on hover */
         }
 
+        /* Logout Button Styles */
+        .logout-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: #c92b2b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .logout-btn:hover {
+            background-color: #a72222;
+            transform: scale(1.05);
+        }
+
         /* Additional styles for the container */
         .container {
             position: relative; /* Set position to relative for absolute positioning to work */
@@ -33,9 +52,9 @@
     </style>
 </head>
 <body>
+    <a href="javascript:history.back()" class="back-btn">Back</a> <!-- Back button -->
     <a href="{% url 'logout' %}" class="logout-btn">Logout</a>
     <div class="container">
-        <a href="javascript:history.back()" class="back-btn">Back</a> <!-- Back button -->
         <h2>Patient History</h2>
 
         <!-- Search and Filter Form -->

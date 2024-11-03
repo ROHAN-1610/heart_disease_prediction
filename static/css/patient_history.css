@@ -100,6 +100,37 @@ h2 {
     transform: translateY(-2px); /* Lift effect on hover */
 }
 
+/* Download Button Styles */
+.download-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the button */
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 24px; /* Increased padding for a more substantial button */
+    background-color: #3498db; /* Main button color */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 6px; /* Slightly rounded corners */
+    font-size: 1rem; /* Increased font size for readability */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.download-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.download-btn:active {
+    transform: translateY(0); /* Remove lift effect when active */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduce shadow on active */
+}
+
 /* Table Styles */
 table {
     width: 100%;

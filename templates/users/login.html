@@ -1,4 +1,3 @@
-<!--templates/users/login.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,6 @@
     <title>User Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        /* General Styling */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -21,7 +19,6 @@
             background-position: center;
         }
 
-        /* Login Box Styling */
         .login-box {
             max-width: 480px;
             width: 100%;
@@ -39,7 +36,6 @@
             margin-bottom: 25px;
         }
 
-        /* Login Form Styling */
         .login-form {
             display: flex;
             flex-direction: column;
@@ -85,41 +81,58 @@
             background-color: #229954;
         }
 
-        /* Register Link Styling */
-        .register-link {
-            font-size: 0.95rem;
-            color: #444;
-            margin-top: 10px;
-        }
+        /* CSS for Show Password Checkbox */
+.show-password {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #34495e;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
 
-        .register-link a {
-            color: #27ae60;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
+.show-password input[type="checkbox"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    accent-color: #27ae60;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
 
-        .register-link a:hover {
-            color: #1f8c4e;
-        }
+.show-password label {
+    cursor: pointer;
+}
 
-        /* Reset Password Link Styling */
+.show-password input[type="checkbox"]:hover {
+    box-shadow: 0 0 3px rgba(39, 174, 96, 0.3);
+}
+
+.show-password input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(39, 174, 96, 0.6);
+}
+
+        .register-link,
         .reset-password-link {
             font-size: 0.95rem;
             color: #444;
             margin-top: 10px;
         }
 
+        .register-link a,
         .reset-password-link a {
             color: #27ae60;
             text-decoration: none;
             transition: color 0.3s;
         }
 
+        .register-link a:hover,
         .reset-password-link a:hover {
             color: #1f8c4e;
         }
 
-        /* Media Query for Mobile Devices */
         @media (max-width: 768px) {
             .login-box {
                 margin: 0 20px;
@@ -141,24 +154,23 @@
         <h2 id="login-heading">Welcome Back!</h2>
         <form method="POST" class="login-form" autocomplete="off">
             {% csrf_token %}
-
-            <!-- Username Input Field with Label -->
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" placeholder="Enter your username" required aria-required="true" aria-label="Username">
 
-            <!-- Password Input Field with Label -->
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" placeholder="Enter your password" required aria-required="true" aria-label="Password" minlength="8">
+            
+            <div class="show-password">
+                <input type="checkbox" onclick="togglePassword()" id="show-password-toggle">
+                <label for="show-password-toggle">Show Password</label>
+            </div>
 
-            <!-- Submit Button -->
             <button type="submit">Log In</button>
 
-            <!-- Alert Message for Wrong Password -->
             {% if error_message %}
                 <div class="alert" style="color: red; margin-top: 15px;">{{ error_message }}</div>
             {% endif %}
 
-            <!-- Display form errors if any -->
             {% if form.errors %}
                 <div class="alert" style="color: red;">
                     {% for field in form %}
@@ -175,5 +187,12 @@
         <p class="register-link">New here? <a href="{% url 'register' %}">Create an account</a></p>
         <p class="reset-password-link"><a href="{% url 'reset_password' %}">Forgot your password? Reset it here.</a></p>
     </div>
+
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById("password");
+            passwordField.type = passwordField.type === "password" ? "text" : "password";
+        }
+    </script>
 </body>
 </html>

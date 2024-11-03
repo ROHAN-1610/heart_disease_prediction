@@ -1,4 +1,3 @@
-<!--register.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,26 +11,25 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center; /* Center the container horizontally */
-            align-items: center; /* Center the container vertically */
+            justify-content: center;
+            align-items: center;
             height: 100vh;
-            background-image: url('/static/images/heart_photo.png'); /* Medical-themed image */
+            background-image: url('/static/images/heart_photo.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
 
         .container {
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-            padding: 30px; /* Increased padding for a more spacious feel */
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Shadow for depth */
-            width: 80vmin; /* Width is 80% of the smaller viewport dimension */
-            height: auto; /* Adjust height to auto for dynamic content */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+            max-width: 600px;
+            width: 90%;
             display: flex;
-            flex-direction: column; /* Ensure the title and form stack vertically */
-            justify-content: center; /* Center contents vertically */
-            overflow: auto; /* Allow scrolling if content exceeds height */
+            flex-direction: column;
+            gap: 20px;
         }
 
         h2 {
@@ -43,23 +41,21 @@
 
         form {
             display: flex;
-            flex-wrap: wrap; /* Allow wrapping to next line if needed */
-            justify-content: space-between; /* Distribute space between elements */
-            width: 100%;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between;
         }
 
         .form-group {
             display: flex;
             flex-direction: column;
-            flex: 1; /* Allow inputs to grow */
-            margin-right: 10px; /* Space between fields */
+            flex: 1 1 45%;
         }
 
         label {
             font-size: 1rem;
             color: #34495e;
             margin-bottom: 5px;
-            text-align: left;
         }
 
         input[type="text"],
@@ -67,55 +63,81 @@
         input[type="password"],
         input[type="date"],
         select {
-            padding: 15px; /* Increased padding for larger input boxes */
-            font-size: 1.1rem; /* Increased font size for readability */
-            border: 2px solid #bdc3c7; /* Border color */
-            border-radius: 4px; /* Slightly rounded corners */
-            margin-bottom: 15px; /* Space below each input */
-            transition: border 0.3s; /* Smooth transition for focus effect */
+            padding: 12px;
+            font-size: 1rem;
+            border: 1px solid #bdc3c7;
+            border-radius: 6px;
+            transition: border 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         input:focus,
         select:focus {
-            border-color: #3498db; /* Color change on focus */
-            outline: none; /* Remove default outline */
+            border-color: #3498db;
+            box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+            outline: none;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        button, .back-button {
+            padding: 14px;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 45%;
+            text-align: center;
         }
 
         button {
-            padding: 15px; /* Increased padding for button */
             background-color: #1abc9c;
             color: white;
-            font-size: 1.1rem;
             border: none;
-            border-radius: 8px; /* Rounded corners for the button */
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin-top: 10px; /* Space above button */
-            width: 100%; /* Make button take full width */
+        }
+
+        .back-button {
+            background-color: #e74c3c;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            border: none;
         }
 
         button:hover {
-            background-color: #16a085; /* Darker shade on hover */
+            background-color: #16a085;
+        }
+
+        .back-button:hover {
+            background-color: #c0392b;
         }
 
         .errorlist {
             color: red;
             font-size: 0.9rem;
-            margin-top: -10px;
+            margin-top: -5px;
             margin-bottom: 10px;
         }
 
+        /* Responsive adjustments */
         @media (max-width: 768px) {
+            .form-group {
+                flex: 1 1 100%;
+            }
+
             .container {
-                padding: 20px; /* Adjust padding for smaller screens */
+                padding: 20px;
             }
 
-            h2 {
-                font-size: 1.8rem;
-            }
-
-            button {
-                font-size: 1rem;
+            .button-container {
+                flex-direction: column;
+                gap: 10px;
             }
         }
 
@@ -124,8 +146,9 @@
                 font-size: 1.5rem;
             }
 
-            button {
+            button, .back-button {
                 font-size: 0.9rem;
+                padding: 10px;
             }
 
             input {
@@ -143,17 +166,21 @@
             {% for field in form %}
             <div class="form-group">
                 <label for="{{ field.id_for_label }}">{{ field.label }}</label>
-                {% if field.name == 'dob' %} <!-- Assuming 'dob' is the name of your date field -->
+                {% if field.name == 'dob' %}
                     <input type="date" id="{{ field.id_for_label }}" name="{{ field.name }}" required>
                 {% else %}
-                    {{ field }} <!-- Render each form field -->
+                    {{ field }}
                 {% endif %}
                 {% if field.errors %}
                 <div class="errorlist">{{ field.errors }}</div>
                 {% endif %}
             </div>
             {% endfor %}
-            <button type="submit">Sign Up</button>
+            <!-- Button container with Sign Up and Back button -->
+            <div class="button-container">
+                <a href="{% url 'login' %}" class="back-button">Back</a>
+                <button type="submit">Sign Up</button>
+            </div>
         </form>
     </div>
 </body>
