@@ -102,33 +102,22 @@ h2 {
 
 /* Download Button Styles */
 .download-button {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center; /* Center the button */
+    margin-top: 20px; /* Space above the button */
+    text-align: center;
 }
 
-.download-btn {
-    display: inline-block;
-    padding: 12px 24px; /* Increased padding for a more substantial button */
-    background-color: #3498db; /* Main button color */
-    color: #fff; /* White text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 6px; /* Slightly rounded corners */
-    font-size: 1rem; /* Increased font size for readability */
-    font-weight: bold; /* Bold text for emphasis */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+.download-button a {
+    display: inline-block; /* Make the link behave like a button */
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #007bff; /* Primary color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
-.download-btn:hover {
-    background-color: #2980b9; /* Darker blue on hover */
-    transform: translateY(-2px); /* Lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
-}
-
-.download-btn:active {
-    transform: translateY(0); /* Remove lift effect when active */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduce shadow on active */
+.download-button a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
 /* Table Styles */
@@ -205,6 +194,23 @@ tr:hover {
     gap: 10px;
 }
 
+/* Table Wrapper */
+.table-wrapper {
+    max-height: 300px; /* Set the maximum height of the table */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ddd; /* Optional: border around the table */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    margin-top: 15px; /* Space between other elements */
+}
+
+/* Optional: Styling for the table header */
+thead th {
+    position: sticky; /* Keep header sticky */
+    top: 0; /* Stick to the top of the wrapper */
+    background-color: #f7f9fb; /* Background color for header */
+    z-index: 1; /* Ensure it stays above the other rows */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .container {
@@ -250,4 +256,45 @@ tr:hover {
 }
 .reset-button:hover {
     background-color: #d32f2f; /* Darker red on hover */
+}
+  /* Back Button Styles */
+  .back-btn {
+    position: fixed; /* Position it absolutely */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    padding: 10px 15px; /* Padding for a better click area */
+    background-color: #3498db; /* Background color */
+    color: white; /* Text color */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    z-index: 10; /* Make sure it stays above other elements */
+}
+
+.back-btn:hover {
+    background-color: #2980b9; /* Darker background on hover */
+}
+
+/* Logout Button Styles */
+.logout-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #c92b2b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+    background-color: #a72222;
+    transform: scale(1.05);
+}
+
+/* Additional styles for the container */
+.container {
+    position: relative; /* Set position to relative for absolute positioning to work */
+    padding-top: 60px; /* Optional: add padding to avoid content overlap */
 }
