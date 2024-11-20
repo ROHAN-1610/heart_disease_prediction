@@ -1,0 +1,2001 @@
+Patient_ID,Height_cm,Weight_kg,Blood_Pressure,Temperature_C,Heart_Rate,Symptoms,Existing_Conditions,Disease_Predictions,Laboratory_Test_Results,Cholesterol_mg_dL,Blood_Sugar_mg_dL,Family_History_Heart_Disease,Smoking_Status
+P0001,174,59,120/80,36.6,63,chest pain,Diabetes,Heart Disease,High Cholesterol,198,79,Yes,Never
+P0002,,67,130/85,37,68,shortness of breath,Hypertension,Coronary Artery Disease,,179,90,No,Former
+P0003,176,58,140/90,37,65,fatigue,High Cholesterol,Arrhythmia,Normal,193,82,,Current
+P0004,185,65,125/82,37.2,69,dizziness,,,,228,103,No,Never
+P0005,167,41,135/88,36.3,72,palpitations,Asthma,Hypertension,,251,135,Yes,Former
+P0006,167,73,145/92,37.3,83,nausea,Thyroid,,High Cholesterol,,76,No,Current
+P0007,185,70,,35.6,71,,Diabetes,Heart Disease,High Blood Sugar,204,130,Yes,Never
+P0008,177,57,120/80,36.7,59,chest pain,Hypertension,Coronary Artery Disease,Normal,,76,No,Former
+P0009,165,79,130/85,36.8,86,shortness of breath,High Cholesterol,Arrhythmia,Low Iron,187,74,Yes,Current
+P0010,,84,140/90,,66,fatigue,,Stroke,,241,124,No,Never
+P0011,165,45,125/82,37,74,dizziness,Asthma,Hypertension,High Cholesterol,188,127,Yes,Former
+P0012,165,58,135/88,36.3,79,palpitations,Thyroid,,High Blood Sugar,217,125,No,Current
+P0013,172,58,145/92,36.5,76,nausea,Diabetes,Heart Disease,Normal,195,60,Yes,Never
+P0014,150,55,,37.1,85,,Hypertension,Coronary Artery Disease,Low Iron,197,86,No,Former
+P0015,152,82,120/80,37,79,chest pain,,Arrhythmia,,184,124,Yes,Current
+P0016,164,67,130/85,36.7,66,shortness of breath,,Stroke,High Cholesterol,253,101,No,Never
+P0017,159,66,140/90,36.8,96,fatigue,,Hypertension,High Blood Sugar,170,67,Yes,Former
+P0018,173,39,125/82,37.3,,dizziness,Thyroid,,Normal,170,113,No,Current
+P0019,160,79,135/88,36.7,73,palpitations,Diabetes,Heart Disease,Low Iron,284,,Yes,Never
+P0020,,51,145/92,37,84,nausea,Hypertension,Coronary Artery Disease,,239,153,No,
+P0021,184,70,,38.1,,,High Cholesterol,Arrhythmia,High Cholesterol,104,146,Yes,Current
+P0022,167,74,120/80,,78,chest pain,,Stroke,High Blood Sugar,177,118,No,Never
+P0023,170,90,130/85,36.1,,,Asthma,Hypertension,Normal,127,140,Yes,Former
+P0024,155,50,140/90,37.4,72,fatigue,Thyroid,,Low Iron,161,101,No,Current
+P0025,164,24,125/82,36.7,71,dizziness,Diabetes,Heart Disease,,74,122,Yes,Never
+P0026,171,72,135/88,36.8,76,palpitations,Hypertension,Coronary Artery Disease,,194,144,No,Former
+P0027,158,97,145/92,36.6,85,nausea,High Cholesterol,Arrhythmia,High Blood Sugar,154,,Yes,Current
+P0028,173,88,,36.9,59,,,Stroke,Normal,202,92,No,Never
+P0029,163,73,120/80,37.8,55,chest pain,Asthma,Hypertension,,134,48,Yes,Former
+P0030,167,62,130/85,37.4,69,shortness of breath,Thyroid,,,203,97,No,Current
+P0031,163,82,140/90,37.4,58,,Diabetes,Heart Disease,High Cholesterol,183,124,Yes,Never
+P0032,188,55,125/82,36.3,70,dizziness,Hypertension,Coronary Artery Disease,High Blood Sugar,260,128,No,Former
+P0033,169,77,135/88,36.4,80,palpitations,High Cholesterol,Arrhythmia,Normal,256,115,Yes,Current
+P0034,159,77,145/92,35.6,66,nausea,,Stroke,Low Iron,231,83,No,Never
+P0035,178,85,,36.6,60,,Asthma,Hypertension,,186,40,Yes,Former
+P0036,157,,120/80,37.5,75,,Thyroid,,High Cholesterol,279,85,No,Current
+P0037,172,75,130/85,37.3,83,shortness of breath,Diabetes,Heart Disease,High Blood Sugar,137,90,Yes,
+P0038,150,62,140/90,36.9,,fatigue,Hypertension,Coronary Artery Disease,Normal,143,90,No,Former
+P0039,156,69,125/82,37,83,dizziness,High Cholesterol,,Low Iron,196,118,Yes,Current
+P0040,171,43,135/88,36.7,83,palpitations,,Stroke,,,159,,Never
+P0041,177,59,145/92,,84,,Asthma,Hypertension,High Cholesterol,191,103,Yes,Former
+P0042,171,63,,37.4,87,,Thyroid,,High Blood Sugar,192,,No,Current
+P0043,168,62,120/80,36.2,97,,Diabetes,Heart Disease,Normal,142,,Yes,Never
+P0044,166,72,130/85,37.1,71,shortness of breath,Hypertension,Coronary Artery Disease,Low Iron,237,103,No,Former
+P0045,,57,140/90,37.5,76,fatigue,High Cholesterol,Arrhythmia,,238,75,Yes,Current
+P0046,162,86,125/82,36.8,70,dizziness,,Stroke,High Cholesterol,231,103,No,
+P0047,165,70,135/88,37.4,75,palpitations,Asthma,Hypertension,High Blood Sugar,174,113,Yes,Former
+P0048,180,69,145/92,38.4,90,nausea,Thyroid,,Normal,171,,No,Current
+P0049,173,65,,36.9,61,,Diabetes,Heart Disease,Low Iron,148,113,Yes,Never
+P0050,152,72,120/80,37.2,66,chest pain,Hypertension,Coronary Artery Disease,,203,113,No,Former
+P0051,173,82,130/85,36.6,88,shortness of breath,High Cholesterol,Arrhythmia,,156,46,Yes,Current
+P0052,166,56,140/90,37.1,85,fatigue,,Stroke,High Blood Sugar,152,119,No,Never
+P0053,163,60,125/82,37.2,71,dizziness,Asthma,Hypertension,Normal,183,79,Yes,Former
+P0054,176,65,135/88,37.1,83,palpitations,Thyroid,,Low Iron,180,67,No,Current
+P0055,180,49,145/92,36.5,78,nausea,Diabetes,Heart Disease,,178,66,Yes,Never
+P0056,179,57,,37.1,90,,Hypertension,Coronary Artery Disease,High Cholesterol,218,113,,Former
+P0057,161,62,120/80,37.7,75,chest pain,High Cholesterol,Arrhythmia,,203,93,Yes,
+P0058,166,83,130/85,37.2,85,shortness of breath,,Stroke,Normal,188,49,No,Never
+P0059,173,73,140/90,37.5,101,fatigue,Asthma,Hypertension,Low Iron,207,114,Yes,Former
+P0060,179,72,125/82,36.9,80,dizziness,Thyroid,,,160,56,No,Current
+P0061,165,82,135/88,37.4,75,palpitations,Diabetes,Heart Disease,High Cholesterol,204,104,Yes,Never
+P0062,168,67,145/92,37.1,82,nausea,Hypertension,Coronary Artery Disease,High Blood Sugar,206,107,No,
+P0063,158,75,,36.5,71,,High Cholesterol,Arrhythmia,Normal,139,126,Yes,Current
+P0064,158,68,120/80,,98,chest pain,,Stroke,Low Iron,239,153,,Never
+P0065,178,73,130/85,36.5,76,shortness of breath,Asthma,Hypertension,,164,59,Yes,Former
+P0066,183,61,140/90,36.7,72,,Thyroid,,High Cholesterol,203,98,No,Current
+P0067,169,33,125/82,37.1,66,dizziness,Diabetes,Heart Disease,High Blood Sugar,246,91,Yes,Never
+P0068,180,67,135/88,37.1,85,palpitations,Hypertension,Coronary Artery Disease,Normal,237,113,No,Former
+P0069,173,,145/92,36.4,83,nausea,High Cholesterol,Arrhythmia,Low Iron,201,106,Yes,
+P0070,163,83,,37.5,70,,,Stroke,,185,89,No,Never
+P0071,173,84,120/80,37.3,80,chest pain,Asthma,Hypertension,High Cholesterol,237,86,Yes,Former
+P0072,185,88,,36.6,59,shortness of breath,Thyroid,,High Blood Sugar,226,66,No,Current
+P0073,169,71,,36.2,76,fatigue,Diabetes,Heart Disease,Normal,175,129,Yes,Never
+P0074,185,72,125/82,,79,dizziness,,Coronary Artery Disease,Low Iron,168,113,No,
+P0075,143,60,135/88,36.8,92,palpitations,,Arrhythmia,,117,127,Yes,Current
+P0076,178,65,145/92,37.1,67,nausea,,Stroke,High Cholesterol,206,90,No,Never
+P0077,170,79,,36.8,62,,Asthma,Hypertension,High Blood Sugar,196,80,Yes,
+P0078,167,88,120/80,36,66,chest pain,Thyroid,,Normal,245,67,No,Current
+P0079,170,67,130/85,36.8,61,shortness of breath,Diabetes,Heart Disease,Low Iron,214,110,Yes,Never
+P0080,150,63,,36.8,88,fatigue,Hypertension,Coronary Artery Disease,,253,68,No,Former
+P0081,167,70,125/82,37.3,90,dizziness,High Cholesterol,Arrhythmia,High Cholesterol,172,155,Yes,Current
+P0082,173,79,135/88,36.7,78,palpitations,,Stroke,High Blood Sugar,245,60,No,Never
+P0083,184,48,145/92,,87,nausea,Asthma,,Normal,178,108,Yes,Former
+P0084,164,35,,36,76,,,,Low Iron,231,147,No,Current
+P0085,161,61,120/80,37.7,74,chest pain,Diabetes,Heart Disease,,141,117,Yes,Never
+P0086,164,51,130/85,36.9,71,shortness of breath,Hypertension,Coronary Artery Disease,High Cholesterol,209,105,,Former
+P0087,179,62,140/90,37.4,71,fatigue,High Cholesterol,Arrhythmia,High Blood Sugar,120,70,Yes,Current
+P0088,173,67,125/82,37,59,dizziness,,Stroke,Normal,189,58,No,Never
+P0089,,63,135/88,37.6,77,palpitations,Asthma,Hypertension,Low Iron,217,123,Yes,Former
+P0090,175,91,145/92,36.8,74,nausea,Thyroid,,,179,,No,Current
+P0091,170,74,,36.5,82,,Diabetes,Heart Disease,High Cholesterol,157,86,Yes,Never
+P0092,179,74,120/80,37.7,75,chest pain,Hypertension,Coronary Artery Disease,High Blood Sugar,233,65,No,Former
+P0093,162,79,130/85,,73,shortness of breath,,Arrhythmia,Normal,195,26,Yes,Current
+P0094,166,52,140/90,37.1,66,fatigue,,,Low Iron,180,70,No,Never
+P0095,,85,125/82,,75,dizziness,Asthma,,,201,96,Yes,Former
+P0096,155,68,135/88,36.5,82,palpitations,Thyroid,,High Cholesterol,,147,No,Current
+P0097,172,80,145/92,37.3,63,nausea,Diabetes,Heart Disease,High Blood Sugar,246,120,Yes,Never
+P0098,172,53,,36.7,75,,Hypertension,Coronary Artery Disease,Normal,246,109,No,Former
+P0099,170,46,120/80,36.9,,chest pain,High Cholesterol,Arrhythmia,Low Iron,217,87,Yes,Current
+P0100,167,82,,37,67,shortness of breath,,Stroke,,206,82,No,Never
+P0101,155,75,140/90,36.2,69,,Asthma,Hypertension,High Cholesterol,104,,Yes,Former
+P0102,165,56,,,77,dizziness,Thyroid,,High Blood Sugar,172,106,No,
+P0103,166,56,135/88,37.7,63,,Diabetes,Heart Disease,Normal,180,36,Yes,Never
+P0104,161,86,145/92,37.4,78,nausea,Hypertension,,Low Iron,125,79,No,Former
+P0105,168,52,,37,66,,High Cholesterol,Arrhythmia,,153,74,Yes,Current
+P0106,174,94,120/80,37.1,85,chest pain,,Stroke,High Cholesterol,120,83,No,Never
+P0107,188,56,130/85,36.9,98,,Asthma,Hypertension,High Blood Sugar,198,,,Former
+P0108,171,79,140/90,37.7,66,fatigue,Thyroid,,Normal,232,96,No,Current
+P0109,172,65,125/82,36.9,80,dizziness,Diabetes,,Low Iron,244,97,Yes,Never
+P0110,169,79,135/88,37.1,67,palpitations,Hypertension,Coronary Artery Disease,,,139,No,Former
+P0111,150,61,,37.6,85,nausea,High Cholesterol,Arrhythmia,High Cholesterol,161,79,Yes,Current
+P0112,169,67,,36.6,62,,,Stroke,High Blood Sugar,122,155,No,Never
+P0113,170,70,120/80,37.8,79,,Asthma,Hypertension,Normal,129,79,Yes,Former
+P0114,194,54,130/85,36.2,66,shortness of breath,Thyroid,,Low Iron,149,102,No,Current
+P0115,168,81,140/90,37.8,72,,Diabetes,Heart Disease,,164,91,Yes,Never
+P0116,173,62,125/82,36.8,64,dizziness,Hypertension,Coronary Artery Disease,High Cholesterol,193,103,No,Former
+P0117,169,66,135/88,36.9,83,,High Cholesterol,Arrhythmia,,159,113,Yes,Current
+P0118,158,55,145/92,36.1,66,nausea,,Stroke,Normal,213,113,No,Never
+P0119,181,31,,36.8,80,,Asthma,,,190,77,Yes,Former
+P0120,177,67,120/80,36.5,71,chest pain,Thyroid,,,200,66,No,Current
+P0121,177,,130/85,36.7,73,shortness of breath,Diabetes,,High Cholesterol,245,175,Yes,Never
+P0122,160,81,140/90,36.9,76,fatigue,Hypertension,Coronary Artery Disease,High Blood Sugar,152,85,No,Former
+P0123,184,69,125/82,,67,dizziness,High Cholesterol,Arrhythmia,Normal,216,120,Yes,Current
+P0124,155,66,135/88,37.1,77,palpitations,,Stroke,Low Iron,199,51,No,Never
+P0125,175,70,145/92,37.2,90,nausea,Asthma,Hypertension,,186,91,Yes,Former
+P0126,191,78,,36.5,67,,Thyroid,,High Cholesterol,235,96,No,Current
+P0127,,52,120/80,36.6,86,chest pain,Diabetes,Heart Disease,High Blood Sugar,235,114,Yes,Never
+P0128,164,86,130/85,37.9,89,shortness of breath,Hypertension,,Normal,162,18,No,Former
+P0129,170,80,140/90,36.6,66,fatigue,High Cholesterol,Arrhythmia,Low Iron,192,104,Yes,Current
+P0130,164,80,125/82,37.8,60,dizziness,,Stroke,,211,65,No,Never
+P0131,154,76,135/88,36.9,78,palpitations,Asthma,Hypertension,High Cholesterol,189,109,,Former
+P0132,170,70,145/92,37,69,nausea,Thyroid,,High Blood Sugar,223,68,No,Current
+P0133,159,,,37.5,93,,Diabetes,Heart Disease,Normal,211,74,Yes,Never
+P0134,174,78,120/80,37.6,75,chest pain,Hypertension,Coronary Artery Disease,Low Iron,273,91,No,Former
+P0135,,64,130/85,36.9,66,shortness of breath,High Cholesterol,Arrhythmia,,138,68,Yes,Current
+P0136,185,61,140/90,36.8,63,fatigue,,Stroke,High Cholesterol,195,85,No,Never
+P0137,162,71,125/82,37,85,dizziness,Asthma,Hypertension,High Blood Sugar,163,,Yes,Former
+P0138,166,93,135/88,37.2,69,palpitations,Thyroid,,Normal,,45,No,Current
+P0139,178,51,145/92,37.4,75,nausea,Diabetes,Heart Disease,Low Iron,135,130,Yes,Never
+P0140,157,47,,37,84,,Hypertension,Coronary Artery Disease,,213,61,No,Former
+P0141,172,72,120/80,37.3,70,chest pain,High Cholesterol,Arrhythmia,High Cholesterol,174,94,Yes,Current
+P0142,183,70,130/85,37.8,74,shortness of breath,,Stroke,High Blood Sugar,170,122,No,Never
+P0143,153,72,140/90,37.2,74,fatigue,Asthma,Hypertension,Normal,142,,Yes,Former
+P0144,171,73,125/82,37.2,81,dizziness,Thyroid,,,181,75,No,Current
+P0145,172,66,,36.2,80,palpitations,Diabetes,Heart Disease,,243,106,Yes,Never
+P0146,177,92,145/92,35.7,72,,Hypertension,Coronary Artery Disease,High Cholesterol,198,133,No,Former
+P0147,157,45,,37.2,75,,High Cholesterol,Arrhythmia,High Blood Sugar,225,64,Yes,Current
+P0148,156,57,120/80,37,71,chest pain,,Stroke,Normal,266,95,No,Never
+P0149,175,68,130/85,36.7,60,shortness of breath,Asthma,Hypertension,Low Iron,210,,Yes,Former
+P0150,172,,140/90,37.1,77,,Thyroid,,,177,88,,Current
+P0151,172,67,125/82,37,93,,Diabetes,,High Cholesterol,218,101,Yes,Never
+P0152,173,94,135/88,37.6,66,palpitations,Hypertension,Coronary Artery Disease,High Blood Sugar,178,74,No,Former
+P0153,163,,,37,67,nausea,High Cholesterol,Arrhythmia,Normal,179,86,Yes,Current
+P0154,172,,,36.6,66,,,Stroke,Low Iron,139,57,No,Never
+P0155,172,51,120/80,37.5,82,chest pain,Asthma,Hypertension,,237,102,Yes,Former
+P0156,162,60,130/85,36.9,79,shortness of breath,Thyroid,,High Cholesterol,184,131,No,Current
+P0157,188,64,140/90,37.3,73,fatigue,Diabetes,Heart Disease,High Blood Sugar,207,67,Yes,Never
+P0158,174,65,125/82,36.8,65,dizziness,Hypertension,Coronary Artery Disease,Normal,158,81,No,Former
+P0159,158,89,135/88,36.7,75,palpitations,High Cholesterol,Arrhythmia,Low Iron,217,,Yes,Current
+P0160,176,78,145/92,37,59,nausea,,Stroke,,169,136,No,Never
+P0161,160,53,,37,76,,Asthma,Hypertension,High Cholesterol,,55,Yes,Former
+P0162,177,73,120/80,37.2,83,chest pain,Thyroid,,High Blood Sugar,235,94,No,Current
+P0163,181,,130/85,36.9,62,shortness of breath,Diabetes,Heart Disease,Normal,231,108,Yes,Never
+P0164,161,87,140/90,36.1,59,fatigue,Hypertension,Coronary Artery Disease,Low Iron,199,96,No,Former
+P0165,179,93,125/82,36.8,90,,High Cholesterol,Arrhythmia,,129,25,Yes,Current
+P0166,,54,135/88,37.4,68,palpitations,,Stroke,High Cholesterol,319,115,No,Never
+P0167,178,57,145/92,36.9,86,nausea,Asthma,Hypertension,High Blood Sugar,269,145,Yes,Former
+P0168,188,,,36.9,73,,Thyroid,,Normal,228,103,No,Current
+P0169,167,66,120/80,37.5,73,chest pain,Diabetes,Heart Disease,Low Iron,169,69,Yes,Never
+P0170,162,76,130/85,36.6,79,shortness of breath,Hypertension,Coronary Artery Disease,,,84,No,Former
+P0171,161,84,140/90,36.2,66,fatigue,High Cholesterol,Arrhythmia,High Cholesterol,178,153,Yes,Current
+P0172,161,68,125/82,36.9,76,dizziness,,Stroke,High Blood Sugar,250,127,No,Never
+P0173,169,,135/88,36.8,71,palpitations,Asthma,Hypertension,Normal,210,119,Yes,Former
+P0174,173,72,145/92,36.5,61,nausea,Thyroid,,,168,110,No,Current
+P0175,172,57,,36.9,78,,Diabetes,Heart Disease,,181,80,Yes,Never
+P0176,178,101,120/80,37.2,72,chest pain,Hypertension,Coronary Artery Disease,High Cholesterol,244,93,No,Former
+P0177,,45,130/85,37,73,,High Cholesterol,Arrhythmia,High Blood Sugar,264,97,Yes,Current
+P0178,184,72,140/90,37.2,62,fatigue,,Stroke,Normal,261,116,No,Never
+P0179,167,100,125/82,37.9,90,dizziness,Asthma,Hypertension,Low Iron,230,145,Yes,Former
+P0180,197,70,135/88,36.8,83,palpitations,,,,189,133,No,Current
+P0181,176,,145/92,37.1,84,nausea,Diabetes,Heart Disease,High Cholesterol,70,57,Yes,Never
+P0182,161,64,,36.7,71,,Hypertension,Coronary Artery Disease,High Blood Sugar,211,106,No,Former
+P0183,159,67,120/80,36.6,57,,High Cholesterol,Arrhythmia,Normal,199,122,Yes,Current
+P0184,,90,,36.7,,shortness of breath,,Stroke,Low Iron,205,118,No,Never
+P0185,167,36,140/90,36.8,74,fatigue,Asthma,,,202,81,,Former
+P0186,177,93,125/82,37.2,67,dizziness,Thyroid,,High Cholesterol,146,187,No,Current
+P0187,174,48,135/88,38.2,79,,Diabetes,Heart Disease,High Blood Sugar,222,61,Yes,Never
+P0188,169,66,145/92,36.6,86,nausea,Hypertension,Coronary Artery Disease,Normal,225,67,No,Former
+P0189,161,63,,36.8,74,,High Cholesterol,Arrhythmia,Low Iron,227,107,Yes,Current
+P0190,154,78,120/80,37,87,chest pain,,Stroke,,237,163,No,Never
+P0191,165,46,130/85,37.2,85,,Asthma,Hypertension,High Cholesterol,224,74,Yes,Former
+P0192,178,76,140/90,37.1,64,,Thyroid,,High Blood Sugar,183,,No,Current
+P0193,172,100,125/82,37.6,68,dizziness,Diabetes,Heart Disease,Normal,197,132,Yes,Never
+P0194,157,,135/88,35.8,84,palpitations,Hypertension,Coronary Artery Disease,Low Iron,203,99,,Former
+P0195,171,72,145/92,35.8,47,nausea,High Cholesterol,Arrhythmia,,204,89,Yes,Current
+P0196,173,60,,36.8,73,,,Stroke,High Cholesterol,239,116,No,Never
+P0197,161,76,,37.5,60,,,Hypertension,High Blood Sugar,225,108,Yes,Former
+P0198,171,70,130/85,36.2,70,shortness of breath,Thyroid,,Normal,,130,No,Current
+P0199,170,60,140/90,35.5,72,,Diabetes,Heart Disease,Low Iron,288,138,Yes,Never
+P0200,158,77,125/82,37.3,71,dizziness,Hypertension,Coronary Artery Disease,,203,109,No,Former
+P0201,173,97,135/88,37.1,69,palpitations,,Arrhythmia,High Cholesterol,46,108,Yes,Current
+P0202,175,67,145/92,36.5,64,nausea,,Stroke,High Blood Sugar,249,106,No,Never
+P0203,180,80,,36.5,97,,Asthma,Hypertension,Normal,178,114,Yes,Former
+P0204,180,50,120/80,36.5,93,chest pain,Thyroid,,Low Iron,167,101,No,Current
+P0205,156,55,130/85,37.1,63,shortness of breath,Diabetes,Heart Disease,,184,99,Yes,Never
+P0206,160,77,140/90,36.7,90,fatigue,Hypertension,Coronary Artery Disease,High Cholesterol,182,135,No,Former
+P0207,175,92,125/82,,71,dizziness,High Cholesterol,,High Blood Sugar,224,145,Yes,Current
+P0208,,75,135/88,35.6,76,palpitations,,Stroke,Normal,,54,No,Never
+P0209,175,65,145/92,36.6,74,nausea,Asthma,Hypertension,Low Iron,156,,Yes,Former
+P0210,208,69,,36.4,68,,Thyroid,,,,79,No,
+P0211,175,,120/80,36.9,84,chest pain,Diabetes,Heart Disease,High Cholesterol,224,90,Yes,Never
+P0212,181,79,130/85,36.7,76,shortness of breath,Hypertension,,High Blood Sugar,225,112,No,Former
+P0213,179,83,140/90,37.4,70,fatigue,High Cholesterol,Arrhythmia,Normal,168,120,Yes,Current
+P0214,176,63,125/82,36.1,61,dizziness,,Stroke,Low Iron,160,96,No,Never
+P0215,166,,135/88,37,66,palpitations,Asthma,Hypertension,,179,42,Yes,Former
+P0216,177,73,145/92,37.3,58,nausea,,,High Cholesterol,209,71,No,Current
+P0217,162,63,,37.9,75,,Diabetes,Heart Disease,High Blood Sugar,259,126,Yes,Never
+P0218,167,69,120/80,36.8,63,chest pain,Hypertension,Coronary Artery Disease,Normal,118,17,No,Former
+P0219,165,101,130/85,37.2,72,,High Cholesterol,Arrhythmia,Low Iron,191,135,Yes,Current
+P0220,170,66,140/90,36.1,88,fatigue,,Stroke,,146,115,No,Never
+P0221,193,64,125/82,35.8,86,dizziness,Asthma,,High Cholesterol,133,139,Yes,Former
+P0222,151,,135/88,37.4,74,palpitations,Thyroid,,High Blood Sugar,238,94,No,Current
+P0223,176,81,145/92,37,74,nausea,Diabetes,Heart Disease,Normal,221,38,Yes,Never
+P0224,153,67,,37.6,93,,Hypertension,Coronary Artery Disease,Low Iron,217,112,No,Former
+P0225,,60,120/80,36.3,80,chest pain,High Cholesterol,Arrhythmia,,236,138,Yes,Current
+P0226,180,89,130/85,37.3,71,shortness of breath,,Stroke,High Cholesterol,180,127,No,Never
+P0227,170,91,140/90,37.9,60,fatigue,Asthma,Hypertension,,182,80,,Former
+P0228,159,60,125/82,37.2,78,,Thyroid,,Normal,287,102,No,Current
+P0229,162,42,135/88,37.1,83,palpitations,,Heart Disease,Low Iron,190,84,Yes,Never
+P0230,176,85,145/92,37,68,nausea,Hypertension,Coronary Artery Disease,,229,75,No,Former
+P0231,162,59,,,77,,High Cholesterol,Arrhythmia,High Cholesterol,200,128,Yes,Current
+P0232,172,81,120/80,37.7,71,chest pain,,Stroke,High Blood Sugar,126,64,No,Never
+P0233,170,40,130/85,36.7,73,shortness of breath,Asthma,Hypertension,Normal,118,73,Yes,Former
+P0234,163,83,140/90,37.3,50,fatigue,,,Low Iron,176,66,No,Current
+P0235,191,51,125/82,36.2,72,dizziness,Diabetes,Heart Disease,,242,55,Yes,Never
+P0236,176,80,135/88,36.4,84,palpitations,Hypertension,Coronary Artery Disease,High Cholesterol,231,104,No,Former
+P0237,149,70,145/92,37.7,68,nausea,High Cholesterol,Arrhythmia,High Blood Sugar,236,134,Yes,Current
+P0238,171,55,,36.8,75,,,Stroke,Normal,160,94,No,Never
+P0239,163,,120/80,,67,chest pain,Asthma,Hypertension,,264,54,Yes,Former
+P0240,178,80,130/85,37,,shortness of breath,Thyroid,,,161,125,No,Current
+P0241,162,71,140/90,36.1,72,fatigue,,Heart Disease,High Cholesterol,208,,Yes,Never
+P0242,168,78,125/82,37.4,65,dizziness,Hypertension,Coronary Artery Disease,High Blood Sugar,199,80,No,Former
+P0243,175,99,135/88,36.7,88,palpitations,High Cholesterol,,Normal,193,85,Yes,Current
+P0244,178,46,145/92,37.3,84,nausea,,Stroke,Low Iron,253,115,No,Never
+P0245,157,94,,37,68,,Asthma,Hypertension,,171,148,Yes,Former
+P0246,166,71,120/80,36.2,79,chest pain,Thyroid,,High Cholesterol,146,84,No,Current
+P0247,165,56,130/85,37.1,80,shortness of breath,Diabetes,Heart Disease,High Blood Sugar,200,60,Yes,Never
+P0248,163,50,140/90,,81,fatigue,Hypertension,,Normal,184,118,,Former
+P0249,187,67,125/82,37.2,58,dizziness,High Cholesterol,,Low Iron,335,123,Yes,Current
+P0250,174,83,135/88,37,85,palpitations,,Stroke,,227,,No,Never
+P0251,157,68,145/92,,69,nausea,,Hypertension,High Cholesterol,183,83,Yes,Former
+P0252,179,92,,37.1,71,,Thyroid,,High Blood Sugar,157,129,No,Current
+P0253,,,120/80,37.1,101,chest pain,Diabetes,Heart Disease,Normal,124,115,Yes,Never
+P0254,180,69,130/85,36.5,78,shortness of breath,,Coronary Artery Disease,Low Iron,158,76,No,Former
+P0255,154,51,140/90,37.1,71,fatigue,High Cholesterol,Arrhythmia,,204,101,Yes,Current
+P0256,165,75,125/82,37.5,52,dizziness,,Stroke,High Cholesterol,257,59,No,Never
+P0257,,83,135/88,36.6,,palpitations,Asthma,Hypertension,High Blood Sugar,244,120,Yes,Former
+P0258,162,63,145/92,37.7,61,nausea,Thyroid,,Normal,209,92,No,Current
+P0259,174,30,,37,64,,Diabetes,Heart Disease,Low Iron,187,86,Yes,Never
+P0260,177,72,120/80,36.6,71,chest pain,Hypertension,Coronary Artery Disease,,210,99,No,Former
+P0261,160,76,130/85,37.5,89,shortness of breath,High Cholesterol,Arrhythmia,High Cholesterol,179,101,Yes,Current
+P0262,169,76,140/90,36.9,82,fatigue,,,High Blood Sugar,268,126,No,Never
+P0263,137,88,125/82,37.4,73,dizziness,,Hypertension,,192,117,Yes,Former
+P0264,159,53,135/88,36.9,78,palpitations,Thyroid,,Low Iron,196,95,No,Current
+P0265,167,80,145/92,37,68,nausea,Diabetes,Heart Disease,,111,122,Yes,Never
+P0266,157,87,,37.2,76,,Hypertension,Coronary Artery Disease,High Cholesterol,192,112,No,Former
+P0267,186,43,120/80,37.1,75,chest pain,High Cholesterol,Arrhythmia,High Blood Sugar,233,87,Yes,Current
+P0268,155,74,130/85,36,84,shortness of breath,,Stroke,Normal,,96,No,Never
+P0269,165,62,140/90,36.4,84,fatigue,Asthma,Hypertension,Low Iron,169,95,Yes,Former
+P0270,171,68,125/82,37.5,79,dizziness,Thyroid,,,231,115,No,Current
+P0271,184,75,135/88,36.9,71,palpitations,Diabetes,Heart Disease,High Cholesterol,140,88,Yes,Never
+P0272,155,62,145/92,36.7,,nausea,Hypertension,Coronary Artery Disease,High Blood Sugar,242,88,No,Former
+P0273,181,59,,36.3,,,High Cholesterol,Arrhythmia,Normal,178,159,Yes,Current
+P0274,170,70,120/80,36.5,64,chest pain,,Stroke,Low Iron,184,128,No,Never
+P0275,160,53,130/85,36,70,shortness of breath,Asthma,Hypertension,,155,77,Yes,Former
+P0276,174,53,140/90,36.9,75,fatigue,Thyroid,,High Cholesterol,215,,No,Current
+P0277,171,80,125/82,36.7,84,dizziness,Diabetes,Heart Disease,High Blood Sugar,298,103,Yes,Never
+P0278,163,52,135/88,36.5,73,palpitations,Hypertension,Coronary Artery Disease,Normal,231,111,No,Former
+P0279,170,79,145/92,37,62,nausea,High Cholesterol,Arrhythmia,Low Iron,165,104,Yes,Current
+P0280,166,76,,37.2,75,,,,,245,135,No,Never
+P0281,171,44,120/80,38,76,chest pain,Asthma,Hypertension,High Cholesterol,187,110,Yes,Former
+P0282,176,59,130/85,36.2,76,shortness of breath,Thyroid,,High Blood Sugar,254,98,No,Current
+P0283,185,87,140/90,37.6,84,fatigue,Diabetes,Heart Disease,Normal,232,,Yes,Never
+P0284,157,55,125/82,37.5,85,dizziness,Hypertension,Coronary Artery Disease,Low Iron,82,106,No,Former
+P0285,191,63,135/88,,69,palpitations,High Cholesterol,Arrhythmia,,159,,Yes,Current
+P0286,150,76,145/92,37.1,68,nausea,,Stroke,High Cholesterol,237,,No,Never
+P0287,168,81,,,64,,Asthma,Hypertension,High Blood Sugar,206,97,Yes,Former
+P0288,175,66,120/80,37.1,81,chest pain,Thyroid,,Normal,159,100,No,Current
+P0289,172,61,130/85,,89,shortness of breath,Diabetes,Heart Disease,Low Iron,174,82,Yes,
+P0290,163,91,140/90,37.3,71,fatigue,Hypertension,Coronary Artery Disease,,123,77,No,Former
+P0291,167,96,125/82,37.3,72,dizziness,High Cholesterol,Arrhythmia,High Cholesterol,,,Yes,Current
+P0292,165,84,135/88,36.8,89,palpitations,,Stroke,High Blood Sugar,288,58,,Never
+P0293,164,71,145/92,36.3,80,nausea,Asthma,Hypertension,Normal,232,73,Yes,Former
+P0294,178,57,,36.9,79,,Thyroid,,Low Iron,287,94,No,Current
+P0295,173,57,120/80,37.6,63,chest pain,Diabetes,Heart Disease,,235,103,Yes,Never
+P0296,163,77,130/85,36.2,81,shortness of breath,Hypertension,Coronary Artery Disease,High Cholesterol,241,91,No,Former
+P0297,178,76,140/90,36.5,65,fatigue,High Cholesterol,Arrhythmia,High Blood Sugar,278,29,Yes,Current
+P0298,173,91,125/82,37.1,63,dizziness,,Stroke,Normal,215,147,No,Never
+P0299,178,79,135/88,36.5,71,palpitations,Asthma,Hypertension,Low Iron,192,132,Yes,Former
+P0300,176,47,,36.6,69,nausea,Thyroid,,,241,113,No,Current
+P0301,161,85,,36.8,72,,Diabetes,Heart Disease,High Cholesterol,258,157,Yes,Never
+P0302,164,55,120/80,36.3,,,,,High Blood Sugar,180,,No,Former
+P0303,177,64,130/85,36.5,84,shortness of breath,High Cholesterol,,,171,156,Yes,Current
+P0304,176,73,140/90,37.4,86,fatigue,,Stroke,,205,71,No,Never
+P0305,169,99,125/82,36.3,55,dizziness,Asthma,Hypertension,,233,107,Yes,Former
+P0306,171,116,135/88,36.2,84,palpitations,Thyroid,,,231,61,No,Current
+P0307,182,79,145/92,36.7,66,nausea,,Heart Disease,High Blood Sugar,143,100,Yes,Never
+P0308,164,67,,37.4,83,,Hypertension,Coronary Artery Disease,Normal,276,111,No,Former
+P0309,175,78,120/80,36.9,74,chest pain,High Cholesterol,Arrhythmia,Low Iron,174,95,Yes,Current
+P0310,167,83,130/85,36.8,75,shortness of breath,,Stroke,,189,,No,Never
+P0311,167,65,140/90,37,73,fatigue,Asthma,Hypertension,High Cholesterol,163,102,Yes,Former
+P0312,180,96,125/82,36.1,87,dizziness,Thyroid,,High Blood Sugar,307,84,No,Current
+P0313,178,73,135/88,37.2,62,palpitations,Diabetes,,Normal,209,82,Yes,Never
+P0314,178,77,,37.2,81,nausea,Hypertension,Coronary Artery Disease,Low Iron,165,,No,Former
+P0315,183,79,,36.8,86,,High Cholesterol,Arrhythmia,,234,80,Yes,Current
+P0316,170,76,120/80,37.5,82,chest pain,,Stroke,High Cholesterol,230,127,No,Never
+P0317,176,82,130/85,36.4,98,shortness of breath,Asthma,Hypertension,High Blood Sugar,,136,Yes,Former
+P0318,166,60,140/90,37.6,69,fatigue,Thyroid,,Normal,233,49,No,Current
+P0319,173,61,125/82,37.1,84,dizziness,Diabetes,Heart Disease,,166,133,Yes,Never
+P0320,168,53,135/88,36.8,73,palpitations,Hypertension,,,180,161,No,Former
+P0321,170,76,145/92,37,87,nausea,High Cholesterol,,,119,107,Yes,Current
+P0322,175,81,,36.9,74,,,Stroke,High Blood Sugar,147,117,No,Never
+P0323,161,76,120/80,37.6,71,chest pain,Asthma,Hypertension,Normal,272,131,Yes,Former
+P0324,190,,130/85,36.5,88,shortness of breath,Thyroid,,Low Iron,265,91,No,Current
+P0325,,69,140/90,36.6,70,fatigue,Diabetes,Heart Disease,,202,105,Yes,Never
+P0326,157,80,125/82,37.5,60,dizziness,Hypertension,Coronary Artery Disease,High Cholesterol,266,60,No,Former
+P0327,181,53,135/88,36.7,69,palpitations,High Cholesterol,Arrhythmia,High Blood Sugar,193,104,Yes,Current
+P0328,177,64,145/92,37.5,81,nausea,,Stroke,Normal,190,114,No,Never
+P0329,176,80,,,88,,Asthma,Hypertension,Low Iron,202,115,Yes,Former
+P0330,176,82,120/80,36.8,76,chest pain,,,,195,131,No,Current
+P0331,169,,130/85,37.3,88,shortness of breath,Diabetes,Heart Disease,High Cholesterol,191,76,Yes,Never
+P0332,161,68,140/90,36.4,61,fatigue,Hypertension,Coronary Artery Disease,High Blood Sugar,245,84,No,Former
+P0333,170,47,125/82,37.4,70,dizziness,High Cholesterol,Arrhythmia,Normal,206,156,Yes,Current
+P0334,163,64,135/88,37.1,72,palpitations,,Stroke,Low Iron,228,95,No,Never
+P0335,179,83,145/92,37.2,73,nausea,Asthma,Hypertension,,241,106,Yes,
+P0336,168,78,,36.7,75,,Thyroid,,High Cholesterol,215,97,No,Current
+P0337,161,77,120/80,36.2,81,chest pain,Diabetes,Heart Disease,High Blood Sugar,161,,Yes,Never
+P0338,166,70,130/85,37.3,70,shortness of breath,Hypertension,Coronary Artery Disease,Normal,145,148,No,Former
+P0339,174,70,140/90,36,76,fatigue,High Cholesterol,Arrhythmia,Low Iron,205,84,Yes,Current
+P0340,164,60,125/82,36.8,,,,Stroke,,193,66,No,Never
+P0341,161,80,135/88,37.5,65,palpitations,Asthma,Hypertension,High Cholesterol,203,86,Yes,Former
+P0342,172,76,145/92,37.1,73,nausea,Thyroid,,High Blood Sugar,199,39,No,Current
+P0343,172,,,38,73,,,Heart Disease,Normal,303,80,Yes,Never
+P0344,164,62,120/80,37.5,73,chest pain,Hypertension,,Low Iron,146,70,No,Former
+P0345,165,37,130/85,36.7,75,shortness of breath,High Cholesterol,Arrhythmia,,120,118,,Current
+P0346,172,86,140/90,37,75,fatigue,,Stroke,High Cholesterol,213,79,No,Never
+P0347,155,62,125/82,37,70,dizziness,Asthma,Hypertension,High Blood Sugar,184,126,Yes,Former
+P0348,155,57,135/88,36.2,87,palpitations,Thyroid,,Normal,212,141,No,Current
+P0349,162,80,145/92,36.5,63,nausea,Diabetes,Heart Disease,Low Iron,223,,Yes,Never
+P0350,167,64,,36.7,67,,Hypertension,,,251,93,No,Former
+P0351,173,85,120/80,36,102,chest pain,High Cholesterol,Arrhythmia,High Cholesterol,139,104,Yes,Current
+P0352,184,79,130/85,37,64,shortness of breath,,Stroke,High Blood Sugar,177,54,No,
+P0353,178,80,140/90,36.9,61,fatigue,Asthma,,Normal,217,95,Yes,
+P0354,168,49,125/82,36.2,82,dizziness,Thyroid,,Low Iron,230,74,No,Current
+P0355,169,88,135/88,,54,palpitations,Diabetes,Heart Disease,,287,120,Yes,Never
+P0356,159,73,145/92,37.4,72,nausea,Hypertension,Coronary Artery Disease,,238,177,No,Former
+P0357,169,64,,,96,,High Cholesterol,,High Blood Sugar,197,114,Yes,Current
+P0358,167,72,120/80,36.8,59,chest pain,,Stroke,Normal,164,40,No,Never
+P0359,173,43,130/85,37.3,55,shortness of breath,Asthma,Hypertension,Low Iron,177,89,Yes,Former
+P0360,161,76,,37.3,,,Thyroid,,,176,103,No,Current
+P0361,175,54,125/82,37.2,83,,Diabetes,Heart Disease,High Cholesterol,226,102,,Never
+P0362,185,49,135/88,36.6,86,palpitations,,Coronary Artery Disease,High Blood Sugar,210,78,No,Former
+P0363,168,47,145/92,37.1,69,nausea,High Cholesterol,Arrhythmia,Normal,147,107,Yes,Current
+P0364,174,86,,37.6,81,,,Stroke,Low Iron,182,62,No,Never
+P0365,176,60,120/80,36.7,88,chest pain,Asthma,Hypertension,,235,71,Yes,Former
+P0366,165,93,130/85,38,92,shortness of breath,Thyroid,,High Cholesterol,214,119,No,Current
+P0367,172,61,140/90,36.7,72,fatigue,Diabetes,Heart Disease,High Blood Sugar,222,,Yes,Never
+P0368,170,44,125/82,37,51,dizziness,Hypertension,Coronary Artery Disease,Normal,215,116,No,
+P0369,170,53,135/88,36.7,66,palpitations,High Cholesterol,Arrhythmia,Low Iron,265,58,Yes,Current
+P0370,162,88,145/92,37.1,70,nausea,,Stroke,,209,152,,Never
+P0371,170,67,,36.1,,,Asthma,Hypertension,High Cholesterol,184,76,Yes,Former
+P0372,174,61,120/80,36.7,73,chest pain,Thyroid,,,163,93,No,Current
+P0373,184,72,130/85,36.5,86,shortness of breath,Diabetes,Heart Disease,Normal,209,109,Yes,Never
+P0374,179,77,140/90,37.1,87,fatigue,Hypertension,Coronary Artery Disease,Low Iron,102,83,No,Former
+P0375,191,86,125/82,37.5,73,dizziness,High Cholesterol,,,192,104,Yes,Current
+P0376,162,91,135/88,37.3,85,palpitations,,Stroke,High Cholesterol,191,117,No,Never
+P0377,178,64,145/92,35.8,78,nausea,Asthma,Hypertension,High Blood Sugar,145,128,Yes,Former
+P0378,171,50,,38,75,,Thyroid,,Normal,162,123,No,Current
+P0379,191,63,120/80,37.1,84,chest pain,Diabetes,Heart Disease,Low Iron,232,,Yes,Never
+P0380,161,73,130/85,36.6,75,shortness of breath,Hypertension,Coronary Artery Disease,,209,,No,Former
+P0381,161,55,140/90,37.1,95,fatigue,High Cholesterol,Arrhythmia,High Cholesterol,204,170,Yes,Current
+P0382,164,55,125/82,37.1,60,dizziness,,Stroke,High Blood Sugar,212,128,No,Never
+P0383,148,75,135/88,36.7,69,palpitations,Asthma,Hypertension,Normal,203,72,Yes,Former
+P0384,164,69,145/92,37.1,73,nausea,Thyroid,,Low Iron,249,102,No,Current
+P0385,162,,,36.7,79,,Diabetes,Heart Disease,,204,89,,Never
+P0386,171,58,120/80,36.8,87,chest pain,Hypertension,,High Cholesterol,141,95,No,Former
+P0387,173,66,130/85,36.7,74,shortness of breath,High Cholesterol,Arrhythmia,High Blood Sugar,265,63,Yes,Current
+P0388,188,56,140/90,36.3,60,fatigue,,Stroke,Normal,214,87,No,Never
+P0389,179,83,125/82,37.1,83,dizziness,,Hypertension,Low Iron,176,154,Yes,Former
+P0390,164,85,135/88,37.3,82,,Thyroid,,,149,117,No,Current
+P0391,161,42,145/92,37.3,55,nausea,Diabetes,Heart Disease,High Cholesterol,,25,Yes,Never
+P0392,174,56,,37.4,74,,,Coronary Artery Disease,High Blood Sugar,195,136,No,Former
+P0393,156,47,120/80,37.2,59,chest pain,High Cholesterol,Arrhythmia,Normal,262,132,Yes,Current
+P0394,188,60,130/85,36.7,68,shortness of breath,,Stroke,Low Iron,,89,No,Never
+P0395,,68,140/90,37.4,65,fatigue,Asthma,Hypertension,,166,121,Yes,Former
+P0396,165,48,125/82,36.3,83,dizziness,Thyroid,,High Cholesterol,235,74,No,
+P0397,152,56,135/88,36.5,76,palpitations,Diabetes,Heart Disease,High Blood Sugar,237,85,,Never
+P0398,183,54,145/92,36.5,62,nausea,Hypertension,,Normal,,144,No,Former
+P0399,168,73,,37.5,,,High Cholesterol,Arrhythmia,Low Iron,227,91,Yes,Current
+P0400,182,71,120/80,37.5,60,chest pain,,Stroke,,198,43,No,Never
+P0401,154,59,130/85,37.2,78,shortness of breath,Asthma,Hypertension,High Cholesterol,209,98,Yes,Former
+P0402,164,72,140/90,37.5,66,fatigue,Thyroid,,High Blood Sugar,246,97,No,Current
+P0403,170,61,125/82,36.6,71,dizziness,,Heart Disease,,225,135,Yes,Never
+P0404,170,65,135/88,,80,palpitations,Hypertension,,Low Iron,193,100,No,Former
+P0405,165,95,145/92,36.9,80,nausea,High Cholesterol,Arrhythmia,,254,,Yes,Current
+P0406,176,90,,37.4,88,,,Stroke,High Cholesterol,,131,No,Never
+P0407,,50,120/80,36.9,74,chest pain,Asthma,Hypertension,High Blood Sugar,282,103,Yes,Former
+P0408,168,82,130/85,36.8,78,shortness of breath,Thyroid,,Normal,131,77,No,Current
+P0409,171,82,140/90,37.3,70,fatigue,Diabetes,Heart Disease,Low Iron,174,134,Yes,Never
+P0410,175,52,125/82,37.4,76,dizziness,Hypertension,Coronary Artery Disease,,,105,No,Former
+P0411,177,82,135/88,36.7,79,,High Cholesterol,Arrhythmia,High Cholesterol,194,100,Yes,Current
+P0412,158,93,145/92,37,74,nausea,,Stroke,High Blood Sugar,240,105,No,Never
+P0413,154,53,,36.5,56,,Asthma,Hypertension,Normal,157,67,Yes,Former
+P0414,182,56,120/80,35.8,78,chest pain,Thyroid,,Low Iron,210,84,No,Current
+P0415,173,85,130/85,37.1,78,shortness of breath,Diabetes,Heart Disease,,,100,Yes,Never
+P0416,,74,140/90,37.3,68,fatigue,Hypertension,Coronary Artery Disease,High Cholesterol,211,94,No,Former
+P0417,185,78,125/82,37.1,62,dizziness,High Cholesterol,Arrhythmia,High Blood Sugar,197,138,Yes,Current
+P0418,171,75,135/88,36,89,palpitations,,Stroke,Normal,203,106,No,Never
+P0419,181,75,145/92,36.8,79,nausea,Asthma,Hypertension,Low Iron,178,125,Yes,Former
+P0420,,50,,35.9,72,,Thyroid,,,179,100,No,Current
+P0421,190,85,120/80,37.7,63,chest pain,,Heart Disease,High Cholesterol,211,131,Yes,Never
+P0422,187,87,130/85,36.5,66,shortness of breath,Hypertension,Coronary Artery Disease,High Blood Sugar,237,111,No,Former
+P0423,167,66,140/90,37.6,88,fatigue,,Arrhythmia,Normal,176,100,Yes,Current
+P0424,179,69,125/82,37.5,76,dizziness,,Stroke,,165,99,,Never
+P0425,176,47,135/88,36.5,69,palpitations,Asthma,Hypertension,,224,71,Yes,Former
+P0426,183,77,145/92,,,nausea,Thyroid,,High Cholesterol,198,115,No,Current
+P0427,160,,,37.2,66,,Diabetes,Heart Disease,High Blood Sugar,233,98,Yes,Never
+P0428,176,69,120/80,36.6,90,chest pain,Hypertension,Coronary Artery Disease,Normal,,84,No,Former
+P0429,180,86,130/85,37.1,88,shortness of breath,High Cholesterol,Arrhythmia,Low Iron,128,133,Yes,Current
+P0430,152,64,140/90,36.8,70,fatigue,,Stroke,,178,62,,
+P0431,158,78,125/82,36.1,,dizziness,Asthma,Hypertension,High Cholesterol,169,87,Yes,Former
+P0432,149,54,135/88,35.9,48,palpitations,Thyroid,,High Blood Sugar,196,130,No,Current
+P0433,167,69,145/92,37.1,60,nausea,Diabetes,Heart Disease,Normal,,109,Yes,Never
+P0434,177,67,,36.7,61,,Hypertension,Coronary Artery Disease,Low Iron,229,98,No,Former
+P0435,185,73,120/80,36.7,76,chest pain,High Cholesterol,Arrhythmia,,188,107,Yes,Current
+P0436,170,64,,,71,shortness of breath,,,High Cholesterol,206,105,,Never
+P0437,186,68,140/90,37.6,61,fatigue,Asthma,Hypertension,,206,54,Yes,Former
+P0438,156,82,125/82,36.9,72,dizziness,,,Normal,207,89,No,Current
+P0439,152,63,135/88,36.8,80,palpitations,Diabetes,Heart Disease,Low Iron,199,148,Yes,
+P0440,169,45,145/92,37.3,80,nausea,,,,220,80,No,Former
+P0441,173,96,,36.3,56,,High Cholesterol,Arrhythmia,High Cholesterol,168,90,Yes,Current
+P0442,169,90,120/80,37.1,73,chest pain,,Stroke,High Blood Sugar,,83,No,Never
+P0443,149,50,130/85,37.3,61,shortness of breath,Asthma,Hypertension,Normal,190,97,Yes,Former
+P0444,169,80,140/90,37.3,84,fatigue,Thyroid,,Low Iron,147,82,No,Current
+P0445,156,62,125/82,36,82,dizziness,Diabetes,Heart Disease,,207,114,Yes,Never
+P0446,176,73,135/88,36.6,66,palpitations,,Coronary Artery Disease,High Cholesterol,,105,No,Former
+P0447,173,74,145/92,36.6,67,nausea,High Cholesterol,Arrhythmia,High Blood Sugar,226,123,Yes,Current
+P0448,160,66,,37,70,,,Stroke,Normal,288,68,No,Never
+P0449,164,58,120/80,37.2,52,chest pain,Asthma,Hypertension,Low Iron,168,89,,Former
+P0450,159,59,130/85,37.7,78,shortness of breath,,,,213,93,No,Current
+P0451,169,56,140/90,36.8,72,fatigue,Diabetes,,High Cholesterol,129,113,Yes,Never
+P0452,179,57,,36.8,84,dizziness,,Coronary Artery Disease,High Blood Sugar,218,76,No,Former
+P0453,160,68,135/88,37.6,64,palpitations,High Cholesterol,Arrhythmia,,164,127,Yes,Current
+P0454,175,,145/92,37.1,68,nausea,,,Low Iron,175,135,No,Never
+P0455,164,80,,37.6,59,,Asthma,Hypertension,,155,70,Yes,Former
+P0456,162,92,120/80,37.1,64,chest pain,Thyroid,,High Cholesterol,229,85,No,Current
+P0457,168,61,130/85,36.4,63,shortness of breath,Diabetes,Heart Disease,High Blood Sugar,240,84,Yes,Never
+P0458,159,73,140/90,36.3,84,fatigue,Hypertension,Coronary Artery Disease,Normal,200,178,No,Former
+P0459,164,77,125/82,36.2,68,,High Cholesterol,Arrhythmia,Low Iron,165,87,Yes,
+P0460,158,77,135/88,37.3,76,palpitations,,Stroke,,263,150,No,Never
+P0461,189,71,145/92,37.6,71,nausea,,Hypertension,High Cholesterol,169,62,Yes,Former
+P0462,170,81,,37.9,62,,Thyroid,,High Blood Sugar,113,70,No,Current
+P0463,163,77,120/80,37.4,73,chest pain,Diabetes,Heart Disease,Normal,218,79,Yes,Never
+P0464,172,51,130/85,37.6,80,shortness of breath,Hypertension,Coronary Artery Disease,Low Iron,155,74,No,Former
+P0465,168,83,140/90,36.7,,fatigue,High Cholesterol,Arrhythmia,,239,91,Yes,Current
+P0466,167,83,125/82,36.4,83,dizziness,,Stroke,High Cholesterol,184,78,No,Never
+P0467,176,58,135/88,37.4,66,palpitations,,Hypertension,High Blood Sugar,224,75,Yes,Former
+P0468,177,70,145/92,37.2,70,,Thyroid,,Normal,256,134,No,Current
+P0469,164,80,,37.1,80,,Diabetes,Heart Disease,Low Iron,,136,Yes,Never
+P0470,,66,120/80,37.2,68,chest pain,Hypertension,Coronary Artery Disease,,177,128,No,Former
+P0471,167,86,130/85,37.2,75,shortness of breath,High Cholesterol,Arrhythmia,High Cholesterol,196,115,Yes,Current
+P0472,146,105,140/90,37.6,71,fatigue,,Stroke,High Blood Sugar,261,102,No,Never
+P0473,154,58,125/82,37.6,76,dizziness,Asthma,Hypertension,Normal,173,85,Yes,Former
+P0474,183,49,135/88,37.3,51,palpitations,Thyroid,,Low Iron,176,71,No,Current
+P0475,186,74,145/92,37.4,56,nausea,Diabetes,Heart Disease,,219,110,,Never
+P0476,167,80,,37.3,81,,Hypertension,Coronary Artery Disease,High Cholesterol,176,64,No,Former
+P0477,175,66,120/80,36.8,85,chest pain,High Cholesterol,Arrhythmia,High Blood Sugar,206,70,Yes,Current
+P0478,173,91,130/85,37.4,65,shortness of breath,,Stroke,Normal,137,134,No,Never
+P0479,200,49,140/90,36.3,72,fatigue,Asthma,,Low Iron,288,157,Yes,Former
+P0480,181,80,125/82,37.5,77,dizziness,Thyroid,,,146,111,No,Current
+P0481,168,60,135/88,36.4,81,palpitations,Diabetes,Heart Disease,High Cholesterol,187,133,Yes,Never
+P0482,160,95,145/92,37.1,54,nausea,Hypertension,Coronary Artery Disease,High Blood Sugar,198,92,No,Former
+P0483,153,99,,36.6,66,,High Cholesterol,Arrhythmia,Normal,276,59,Yes,Current
+P0484,172,58,120/80,37.3,71,chest pain,,,Low Iron,147,118,No,Never
+P0485,162,61,130/85,37,82,shortness of breath,Asthma,Hypertension,,279,117,Yes,Former
+P0486,155,82,140/90,36.2,99,fatigue,Thyroid,,High Cholesterol,230,102,No,Current
+P0487,163,64,125/82,37.2,72,dizziness,Diabetes,,High Blood Sugar,216,92,Yes,Never
+P0488,159,69,135/88,36.7,,palpitations,Hypertension,Coronary Artery Disease,Normal,160,128,No,Former
+P0489,186,70,145/92,37.4,79,nausea,High Cholesterol,Arrhythmia,,222,70,,Current
+P0490,178,41,,37,88,,,,,171,76,No,Never
+P0491,169,69,120/80,37.2,76,chest pain,Asthma,Hypertension,High Cholesterol,250,69,Yes,Former
+P0492,184,59,130/85,36.5,65,shortness of breath,Thyroid,,High Blood Sugar,161,102,No,Current
+P0493,170,62,140/90,36.7,84,fatigue,Diabetes,Heart Disease,,195,67,Yes,Never
+P0494,,91,125/82,36.8,81,dizziness,Hypertension,Coronary Artery Disease,Low Iron,177,79,No,Former
+P0495,185,51,135/88,37.4,64,palpitations,High Cholesterol,Arrhythmia,,160,78,Yes,Current
+P0496,175,82,145/92,37.8,,nausea,,Stroke,High Cholesterol,229,92,,Never
+P0497,159,65,,36.6,84,,Asthma,Hypertension,High Blood Sugar,221,55,Yes,Former
+P0498,168,65,120/80,,86,chest pain,,,Normal,248,102,No,Current
+P0499,161,81,130/85,35.9,74,shortness of breath,Diabetes,Heart Disease,Low Iron,128,137,Yes,Never
+P0500,156,75,140/90,36.4,71,fatigue,Hypertension,Coronary Artery Disease,,242,104,No,Former
+P0501,179,78,125/82,36.5,87,dizziness,High Cholesterol,Arrhythmia,High Cholesterol,300,146,Yes,Current
+P0502,,84,135/88,36.3,62,palpitations,,Stroke,High Blood Sugar,181,140,No,Never
+P0503,156,65,145/92,36.2,79,nausea,Asthma,Hypertension,Normal,275,123,Yes,Former
+P0504,175,60,,37.2,61,,Thyroid,,Low Iron,189,102,No,Current
+P0505,,53,120/80,36.9,85,chest pain,Diabetes,,,145,100,Yes,Never
+P0506,165,57,130/85,37.2,72,shortness of breath,Hypertension,Coronary Artery Disease,High Cholesterol,187,122,No,Former
+P0507,164,114,140/90,37.3,87,,High Cholesterol,Arrhythmia,High Blood Sugar,241,88,Yes,Current
+P0508,161,88,125/82,37.1,79,dizziness,,Stroke,Normal,166,43,No,Never
+P0509,170,49,135/88,37.3,62,palpitations,Asthma,Hypertension,Low Iron,175,114,Yes,Former
+P0510,161,,145/92,37,89,nausea,Thyroid,,,223,66,No,Current
+P0511,172,77,,36.4,90,,Diabetes,Heart Disease,High Cholesterol,200,71,Yes,Never
+P0512,169,78,120/80,37.5,83,chest pain,Hypertension,Coronary Artery Disease,,223,100,No,Former
+P0513,167,78,130/85,36.7,67,shortness of breath,High Cholesterol,,Normal,209,97,Yes,Current
+P0514,160,66,140/90,36.5,71,,,Stroke,Low Iron,219,57,No,Never
+P0515,164,68,125/82,36.9,76,dizziness,Asthma,Hypertension,,182,,Yes,Former
+P0516,177,74,135/88,36.5,67,palpitations,Thyroid,,High Cholesterol,,128,No,Current
+P0517,175,,145/92,36.8,91,,Diabetes,Heart Disease,High Blood Sugar,162,66,Yes,Never
+P0518,160,36,,37.2,76,,Hypertension,,Normal,251,138,No,Former
+P0519,170,66,120/80,37.2,47,chest pain,High Cholesterol,Arrhythmia,Low Iron,174,53,,Current
+P0520,177,57,130/85,36.6,78,shortness of breath,,Stroke,,245,163,No,Never
+P0521,153,72,140/90,36.8,71,fatigue,Asthma,Hypertension,High Cholesterol,190,87,Yes,Former
+P0522,175,114,125/82,37.5,74,dizziness,Thyroid,,High Blood Sugar,208,,No,Current
+P0523,163,75,135/88,37.2,71,palpitations,Diabetes,Heart Disease,Normal,180,43,Yes,Never
+P0524,175,,,38,83,nausea,Hypertension,Coronary Artery Disease,Low Iron,159,98,No,
+P0525,162,83,,37.6,86,,High Cholesterol,Arrhythmia,,130,106,Yes,
+P0526,151,77,120/80,37.6,77,,,Stroke,High Cholesterol,157,97,No,Never
+P0527,153,76,130/85,36.3,71,shortness of breath,Asthma,Hypertension,High Blood Sugar,187,83,Yes,Former
+P0528,170,79,140/90,37.4,74,fatigue,Thyroid,,Normal,,71,No,Current
+P0529,172,100,125/82,37,75,dizziness,,Heart Disease,Low Iron,240,133,Yes,Never
+P0530,160,53,135/88,36.7,66,palpitations,Hypertension,Coronary Artery Disease,,182,100,No,Former
+P0531,176,77,145/92,37.1,80,nausea,High Cholesterol,Arrhythmia,High Cholesterol,164,146,Yes,Current
+P0532,153,56,,37.5,79,,,Stroke,High Blood Sugar,142,84,No,Never
+P0533,169,78,120/80,37.3,90,chest pain,Asthma,Hypertension,Normal,219,86,Yes,Former
+P0534,157,56,130/85,36.6,87,shortness of breath,Thyroid,,Low Iron,255,124,No,Current
+P0535,163,63,140/90,37.4,68,fatigue,Diabetes,Heart Disease,,250,51,Yes,Never
+P0536,170,65,125/82,36.7,83,,Hypertension,Coronary Artery Disease,High Cholesterol,228,63,No,Former
+P0537,161,84,135/88,37.1,65,,High Cholesterol,Arrhythmia,High Blood Sugar,225,132,Yes,Current
+P0538,166,83,,36.8,81,nausea,,Stroke,Normal,267,64,No,Never
+P0539,180,51,,,69,,,Hypertension,Low Iron,213,45,Yes,Former
+P0540,164,70,,,64,chest pain,Thyroid,,,225,156,No,Current
+P0541,178,59,130/85,36.5,77,shortness of breath,Diabetes,Heart Disease,High Cholesterol,187,58,Yes,
+P0542,158,51,140/90,38,48,,Hypertension,,High Blood Sugar,145,105,No,Former
+P0543,175,66,125/82,36.1,57,dizziness,High Cholesterol,Arrhythmia,Normal,172,102,Yes,Current
+P0544,,65,135/88,36.7,73,palpitations,,Stroke,Low Iron,199,15,No,Never
+P0545,145,106,145/92,37.2,75,nausea,Asthma,Hypertension,,202,91,Yes,Former
+P0546,162,76,,37.3,71,,Thyroid,,High Cholesterol,277,113,No,Current
+P0547,175,49,120/80,36.9,,chest pain,Diabetes,Heart Disease,High Blood Sugar,203,110,Yes,Never
+P0548,167,61,130/85,37,66,shortness of breath,Hypertension,Coronary Artery Disease,Normal,247,127,No,Former
+P0549,173,85,,,78,fatigue,High Cholesterol,Arrhythmia,Low Iron,182,88,Yes,Current
+P0550,163,101,125/82,36.9,80,dizziness,,,,187,121,No,Never
+P0551,170,46,135/88,37.7,74,,Asthma,Hypertension,High Cholesterol,146,79,Yes,Former
+P0552,168,41,145/92,37.4,86,nausea,Thyroid,,High Blood Sugar,170,57,No,Current
+P0553,181,98,,37.4,78,,Diabetes,Heart Disease,Normal,221,61,Yes,Never
+P0554,172,75,120/80,36.5,67,,Hypertension,Coronary Artery Disease,Low Iron,200,56,,Former
+P0555,173,56,130/85,37,72,,High Cholesterol,Arrhythmia,,237,130,Yes,Current
+P0556,165,78,140/90,36.8,60,fatigue,,Stroke,High Cholesterol,207,54,No,Never
+P0557,165,30,125/82,36.5,73,dizziness,,Hypertension,High Blood Sugar,185,108,Yes,Former
+P0558,165,70,135/88,37.2,86,palpitations,Thyroid,,Normal,285,92,No,Current
+P0559,173,74,145/92,36.7,81,nausea,Diabetes,,Low Iron,196,,Yes,Never
+P0560,165,83,,37.3,89,,Hypertension,,,246,140,No,Former
+P0561,172,54,120/80,36.5,71,chest pain,High Cholesterol,Arrhythmia,,183,86,Yes,Current
+P0562,190,71,130/85,37.9,88,shortness of breath,,Stroke,High Blood Sugar,228,118,No,Never
+P0563,178,56,140/90,36.6,73,fatigue,Asthma,Hypertension,Normal,237,101,Yes,Former
+P0564,166,,125/82,37.1,89,dizziness,Thyroid,,Low Iron,208,95,No,Current
+P0565,182,56,135/88,37.4,74,palpitations,Diabetes,Heart Disease,,105,168,Yes,Never
+P0566,165,63,145/92,36.7,82,nausea,,Coronary Artery Disease,High Cholesterol,200,56,No,Former
+P0567,149,55,,,89,,,,High Blood Sugar,249,138,,Current
+P0568,159,79,120/80,36.4,73,chest pain,,Stroke,Normal,221,119,No,Never
+P0569,151,82,130/85,37.7,77,shortness of breath,,Hypertension,Low Iron,217,85,Yes,Former
+P0570,166,66,140/90,37,87,,Thyroid,,,131,148,No,Current
+P0571,170,70,125/82,36.7,73,dizziness,Diabetes,,,171,44,Yes,Never
+P0572,186,48,135/88,36.9,61,palpitations,Hypertension,Coronary Artery Disease,,216,84,No,Former
+P0573,173,65,145/92,37.4,96,nausea,High Cholesterol,Arrhythmia,Normal,216,63,Yes,Current
+P0574,167,69,,36.7,70,,,Stroke,Low Iron,,112,No,Never
+P0575,178,109,120/80,36.6,76,chest pain,Asthma,,,194,66,Yes,Former
+P0576,147,53,130/85,36.9,86,shortness of breath,Thyroid,,High Cholesterol,216,112,No,Current
+P0577,172,91,140/90,36.4,68,,Diabetes,Heart Disease,High Blood Sugar,200,94,,Never
+P0578,177,84,125/82,37.9,64,dizziness,Hypertension,,Normal,160,85,No,Former
+P0579,155,74,135/88,36.7,77,palpitations,High Cholesterol,Arrhythmia,Low Iron,109,,Yes,Current
+P0580,181,96,145/92,37.4,57,nausea,,Stroke,,217,91,No,Never
+P0581,173,75,,37.1,72,,Asthma,,High Cholesterol,206,67,,Former
+P0582,165,75,120/80,36.5,77,chest pain,Thyroid,,High Blood Sugar,175,184,No,Current
+P0583,176,69,130/85,37,72,shortness of breath,Diabetes,Heart Disease,Normal,135,85,Yes,Never
+P0584,,88,140/90,37.4,59,,,Coronary Artery Disease,Low Iron,225,,No,Former
+P0585,171,86,125/82,36.9,90,dizziness,High Cholesterol,Arrhythmia,,189,74,Yes,Current
+P0586,172,60,135/88,37.6,76,palpitations,,,High Cholesterol,222,61,No,Never
+P0587,165,50,145/92,,89,nausea,,Hypertension,High Blood Sugar,274,124,Yes,Former
+P0588,161,66,,37.5,72,,Thyroid,,Normal,114,109,No,Current
+P0589,178,57,120/80,36.8,66,chest pain,Diabetes,Heart Disease,Low Iron,172,111,Yes,Never
+P0590,,69,130/85,,77,shortness of breath,Hypertension,Coronary Artery Disease,,191,88,No,Former
+P0591,170,88,140/90,36.7,72,fatigue,,Arrhythmia,High Cholesterol,258,91,Yes,Current
+P0592,165,63,125/82,37.1,63,dizziness,,Stroke,High Blood Sugar,134,88,No,Never
+P0593,174,69,135/88,37.3,89,palpitations,Asthma,,Normal,277,97,Yes,Former
+P0594,173,70,145/92,35.9,68,nausea,Thyroid,,Low Iron,205,125,No,Current
+P0595,180,82,,37,56,,Diabetes,Heart Disease,,196,110,Yes,Never
+P0596,164,36,120/80,,88,chest pain,Hypertension,Coronary Artery Disease,High Cholesterol,,115,No,
+P0597,167,,130/85,36.9,69,shortness of breath,High Cholesterol,Arrhythmia,High Blood Sugar,182,114,,Current
+P0598,160,73,140/90,37.6,68,fatigue,,,Normal,241,126,No,Never
+P0599,,88,125/82,37.2,57,dizziness,,Hypertension,Low Iron,157,108,Yes,Former
+P0600,173,62,135/88,37.7,92,palpitations,Thyroid,,,213,110,No,Current
+P0601,,41,145/92,36.9,62,nausea,Diabetes,Heart Disease,High Cholesterol,184,135,Yes,Never
+P0602,160,79,,37.5,75,,,Coronary Artery Disease,High Blood Sugar,169,80,No,Former
+P0603,178,60,120/80,37.8,84,chest pain,High Cholesterol,Arrhythmia,Normal,303,,Yes,Current
+P0604,183,52,130/85,,79,shortness of breath,,,,216,64,No,Never
+P0605,174,60,140/90,36.5,74,fatigue,,Hypertension,,224,105,Yes,Former
+P0606,188,,125/82,36.9,57,dizziness,,,High Cholesterol,245,44,No,Current
+P0607,162,60,135/88,36.8,66,palpitations,Diabetes,Heart Disease,,143,113,Yes,Never
+P0608,157,36,145/92,37.2,76,nausea,Hypertension,Coronary Artery Disease,Normal,270,96,No,Former
+P0609,,83,,37.3,67,,High Cholesterol,Arrhythmia,Low Iron,99,134,Yes,Current
+P0610,184,89,,36.6,77,chest pain,,Stroke,,169,79,No,Never
+P0611,176,79,130/85,37,81,shortness of breath,,Hypertension,High Cholesterol,181,93,Yes,Former
+P0612,169,52,140/90,36,84,fatigue,Thyroid,,High Blood Sugar,223,133,No,Current
+P0613,172,66,125/82,37.7,62,dizziness,Diabetes,Heart Disease,Normal,208,141,Yes,Never
+P0614,158,69,135/88,36.7,,palpitations,Hypertension,Coronary Artery Disease,Low Iron,193,79,No,Former
+P0615,194,78,145/92,37,82,nausea,High Cholesterol,Arrhythmia,,199,105,Yes,
+P0616,171,80,,36.8,74,,,Stroke,High Cholesterol,160,108,No,Never
+P0617,171,58,,37.6,85,chest pain,Asthma,Hypertension,High Blood Sugar,140,111,Yes,Former
+P0618,177,71,130/85,35.6,98,shortness of breath,Thyroid,,Normal,,92,No,Current
+P0619,174,,140/90,37,60,fatigue,Diabetes,Heart Disease,Low Iron,227,138,Yes,Never
+P0620,172,91,125/82,36.9,72,dizziness,,Coronary Artery Disease,,263,43,No,Former
+P0621,162,80,135/88,36.8,51,palpitations,High Cholesterol,,High Cholesterol,168,87,,Current
+P0622,174,81,145/92,37.9,76,nausea,,Stroke,High Blood Sugar,227,113,No,Never
+P0623,188,71,,36.6,78,,,Hypertension,Normal,188,113,Yes,Former
+P0624,183,91,120/80,37.4,74,chest pain,Thyroid,,Low Iron,247,140,No,Current
+P0625,185,76,130/85,37.2,68,shortness of breath,Diabetes,Heart Disease,,240,135,Yes,Never
+P0626,164,57,140/90,37.6,54,fatigue,Hypertension,Coronary Artery Disease,High Cholesterol,208,91,No,Former
+P0627,160,91,125/82,36.7,78,dizziness,High Cholesterol,Arrhythmia,High Blood Sugar,186,138,Yes,Current
+P0628,168,80,135/88,36.6,89,palpitations,,Stroke,Normal,238,78,No,Never
+P0629,170,63,145/92,,69,nausea,Asthma,Hypertension,Low Iron,225,127,Yes,Former
+P0630,180,62,,37.2,79,,Thyroid,,,172,154,No,Current
+P0631,153,74,120/80,36.2,59,,,Heart Disease,High Cholesterol,146,136,Yes,Never
+P0632,185,76,130/85,36.7,79,shortness of breath,Hypertension,Coronary Artery Disease,High Blood Sugar,188,103,No,Former
+P0633,168,72,,37.2,71,fatigue,High Cholesterol,Arrhythmia,Normal,260,90,Yes,Current
+P0634,165,74,125/82,37.4,67,dizziness,,Stroke,,,,No,Never
+P0635,159,95,135/88,36.7,67,palpitations,Asthma,,,155,109,Yes,Former
+P0636,153,86,145/92,35.5,71,nausea,Thyroid,,High Cholesterol,153,66,No,Current
+P0637,178,72,,37.3,78,,,Heart Disease,High Blood Sugar,250,76,Yes,Never
+P0638,,84,120/80,36.4,61,chest pain,Hypertension,Coronary Artery Disease,Normal,154,64,No,Former
+P0639,157,54,130/85,36,71,shortness of breath,,Arrhythmia,Low Iron,220,86,Yes,Current
+P0640,157,75,140/90,35.6,74,fatigue,,Stroke,,,99,No,Never
+P0641,166,,125/82,37.4,64,dizziness,Asthma,Hypertension,High Cholesterol,264,108,Yes,Former
+P0642,186,,135/88,37.1,92,palpitations,Thyroid,,High Blood Sugar,169,81,No,Current
+P0643,167,57,,36.9,,,Diabetes,Heart Disease,Normal,245,132,Yes,Never
+P0644,154,60,,37.7,68,,Hypertension,Coronary Artery Disease,Low Iron,207,93,No,Former
+P0645,167,53,120/80,37.3,65,chest pain,High Cholesterol,Arrhythmia,,210,76,Yes,Current
+P0646,167,58,130/85,37.8,92,shortness of breath,,Stroke,High Cholesterol,121,106,No,Never
+P0647,143,64,140/90,36.3,80,fatigue,Asthma,Hypertension,High Blood Sugar,111,158,Yes,Former
+P0648,169,48,125/82,37,65,dizziness,Thyroid,,Normal,,,No,Current
+P0649,167,70,135/88,,86,palpitations,Diabetes,Heart Disease,Low Iron,209,89,Yes,Never
+P0650,176,83,145/92,36.9,77,nausea,Hypertension,Coronary Artery Disease,,154,,No,Former
+P0651,188,56,,36.9,77,,High Cholesterol,Arrhythmia,High Cholesterol,,,Yes,Current
+P0652,,92,120/80,37.3,71,chest pain,,Stroke,High Blood Sugar,,107,No,Never
+P0653,167,77,130/85,37,67,shortness of breath,Asthma,Hypertension,Normal,222,88,Yes,Former
+P0654,158,85,140/90,37.3,78,fatigue,Thyroid,,Low Iron,194,50,No,Current
+P0655,195,60,125/82,37.4,,dizziness,Diabetes,Heart Disease,,231,74,Yes,Never
+P0656,170,82,135/88,38.1,93,palpitations,Hypertension,Coronary Artery Disease,High Cholesterol,153,143,No,
+P0657,170,53,145/92,36.8,62,nausea,High Cholesterol,Arrhythmia,High Blood Sugar,185,143,Yes,Current
+P0658,169,83,,36.5,90,,,Stroke,Normal,265,73,No,Never
+P0659,171,72,120/80,37.1,,chest pain,Asthma,,Low Iron,202,120,Yes,Former
+P0660,168,78,130/85,36.6,77,shortness of breath,,,,205,64,No,Current
+P0661,164,52,140/90,37.7,83,fatigue,Diabetes,Heart Disease,High Cholesterol,292,142,Yes,Never
+P0662,164,,,36.9,68,dizziness,Hypertension,,High Blood Sugar,144,,No,Former
+P0663,169,78,135/88,36.7,83,palpitations,High Cholesterol,Arrhythmia,Normal,231,128,Yes,Current
+P0664,164,55,145/92,36.8,47,nausea,,Stroke,Low Iron,266,,No,Never
+P0665,162,76,,37.4,67,,Asthma,Hypertension,,187,120,Yes,Former
+P0666,171,49,120/80,36.9,65,chest pain,Thyroid,,,234,99,No,Current
+P0667,167,,130/85,36.7,62,shortness of breath,Diabetes,Heart Disease,,160,125,Yes,Never
+P0668,185,51,140/90,37.8,72,fatigue,Hypertension,Coronary Artery Disease,Normal,172,127,No,Former
+P0669,143,78,125/82,36.6,78,dizziness,High Cholesterol,,Low Iron,215,101,Yes,Current
+P0670,180,79,135/88,37,82,,,Stroke,,231,81,No,Never
+P0671,182,59,145/92,37.3,77,nausea,Asthma,Hypertension,,244,123,Yes,Former
+P0672,149,78,,36.2,68,,Thyroid,,High Blood Sugar,262,,No,Current
+P0673,166,73,120/80,37.2,78,chest pain,Diabetes,Heart Disease,Normal,197,73,Yes,
+P0674,166,61,130/85,36.5,76,shortness of breath,Hypertension,Coronary Artery Disease,Low Iron,247,72,No,Former
+P0675,155,54,140/90,37.4,84,,High Cholesterol,,,,55,Yes,Current
+P0676,162,40,125/82,36.5,82,,,Stroke,High Cholesterol,236,84,No,Never
+P0677,158,75,135/88,37.3,75,palpitations,Asthma,,High Blood Sugar,208,133,Yes,Former
+P0678,187,46,,37.6,66,nausea,Thyroid,,Normal,217,105,No,Current
+P0679,179,71,,37.4,68,,Diabetes,Heart Disease,Low Iron,216,84,Yes,Never
+P0680,182,66,120/80,37.1,69,chest pain,Hypertension,Coronary Artery Disease,,135,124,No,Former
+P0681,177,80,130/85,36.9,71,shortness of breath,High Cholesterol,,High Cholesterol,155,,Yes,Current
+P0682,158,65,,36.7,77,fatigue,,Stroke,High Blood Sugar,204,102,No,Never
+P0683,164,65,125/82,,82,,Asthma,Hypertension,Normal,132,94,Yes,Former
+P0684,,80,135/88,36.7,74,palpitations,Thyroid,,Low Iron,233,123,No,Current
+P0685,157,75,145/92,36.5,75,,Diabetes,Heart Disease,,234,52,Yes,Never
+P0686,177,74,,37.3,76,,Hypertension,Coronary Artery Disease,,213,74,No,Former
+P0687,167,77,120/80,36.6,69,chest pain,,Arrhythmia,High Blood Sugar,155,50,Yes,Current
+P0688,166,,,36.5,65,shortness of breath,,,Normal,255,92,No,Never
+P0689,177,81,140/90,36.3,57,fatigue,Asthma,Hypertension,Low Iron,281,136,,Former
+P0690,174,79,125/82,36.8,68,dizziness,Thyroid,,,205,84,No,Current
+P0691,166,,135/88,37,79,palpitations,Diabetes,Heart Disease,High Cholesterol,220,84,Yes,Never
+P0692,181,66,145/92,37.1,67,nausea,Hypertension,Coronary Artery Disease,High Blood Sugar,208,126,No,Former
+P0693,159,69,,37.5,72,,High Cholesterol,Arrhythmia,Normal,221,132,Yes,Current
+P0694,176,67,120/80,37.3,,chest pain,,Stroke,Low Iron,195,97,No,
+P0695,175,75,130/85,36.9,80,shortness of breath,Asthma,Hypertension,,198,120,Yes,Former
+P0696,166,91,140/90,36.9,64,fatigue,Thyroid,,High Cholesterol,236,67,,Current
+P0697,173,86,125/82,37.3,84,dizziness,Diabetes,Heart Disease,High Blood Sugar,293,141,Yes,Never
+P0698,157,50,135/88,37.6,86,palpitations,Hypertension,Coronary Artery Disease,Normal,143,164,No,Former
+P0699,179,79,145/92,37.1,63,nausea,,,Low Iron,195,115,Yes,Current
+P0700,168,89,,36.8,66,,,Stroke,,152,37,No,Never
+P0701,164,75,120/80,36.5,86,,Asthma,Hypertension,High Cholesterol,263,83,Yes,Former
+P0702,180,86,,36.3,73,,Thyroid,,High Blood Sugar,176,118,No,
+P0703,162,100,140/90,37.3,52,fatigue,Diabetes,Heart Disease,Normal,142,87,Yes,Never
+P0704,155,85,125/82,37.3,,dizziness,Hypertension,Coronary Artery Disease,Low Iron,225,138,No,Former
+P0705,154,73,135/88,37.3,72,palpitations,,Arrhythmia,,269,117,Yes,Current
+P0706,176,,145/92,36.9,63,,,Stroke,High Cholesterol,226,78,No,Never
+P0707,157,72,,,70,,Asthma,Hypertension,High Blood Sugar,208,100,Yes,Former
+P0708,187,70,120/80,36.8,75,chest pain,Thyroid,,Normal,216,73,No,Current
+P0709,149,64,130/85,37.5,89,shortness of breath,Diabetes,Heart Disease,,256,94,Yes,Never
+P0710,186,93,140/90,37,72,fatigue,,Coronary Artery Disease,,165,83,,Former
+P0711,172,57,,36.7,85,dizziness,High Cholesterol,Arrhythmia,High Cholesterol,195,135,Yes,Current
+P0712,169,92,135/88,,89,palpitations,,Stroke,High Blood Sugar,181,163,No,Never
+P0713,164,77,145/92,37.2,89,nausea,,Hypertension,Normal,153,57,Yes,Former
+P0714,173,49,,37.2,77,,Thyroid,,Low Iron,186,42,No,Current
+P0715,169,75,120/80,37,55,chest pain,Diabetes,Heart Disease,,244,92,Yes,Never
+P0716,181,38,130/85,37,79,shortness of breath,Hypertension,Coronary Artery Disease,High Cholesterol,222,54,No,Former
+P0717,171,79,140/90,38.2,85,fatigue,High Cholesterol,Arrhythmia,,225,,Yes,Current
+P0718,171,83,125/82,37.6,74,dizziness,,Stroke,Normal,205,122,No,Never
+P0719,166,61,135/88,,92,palpitations,Asthma,Hypertension,Low Iron,220,144,Yes,Former
+P0720,169,71,145/92,37.1,83,nausea,Thyroid,,,167,106,No,Current
+P0721,,99,,37.5,80,,Diabetes,Heart Disease,High Cholesterol,187,94,Yes,Never
+P0722,152,62,120/80,37.3,85,chest pain,Hypertension,Coronary Artery Disease,High Blood Sugar,,40,No,Former
+P0723,156,54,130/85,37,78,,High Cholesterol,Arrhythmia,Normal,211,100,,Current
+P0724,177,92,140/90,36.8,50,fatigue,,Stroke,Low Iron,212,102,No,Never
+P0725,171,99,125/82,37,70,dizziness,Asthma,Hypertension,,194,119,Yes,Former
+P0726,168,70,135/88,35.4,86,palpitations,Thyroid,,High Cholesterol,184,78,No,Current
+P0727,170,85,145/92,37.1,66,nausea,Diabetes,Heart Disease,High Blood Sugar,,86,Yes,Never
+P0728,173,90,,36.8,72,,,Coronary Artery Disease,Normal,236,55,No,Former
+P0729,164,58,120/80,37.8,64,chest pain,,Arrhythmia,Low Iron,216,31,Yes,Current
+P0730,162,,130/85,37,92,shortness of breath,,Stroke,,190,,No,Never
+P0731,171,88,140/90,36.4,91,fatigue,Asthma,Hypertension,High Cholesterol,181,52,Yes,Former
+P0732,160,95,125/82,37,66,dizziness,,,High Blood Sugar,194,110,No,Current
+P0733,174,78,135/88,36.5,76,palpitations,,Heart Disease,Normal,211,84,Yes,Never
+P0734,152,56,145/92,37.2,68,,Hypertension,Coronary Artery Disease,Low Iron,124,83,No,Former
+P0735,180,99,,37.1,81,,High Cholesterol,Arrhythmia,,137,70,Yes,Current
+P0736,174,,120/80,,80,chest pain,,Stroke,High Cholesterol,174,3,No,Never
+P0737,172,64,130/85,36.6,83,shortness of breath,Asthma,Hypertension,High Blood Sugar,208,145,Yes,Former
+P0738,,75,140/90,37,78,fatigue,Thyroid,,,190,69,No,Current
+P0739,186,93,125/82,36.3,104,dizziness,,Heart Disease,Low Iron,259,87,Yes,Never
+P0740,180,82,135/88,37.4,64,palpitations,Hypertension,Coronary Artery Disease,,140,56,No,Former
+P0741,151,76,145/92,37.3,57,nausea,High Cholesterol,Arrhythmia,High Cholesterol,169,129,Yes,Current
+P0742,157,76,,37.2,71,,,Stroke,High Blood Sugar,260,104,No,Never
+P0743,163,70,,37,59,chest pain,Asthma,Hypertension,Normal,205,75,Yes,Former
+P0744,170,78,130/85,37.2,60,shortness of breath,Thyroid,,Low Iron,235,88,No,Current
+P0745,175,32,140/90,37.8,64,fatigue,Diabetes,Heart Disease,,282,150,Yes,Never
+P0746,162,65,125/82,36.9,65,dizziness,Hypertension,Coronary Artery Disease,High Cholesterol,172,97,No,Former
+P0747,171,73,135/88,37.1,65,palpitations,High Cholesterol,Arrhythmia,High Blood Sugar,196,94,Yes,Current
+P0748,162,52,145/92,36.5,80,nausea,,Stroke,Normal,189,71,No,Never
+P0749,163,75,,36.6,69,,Asthma,Hypertension,Low Iron,121,43,Yes,Former
+P0750,155,66,120/80,37,73,chest pain,Thyroid,,,187,95,No,Current
+P0751,160,96,,37.6,83,shortness of breath,Diabetes,Heart Disease,,235,109,Yes,Never
+P0752,156,93,140/90,36.9,,fatigue,Hypertension,Coronary Artery Disease,High Blood Sugar,221,132,No,Former
+P0753,160,63,125/82,,72,dizziness,High Cholesterol,Arrhythmia,Normal,224,32,Yes,Current
+P0754,180,67,135/88,36.8,78,palpitations,,Stroke,Low Iron,184,66,No,Never
+P0755,160,68,145/92,,55,nausea,Asthma,Hypertension,,,82,Yes,Former
+P0756,196,63,,37.1,51,,,,High Cholesterol,250,99,No,Current
+P0757,174,72,120/80,36.3,,chest pain,Diabetes,Heart Disease,High Blood Sugar,180,95,Yes,Never
+P0758,171,58,130/85,37.6,79,shortness of breath,Hypertension,Coronary Artery Disease,Normal,211,96,No,Former
+P0759,161,53,140/90,36.7,95,fatigue,High Cholesterol,Arrhythmia,Low Iron,206,112,Yes,Current
+P0760,177,79,125/82,37.4,76,dizziness,,,,258,72,No,Never
+P0761,164,79,135/88,36.4,83,palpitations,Asthma,Hypertension,High Cholesterol,238,128,Yes,Former
+P0762,171,57,145/92,37.3,73,nausea,Thyroid,,High Blood Sugar,148,113,No,Current
+P0763,195,83,,37.3,77,,Diabetes,Heart Disease,Normal,152,,Yes,Never
+P0764,169,,120/80,37.2,91,chest pain,Hypertension,Coronary Artery Disease,Low Iron,223,148,No,Former
+P0765,181,73,130/85,36.5,53,shortness of breath,,Arrhythmia,,197,146,Yes,Current
+P0766,162,82,140/90,37.1,79,,,Stroke,High Cholesterol,181,127,No,Never
+P0767,169,69,125/82,36.4,96,dizziness,,Hypertension,High Blood Sugar,240,9,Yes,Former
+P0768,187,76,,,77,,Thyroid,,Normal,207,147,No,Current
+P0769,163,62,145/92,37.5,91,nausea,Diabetes,Heart Disease,Low Iron,202,123,Yes,
+P0770,188,67,,37.4,68,,Hypertension,Coronary Artery Disease,,231,160,No,Former
+P0771,177,66,120/80,37,74,chest pain,High Cholesterol,Arrhythmia,High Cholesterol,184,137,Yes,Current
+P0772,164,58,130/85,36.5,,shortness of breath,,Stroke,High Blood Sugar,262,147,No,Never
+P0773,176,67,140/90,37.3,52,,,Hypertension,Normal,168,126,Yes,Former
+P0774,179,,125/82,37,63,dizziness,Thyroid,,Low Iron,226,140,No,Current
+P0775,176,62,135/88,35.8,64,palpitations,Diabetes,Heart Disease,,257,159,Yes,Never
+P0776,,65,145/92,37.4,83,nausea,Hypertension,,High Cholesterol,,106,,Former
+P0777,162,66,,37,83,,High Cholesterol,Arrhythmia,High Blood Sugar,186,52,Yes,Current
+P0778,167,66,120/80,37.6,78,chest pain,,Stroke,Normal,245,,No,Never
+P0779,169,69,130/85,,83,shortness of breath,Asthma,Hypertension,Low Iron,246,111,Yes,
+P0780,176,77,140/90,,73,fatigue,Thyroid,,,193,102,No,Current
+P0781,171,83,125/82,37.1,87,,Diabetes,Heart Disease,High Cholesterol,170,62,Yes,
+P0782,156,60,135/88,37.1,75,palpitations,Hypertension,Coronary Artery Disease,High Blood Sugar,238,51,No,Former
+P0783,173,51,145/92,36.2,75,nausea,High Cholesterol,Arrhythmia,Normal,247,77,,Current
+P0784,176,54,,36.5,72,,,,Low Iron,153,124,No,Never
+P0785,175,62,120/80,38.4,81,chest pain,,Hypertension,,,147,Yes,Former
+P0786,180,64,130/85,36.8,70,shortness of breath,Thyroid,,High Cholesterol,209,127,No,Current
+P0787,178,58,140/90,37.4,84,fatigue,Diabetes,Heart Disease,,225,131,Yes,Never
+P0788,174,50,125/82,36.7,63,dizziness,Hypertension,Coronary Artery Disease,Normal,188,97,No,Former
+P0789,169,63,135/88,36,64,palpitations,High Cholesterol,Arrhythmia,,227,,Yes,Current
+P0790,153,,145/92,36.9,81,nausea,,Stroke,,171,86,No,Never
+P0791,174,78,,36.9,,,Asthma,Hypertension,High Cholesterol,115,92,Yes,Former
+P0792,172,61,120/80,36.8,70,chest pain,Thyroid,,High Blood Sugar,183,85,No,
+P0793,172,63,130/85,36.9,83,shortness of breath,Diabetes,Heart Disease,Normal,202,101,Yes,Never
+P0794,157,56,140/90,37.1,68,fatigue,Hypertension,Coronary Artery Disease,Low Iron,188,113,No,Former
+P0795,159,69,125/82,36.9,72,dizziness,,Arrhythmia,,153,125,Yes,Current
+P0796,180,57,135/88,36.4,88,,,Stroke,High Cholesterol,127,91,No,Never
+P0797,169,78,145/92,37.2,90,nausea,Asthma,Hypertension,High Blood Sugar,,42,Yes,Former
+P0798,176,43,,36,90,,,,Normal,235,85,No,Current
+P0799,170,64,120/80,36,72,,,Heart Disease,Low Iron,,101,Yes,Never
+P0800,170,74,130/85,37.4,87,shortness of breath,Hypertension,Coronary Artery Disease,,247,136,No,Former
+P0801,179,72,140/90,37.3,65,fatigue,High Cholesterol,Arrhythmia,High Cholesterol,167,82,Yes,Current
+P0802,164,110,125/82,37,,,,Stroke,High Blood Sugar,153,115,No,Never
+P0803,170,75,135/88,36.3,51,palpitations,Asthma,Hypertension,Normal,219,108,Yes,Former
+P0804,165,54,145/92,36.6,91,nausea,,,Low Iron,225,101,No,Current
+P0805,165,68,,36.9,66,,Diabetes,Heart Disease,,216,127,Yes,Never
+P0806,166,43,120/80,36.2,73,chest pain,Hypertension,Coronary Artery Disease,High Cholesterol,119,80,No,Former
+P0807,172,68,130/85,36.6,65,,,Arrhythmia,,165,82,Yes,
+P0808,165,,140/90,37.3,81,fatigue,,,Normal,198,99,No,Never
+P0809,182,83,125/82,37.7,71,dizziness,Asthma,,Low Iron,219,80,,Former
+P0810,161,61,135/88,36.8,61,palpitations,Thyroid,,,230,115,No,Current
+P0811,168,68,145/92,37.4,79,,Diabetes,Heart Disease,High Cholesterol,205,78,Yes,Never
+P0812,165,60,,36,60,,Hypertension,Coronary Artery Disease,High Blood Sugar,213,106,No,Former
+P0813,184,96,120/80,37.3,66,,High Cholesterol,Arrhythmia,Normal,203,96,Yes,Current
+P0814,171,65,130/85,36.6,53,shortness of breath,,Stroke,Low Iron,227,106,No,Never
+P0815,180,97,140/90,37.2,60,fatigue,Asthma,Hypertension,,212,86,Yes,Former
+P0816,155,82,125/82,36.9,76,dizziness,Thyroid,,High Cholesterol,202,89,No,Current
+P0817,172,77,135/88,37.7,55,palpitations,Diabetes,Heart Disease,High Blood Sugar,189,102,Yes,Never
+P0818,178,75,145/92,36.6,60,nausea,Hypertension,Coronary Artery Disease,Normal,,106,No,Former
+P0819,170,75,,37.3,74,,High Cholesterol,Arrhythmia,Low Iron,219,,Yes,Current
+P0820,180,41,120/80,36.9,69,chest pain,,Stroke,,210,151,No,Never
+P0821,164,65,130/85,36.9,94,shortness of breath,Asthma,Hypertension,High Cholesterol,215,,Yes,Former
+P0822,184,82,140/90,36.9,93,fatigue,Thyroid,,High Blood Sugar,253,98,No,Current
+P0823,192,69,125/82,36.6,66,dizziness,Diabetes,Heart Disease,,210,52,Yes,Never
+P0824,166,48,135/88,37,80,palpitations,,Coronary Artery Disease,Low Iron,174,111,No,Former
+P0825,165,69,145/92,37,82,nausea,High Cholesterol,Arrhythmia,,235,66,Yes,Current
+P0826,184,,,37.1,69,,,Stroke,High Cholesterol,145,91,No,Never
+P0827,185,88,120/80,37,60,chest pain,Asthma,Hypertension,High Blood Sugar,156,88,,
+P0828,164,69,130/85,37.4,74,shortness of breath,,,Normal,213,108,No,Current
+P0829,165,84,140/90,37.5,73,fatigue,Diabetes,,Low Iron,220,83,Yes,Never
+P0830,167,64,125/82,36.5,70,,Hypertension,Coronary Artery Disease,,150,82,,Former
+P0831,156,44,135/88,37.4,79,palpitations,High Cholesterol,Arrhythmia,High Cholesterol,184,143,Yes,Current
+P0832,160,56,145/92,36.4,67,nausea,,Stroke,High Blood Sugar,175,108,No,Never
+P0833,159,93,,37.3,63,,Asthma,Hypertension,Normal,180,83,Yes,Former
+P0834,162,65,120/80,37.3,76,chest pain,Thyroid,,Low Iron,237,92,No,Current
+P0835,169,66,130/85,36,78,shortness of breath,Diabetes,,,228,149,Yes,Never
+P0836,172,65,140/90,37,63,fatigue,Hypertension,Coronary Artery Disease,High Cholesterol,199,92,No,Former
+P0837,185,98,,36.8,84,dizziness,High Cholesterol,Arrhythmia,High Blood Sugar,178,79,Yes,Current
+P0838,160,94,135/88,36.6,,,,Stroke,Normal,146,79,No,Never
+P0839,179,103,145/92,37.7,,nausea,Asthma,Hypertension,Low Iron,256,83,Yes,Former
+P0840,167,67,,36.7,72,,Thyroid,,,223,82,No,Current
+P0841,169,74,120/80,,68,chest pain,Diabetes,Heart Disease,High Cholesterol,171,61,Yes,Never
+P0842,176,47,130/85,37,69,shortness of breath,Hypertension,Coronary Artery Disease,High Blood Sugar,228,66,No,Former
+P0843,158,92,140/90,37.3,93,fatigue,High Cholesterol,Arrhythmia,Normal,197,75,Yes,Current
+P0844,173,52,125/82,36.9,66,dizziness,,Stroke,Low Iron,188,117,No,Never
+P0845,171,73,135/88,37.6,99,palpitations,Asthma,Hypertension,,217,88,Yes,Former
+P0846,174,53,145/92,37.3,79,nausea,Thyroid,,High Cholesterol,170,93,No,Current
+P0847,172,61,,35.9,75,,Diabetes,Heart Disease,High Blood Sugar,186,138,Yes,Never
+P0848,194,57,120/80,36.7,79,chest pain,Hypertension,Coronary Artery Disease,,204,138,No,Former
+P0849,163,60,130/85,,100,,High Cholesterol,Arrhythmia,Low Iron,180,91,Yes,Current
+P0850,164,61,140/90,37.2,65,fatigue,,,,226,81,No,Never
+P0851,163,61,125/82,35.7,63,dizziness,Asthma,Hypertension,High Cholesterol,274,74,Yes,Former
+P0852,,82,135/88,38.3,,palpitations,Thyroid,,High Blood Sugar,169,120,No,Current
+P0853,,53,145/92,37.3,75,nausea,Diabetes,Heart Disease,Normal,133,93,Yes,Never
+P0854,181,73,,37.1,57,,Hypertension,Coronary Artery Disease,Low Iron,119,88,No,Former
+P0855,184,88,120/80,37.6,75,chest pain,High Cholesterol,Arrhythmia,,193,75,Yes,Current
+P0856,164,62,130/85,38.2,91,,,Stroke,High Cholesterol,173,,No,Never
+P0857,161,59,140/90,,76,fatigue,Asthma,Hypertension,High Blood Sugar,208,109,Yes,Former
+P0858,174,,125/82,37.5,72,dizziness,Thyroid,,Normal,205,60,No,Current
+P0859,164,87,135/88,37.1,68,palpitations,Diabetes,,Low Iron,135,129,Yes,Never
+P0860,176,72,145/92,36.9,83,nausea,Hypertension,Coronary Artery Disease,,127,83,No,Former
+P0861,172,62,,36.8,66,,High Cholesterol,Arrhythmia,High Cholesterol,211,95,Yes,Current
+P0862,154,77,120/80,36.6,93,chest pain,,Stroke,High Blood Sugar,205,59,,
+P0863,185,53,130/85,36.7,94,shortness of breath,Asthma,Hypertension,Normal,182,99,Yes,
+P0864,187,,140/90,36.3,77,fatigue,Thyroid,,Low Iron,133,90,No,Current
+P0865,163,76,125/82,37,74,dizziness,Diabetes,Heart Disease,,218,98,Yes,Never
+P0866,166,65,135/88,36.2,85,palpitations,Hypertension,Coronary Artery Disease,High Cholesterol,250,144,No,Former
+P0867,172,57,145/92,37.1,85,nausea,High Cholesterol,Arrhythmia,High Blood Sugar,211,105,Yes,Current
+P0868,173,56,,37,66,,,Stroke,Normal,166,76,No,Never
+P0869,176,78,120/80,37.1,69,chest pain,Asthma,Hypertension,Low Iron,201,78,,Former
+P0870,190,88,130/85,36.7,61,shortness of breath,Thyroid,,,145,117,No,Current
+P0871,168,60,140/90,38.5,79,fatigue,Diabetes,Heart Disease,High Cholesterol,242,138,Yes,Never
+P0872,162,76,125/82,37.7,81,dizziness,Hypertension,Coronary Artery Disease,High Blood Sugar,203,108,No,Former
+P0873,156,38,135/88,36.4,61,,High Cholesterol,Arrhythmia,Normal,129,120,Yes,Current
+P0874,,61,145/92,37.1,70,nausea,,Stroke,Low Iron,187,118,No,Never
+P0875,169,69,,36.7,61,,,Hypertension,,218,142,Yes,Former
+P0876,187,56,120/80,36.5,66,chest pain,Thyroid,,High Cholesterol,186,41,No,Current
+P0877,164,55,130/85,36.3,80,shortness of breath,,Heart Disease,High Blood Sugar,188,,Yes,Never
+P0878,172,59,140/90,37.2,67,fatigue,Hypertension,,Normal,151,129,No,Former
+P0879,169,74,125/82,36.7,71,dizziness,High Cholesterol,Arrhythmia,Low Iron,222,59,Yes,Current
+P0880,181,67,135/88,37.5,58,palpitations,,,,174,73,No,Never
+P0881,195,36,145/92,37.5,76,nausea,Asthma,Hypertension,High Cholesterol,113,,Yes,Former
+P0882,164,38,,37.7,74,,Thyroid,,High Blood Sugar,185,78,No,Current
+P0883,165,60,,36.6,67,chest pain,Diabetes,Heart Disease,Normal,239,85,Yes,Never
+P0884,180,76,130/85,37.2,73,,Hypertension,Coronary Artery Disease,Low Iron,184,107,No,Former
+P0885,176,28,140/90,,76,fatigue,High Cholesterol,Arrhythmia,,269,125,Yes,Current
+P0886,188,62,125/82,36.8,66,dizziness,,Stroke,,217,132,No,Never
+P0887,175,62,135/88,36.6,60,palpitations,Asthma,Hypertension,High Blood Sugar,213,,Yes,Former
+P0888,166,90,145/92,37.8,93,nausea,Thyroid,,,194,74,No,Current
+P0889,175,64,,37.1,68,,Diabetes,Heart Disease,Low Iron,197,139,Yes,Never
+P0890,181,75,120/80,37.3,74,chest pain,,,,189,119,No,Former
+P0891,178,72,130/85,36.6,85,shortness of breath,High Cholesterol,Arrhythmia,High Cholesterol,187,102,,Current
+P0892,175,38,140/90,36.4,110,fatigue,,Stroke,High Blood Sugar,221,114,No,Never
+P0893,180,81,125/82,36.7,62,dizziness,Asthma,Hypertension,Normal,162,99,Yes,Former
+P0894,181,73,135/88,36.9,79,palpitations,Thyroid,,Low Iron,156,115,No,Current
+P0895,183,77,145/92,36.5,67,nausea,Diabetes,,,155,89,,Never
+P0896,176,128,,37,,,Hypertension,Coronary Artery Disease,High Cholesterol,281,108,No,Former
+P0897,168,38,120/80,36.2,67,chest pain,High Cholesterol,Arrhythmia,High Blood Sugar,221,54,Yes,Current
+P0898,171,95,130/85,36.4,63,shortness of breath,,Stroke,Normal,212,79,,
+P0899,182,65,140/90,37.3,74,fatigue,Asthma,Hypertension,Low Iron,157,79,Yes,Former
+P0900,161,74,125/82,37.3,60,dizziness,Thyroid,,,224,88,No,Current
+P0901,173,69,135/88,36.8,,palpitations,Diabetes,Heart Disease,High Cholesterol,195,72,Yes,
+P0902,166,63,145/92,36.5,75,,Hypertension,Coronary Artery Disease,High Blood Sugar,208,83,No,Former
+P0903,170,61,,36.5,79,,High Cholesterol,Arrhythmia,Normal,,54,,Current
+P0904,182,74,120/80,36.8,70,chest pain,,Stroke,Low Iron,206,116,No,Never
+P0905,171,47,130/85,37.3,71,,Asthma,Hypertension,,183,97,Yes,Former
+P0906,170,81,140/90,37.5,77,fatigue,Thyroid,,High Cholesterol,169,48,,Current
+P0907,156,63,125/82,36.8,63,dizziness,Diabetes,Heart Disease,High Blood Sugar,229,74,Yes,Never
+P0908,177,53,135/88,36.4,71,palpitations,,Coronary Artery Disease,Normal,138,110,No,Former
+P0909,,63,145/92,37.1,66,nausea,High Cholesterol,Arrhythmia,,222,83,Yes,Current
+P0910,191,,,36.6,66,,,Stroke,,227,79,No,Never
+P0911,166,61,120/80,36.7,,chest pain,,Hypertension,High Cholesterol,164,97,Yes,Former
+P0912,172,75,130/85,37.7,88,shortness of breath,Thyroid,,High Blood Sugar,167,110,No,Current
+P0913,172,59,140/90,,68,fatigue,Diabetes,Heart Disease,Normal,191,56,Yes,Never
+P0914,185,81,125/82,37.1,86,dizziness,Hypertension,Coronary Artery Disease,Low Iron,211,116,No,Former
+P0915,169,80,135/88,36.4,85,palpitations,High Cholesterol,Arrhythmia,,193,75,Yes,Current
+P0916,172,97,145/92,37.1,62,nausea,,Stroke,High Cholesterol,217,99,No,Never
+P0917,176,67,,37.5,64,,Asthma,Hypertension,High Blood Sugar,270,98,Yes,Former
+P0918,171,80,120/80,,100,chest pain,Thyroid,,Normal,179,84,No,Current
+P0919,165,71,130/85,37.7,92,,Diabetes,Heart Disease,Low Iron,131,69,Yes,Never
+P0920,171,89,140/90,37.6,74,fatigue,,Coronary Artery Disease,,233,91,No,Former
+P0921,180,59,125/82,37.8,77,dizziness,High Cholesterol,Arrhythmia,High Cholesterol,267,148,Yes,
+P0922,159,81,135/88,37.2,68,palpitations,,Stroke,High Blood Sugar,215,59,No,
+P0923,171,67,145/92,37.3,79,nausea,Asthma,Hypertension,Normal,156,150,Yes,
+P0924,162,69,,37.7,67,,Thyroid,,Low Iron,195,,No,Current
+P0925,181,71,120/80,37.2,54,chest pain,Diabetes,Heart Disease,,155,101,Yes,Never
+P0926,154,73,130/85,36.7,61,shortness of breath,,Coronary Artery Disease,High Cholesterol,225,67,No,Former
+P0927,164,68,140/90,36.8,75,fatigue,High Cholesterol,Arrhythmia,High Blood Sugar,145,76,Yes,Current
+P0928,173,73,125/82,37.1,63,dizziness,,Stroke,Normal,187,84,No,Never
+P0929,185,93,135/88,36.4,74,palpitations,Asthma,Hypertension,Low Iron,159,68,Yes,Former
+P0930,,84,145/92,36.9,64,nausea,Thyroid,,,205,93,No,Current
+P0931,164,83,,37.5,67,,,,High Cholesterol,185,87,Yes,Never
+P0932,188,63,120/80,35.9,83,chest pain,Hypertension,Coronary Artery Disease,High Blood Sugar,207,155,No,Former
+P0933,155,56,130/85,37.8,77,shortness of breath,High Cholesterol,Arrhythmia,,200,65,Yes,Current
+P0934,148,84,140/90,37.6,74,fatigue,,,Low Iron,160,103,No,Never
+P0935,174,83,125/82,36.8,83,dizziness,Asthma,Hypertension,,225,107,Yes,Former
+P0936,164,92,135/88,37.3,79,palpitations,Thyroid,,High Cholesterol,198,,No,Current
+P0937,159,60,145/92,37,89,nausea,,Heart Disease,High Blood Sugar,160,120,Yes,Never
+P0938,177,66,,37.6,70,,Hypertension,Coronary Artery Disease,Normal,,88,No,Former
+P0939,172,45,120/80,37.5,70,chest pain,,,Low Iron,219,,Yes,Current
+P0940,164,64,130/85,36.3,61,shortness of breath,,Stroke,,193,119,No,Never
+P0941,157,84,140/90,37.3,70,fatigue,Asthma,Hypertension,High Cholesterol,256,66,Yes,Former
+P0942,178,63,125/82,36.9,84,dizziness,Thyroid,,High Blood Sugar,273,68,No,Current
+P0943,176,79,135/88,37,87,palpitations,Diabetes,Heart Disease,Normal,,120,Yes,Never
+P0944,169,67,145/92,36.6,84,nausea,Hypertension,Coronary Artery Disease,Low Iron,213,89,No,Former
+P0945,188,74,,37.9,57,,High Cholesterol,Arrhythmia,,160,127,Yes,Current
+P0946,159,52,120/80,37.5,85,chest pain,,Stroke,High Cholesterol,194,136,No,Never
+P0947,154,71,130/85,36.6,56,shortness of breath,Asthma,Hypertension,High Blood Sugar,192,80,Yes,Former
+P0948,163,25,140/90,36.3,83,fatigue,Thyroid,,Normal,207,123,No,Current
+P0949,169,67,125/82,36.8,71,dizziness,Diabetes,Heart Disease,Low Iron,,77,Yes,
+P0950,172,45,135/88,37.2,82,palpitations,Hypertension,Coronary Artery Disease,,222,166,No,Former
+P0951,167,88,,37.1,61,,,Arrhythmia,High Cholesterol,209,79,Yes,Current
+P0952,173,81,,37.6,86,,,Stroke,High Blood Sugar,151,130,No,Never
+P0953,157,77,120/80,37.4,60,chest pain,Asthma,Hypertension,Normal,162,125,Yes,Former
+P0954,184,92,,37.5,68,shortness of breath,Thyroid,,Low Iron,178,109,No,Current
+P0955,169,55,140/90,37.2,65,fatigue,Diabetes,Heart Disease,,188,79,,Never
+P0956,181,96,125/82,36.3,57,dizziness,Hypertension,Coronary Artery Disease,High Cholesterol,,95,No,Former
+P0957,,83,135/88,36.9,75,palpitations,High Cholesterol,Arrhythmia,High Blood Sugar,153,35,Yes,Current
+P0958,174,66,145/92,37.5,93,nausea,,Stroke,,185,106,No,Never
+P0959,175,87,,37,101,,Asthma,Hypertension,Low Iron,238,110,Yes,Former
+P0960,174,53,,37.3,75,chest pain,,,,188,104,No,Current
+P0961,176,57,130/85,36.8,86,shortness of breath,,Heart Disease,High Cholesterol,218,10,Yes,
+P0962,183,60,140/90,,77,fatigue,Hypertension,Coronary Artery Disease,High Blood Sugar,194,62,No,Former
+P0963,171,62,125/82,36.9,79,dizziness,High Cholesterol,,Normal,210,77,Yes,Current
+P0964,177,54,135/88,37.2,71,palpitations,,Stroke,Low Iron,190,108,No,
+P0965,169,88,145/92,36.7,76,nausea,Asthma,Hypertension,,226,,Yes,Former
+P0966,184,66,,36.9,80,,Thyroid,,High Cholesterol,138,,No,Current
+P0967,,75,120/80,36.5,69,,Diabetes,Heart Disease,High Blood Sugar,185,,Yes,Never
+P0968,188,61,130/85,37.6,74,shortness of breath,Hypertension,Coronary Artery Disease,,211,69,No,Former
+P0969,169,42,140/90,36.9,74,fatigue,High Cholesterol,Arrhythmia,Low Iron,221,118,Yes,Current
+P0970,155,74,125/82,37.7,83,,,,,259,114,No,Never
+P0971,171,41,135/88,37.8,64,palpitations,Asthma,Hypertension,High Cholesterol,184,111,Yes,
+P0972,163,68,145/92,37,74,nausea,Thyroid,,High Blood Sugar,259,94,No,
+P0973,178,49,,36.5,94,,Diabetes,Heart Disease,Normal,173,154,Yes,Never
+P0974,163,99,120/80,36,86,chest pain,Hypertension,Coronary Artery Disease,Low Iron,253,114,No,
+P0975,165,83,130/85,,88,shortness of breath,High Cholesterol,Arrhythmia,,232,70,Yes,Current
+P0976,151,71,,36.3,75,fatigue,,Stroke,High Cholesterol,163,107,No,Never
+P0977,165,88,125/82,37.7,78,dizziness,Asthma,Hypertension,,212,122,Yes,Former
+P0978,145,57,135/88,37.1,85,palpitations,Thyroid,,Normal,197,82,No,Current
+P0979,154,78,145/92,37.2,90,nausea,Diabetes,Heart Disease,Low Iron,225,132,Yes,Never
+P0980,177,72,,35.9,55,,Hypertension,,,191,111,No,Former
+P0981,,73,120/80,36.4,61,chest pain,High Cholesterol,Arrhythmia,High Cholesterol,187,29,Yes,Current
+P0982,174,89,130/85,37.4,88,shortness of breath,,Stroke,High Blood Sugar,254,108,No,Never
+P0983,160,80,140/90,37.1,72,fatigue,Asthma,Hypertension,Normal,196,87,,Former
+P0984,169,74,125/82,36.9,,dizziness,Thyroid,,Low Iron,233,116,No,Current
+P0985,169,45,135/88,37.3,62,,Diabetes,Heart Disease,,190,128,,Never
+P0986,158,55,145/92,37.8,69,nausea,Hypertension,Coronary Artery Disease,High Cholesterol,266,105,No,Former
+P0987,185,68,,36.9,60,,High Cholesterol,Arrhythmia,High Blood Sugar,172,149,Yes,
+P0988,178,,120/80,37,95,,,Stroke,Normal,175,94,No,Never
+P0989,167,53,130/85,37.1,74,shortness of breath,Asthma,,Low Iron,260,118,Yes,Former
+P0990,170,106,140/90,38.2,74,fatigue,Thyroid,,,182,124,No,Current
+P0991,172,92,125/82,36,80,dizziness,Diabetes,Heart Disease,High Cholesterol,264,97,Yes,Never
+P0992,,79,135/88,37.3,84,palpitations,Hypertension,Coronary Artery Disease,High Blood Sugar,235,123,,Former
+P0993,167,71,145/92,36.9,,nausea,High Cholesterol,,Normal,193,82,Yes,Current
+P0994,163,66,,37.3,85,,,Stroke,Low Iron,127,87,No,Never
+P0995,159,55,120/80,36.7,68,,Asthma,Hypertension,,199,60,Yes,Former
+P0996,167,71,130/85,37,72,shortness of breath,Thyroid,,High Cholesterol,204,,No,Current
+P0997,187,73,140/90,37.4,82,fatigue,,Heart Disease,High Blood Sugar,246,109,,Never
+P0998,176,51,125/82,38.6,69,dizziness,Hypertension,Coronary Artery Disease,Normal,263,135,No,Former
+P0999,164,75,135/88,37.4,74,palpitations,High Cholesterol,,Low Iron,172,123,Yes,Current
+P1000,175,67,145/92,36.6,78,nausea,,Stroke,,232,91,No,Never
+P1001,183,41,,36.8,82,,Asthma,Hypertension,High Cholesterol,230,,,Former
+P1002,179,57,120/80,36.8,57,chest pain,Thyroid,,,242,,No,Current
+P1003,170,63,130/85,36.1,82,shortness of breath,,Heart Disease,Normal,219,133,Yes,Never
+P1004,163,98,140/90,36.8,72,fatigue,Hypertension,Coronary Artery Disease,Low Iron,122,122,No,Former
+P1005,176,78,125/82,,82,dizziness,High Cholesterol,Arrhythmia,,,132,Yes,Current
+P1006,173,49,135/88,36.4,82,palpitations,,Stroke,High Cholesterol,153,93,No,Never
+P1007,178,77,145/92,37.5,91,nausea,,Hypertension,High Blood Sugar,191,86,Yes,Former
+P1008,176,46,,37.2,88,,Thyroid,,Normal,239,77,No,Current
+P1009,180,86,120/80,,88,,Diabetes,Heart Disease,Low Iron,212,98,Yes,Never
+P1010,164,62,,36.9,89,shortness of breath,Hypertension,Coronary Artery Disease,,245,,No,Former
+P1011,183,68,140/90,37.8,77,fatigue,High Cholesterol,Arrhythmia,High Cholesterol,213,106,Yes,Current
+P1012,171,89,125/82,37.4,75,dizziness,,Stroke,High Blood Sugar,148,96,No,Never
+P1013,190,50,135/88,37,83,palpitations,Asthma,Hypertension,Normal,99,95,Yes,Former
+P1014,,49,145/92,36.9,82,nausea,Thyroid,,Low Iron,205,76,No,Current
+P1015,187,61,,37,71,,Diabetes,Heart Disease,,191,128,Yes,Never
+P1016,171,,120/80,36.7,79,chest pain,Hypertension,Coronary Artery Disease,High Cholesterol,160,102,No,Former
+P1017,163,47,130/85,35.9,74,shortness of breath,High Cholesterol,Arrhythmia,High Blood Sugar,131,94,Yes,Current
+P1018,165,27,140/90,38,66,fatigue,,Stroke,,170,77,No,Never
+P1019,166,63,125/82,37.1,87,,Asthma,Hypertension,,192,60,Yes,Former
+P1020,174,78,135/88,37.2,75,palpitations,Thyroid,,,226,139,No,Current
+P1021,175,88,,37,95,nausea,Diabetes,Heart Disease,High Cholesterol,207,116,Yes,Never
+P1022,164,63,,36.6,58,,Hypertension,Coronary Artery Disease,High Blood Sugar,264,51,No,Former
+P1023,169,63,120/80,36.9,69,chest pain,High Cholesterol,Arrhythmia,Normal,158,122,Yes,Current
+P1024,191,87,130/85,36.2,75,shortness of breath,,Stroke,Low Iron,235,127,No,
+P1025,187,41,140/90,38.1,86,fatigue,Asthma,Hypertension,,201,103,Yes,Former
+P1026,174,64,125/82,36.4,78,dizziness,Thyroid,,High Cholesterol,,147,No,Current
+P1027,170,72,135/88,36.5,78,palpitations,Diabetes,Heart Disease,High Blood Sugar,182,,Yes,Never
+P1028,171,76,145/92,36.8,63,nausea,,Coronary Artery Disease,,242,57,No,Former
+P1029,176,62,,37.6,63,,High Cholesterol,Arrhythmia,Low Iron,211,110,,Current
+P1030,159,70,120/80,37,78,chest pain,,Stroke,,172,107,No,Never
+P1031,167,32,130/85,36.4,61,,Asthma,Hypertension,High Cholesterol,199,,Yes,Former
+P1032,153,60,140/90,37.6,69,fatigue,Thyroid,,High Blood Sugar,190,117,,Current
+P1033,173,76,,37.4,80,dizziness,Diabetes,Heart Disease,Normal,,49,Yes,Never
+P1034,,55,135/88,37.3,65,palpitations,,Coronary Artery Disease,Low Iron,152,129,No,Former
+P1035,165,70,145/92,37.4,91,nausea,High Cholesterol,Arrhythmia,,198,73,Yes,Current
+P1036,185,76,,38.2,87,,,Stroke,,215,70,No,Never
+P1037,157,64,120/80,38.1,59,chest pain,Asthma,Hypertension,High Blood Sugar,201,96,Yes,Former
+P1038,155,72,130/85,36.7,65,shortness of breath,Thyroid,,Normal,253,112,No,Current
+P1039,172,55,140/90,37.8,52,fatigue,Diabetes,Heart Disease,Low Iron,230,104,,Never
+P1040,180,66,125/82,37.2,,dizziness,Hypertension,Coronary Artery Disease,,199,77,No,Former
+P1041,186,79,135/88,37.2,,palpitations,High Cholesterol,Arrhythmia,High Cholesterol,208,84,Yes,Current
+P1042,165,72,145/92,36.2,70,nausea,,Stroke,High Blood Sugar,,66,No,Never
+P1043,180,61,,36.9,79,,Asthma,Hypertension,Normal,216,,Yes,Former
+P1044,169,,120/80,36.6,59,chest pain,Thyroid,,Low Iron,126,132,No,Current
+P1045,168,80,130/85,37.4,82,shortness of breath,Diabetes,Heart Disease,,187,99,Yes,Never
+P1046,178,39,140/90,37.5,69,fatigue,Hypertension,Coronary Artery Disease,High Cholesterol,,125,,Former
+P1047,176,,125/82,36,,dizziness,High Cholesterol,Arrhythmia,High Blood Sugar,251,143,Yes,Current
+P1048,154,64,135/88,37,74,palpitations,,Stroke,Normal,197,82,No,Never
+P1049,184,76,145/92,37.6,62,nausea,Asthma,Hypertension,Low Iron,192,94,Yes,Former
+P1050,183,87,,36.9,63,,Thyroid,,,235,165,No,Current
+P1051,163,49,120/80,37.4,84,chest pain,Diabetes,Heart Disease,High Cholesterol,216,,Yes,Never
+P1052,173,59,130/85,37.2,78,shortness of breath,Hypertension,Coronary Artery Disease,High Blood Sugar,154,49,No,Former
+P1053,174,,140/90,37.2,85,fatigue,High Cholesterol,Arrhythmia,Normal,197,111,Yes,Current
+P1054,172,58,125/82,36.9,78,dizziness,,Stroke,Low Iron,186,100,No,Never
+P1055,164,96,135/88,36.4,76,palpitations,Asthma,Hypertension,,130,124,Yes,Former
+P1056,163,57,145/92,36.4,57,,Thyroid,,High Cholesterol,172,77,No,Current
+P1057,169,61,,37.4,72,,Diabetes,Heart Disease,High Blood Sugar,192,74,Yes,Never
+P1058,181,73,120/80,37,74,chest pain,Hypertension,Coronary Artery Disease,Normal,195,79,,Former
+P1059,175,51,130/85,36.9,94,shortness of breath,High Cholesterol,Arrhythmia,Low Iron,140,82,Yes,
+P1060,166,64,140/90,36.8,81,fatigue,,Stroke,,246,124,No,Never
+P1061,177,74,125/82,36.8,90,dizziness,Asthma,,High Cholesterol,195,64,Yes,Former
+P1062,141,65,135/88,37.5,80,palpitations,Thyroid,,High Blood Sugar,201,81,No,Current
+P1063,,,145/92,36.8,67,nausea,Diabetes,Heart Disease,,216,46,Yes,Never
+P1064,152,62,,36.3,76,,Hypertension,Coronary Artery Disease,Low Iron,168,130,No,Former
+P1065,166,47,120/80,37.4,77,chest pain,High Cholesterol,Arrhythmia,,218,138,Yes,Current
+P1066,158,74,130/85,36.9,65,shortness of breath,,Stroke,High Cholesterol,185,90,No,Never
+P1067,157,96,140/90,37,71,fatigue,Asthma,Hypertension,High Blood Sugar,,91,Yes,
+P1068,181,70,125/82,37.8,72,dizziness,,,Normal,222,113,No,Current
+P1069,165,73,135/88,37,91,palpitations,,Heart Disease,Low Iron,259,144,Yes,
+P1070,173,80,145/92,37.1,54,nausea,,Coronary Artery Disease,,228,112,No,Former
+P1071,169,50,,36.4,87,,,Arrhythmia,High Cholesterol,236,79,Yes,Current
+P1072,174,95,120/80,36.9,65,chest pain,,Stroke,High Blood Sugar,179,51,,Never
+P1073,170,73,130/85,37.3,61,shortness of breath,Asthma,Hypertension,Normal,136,66,Yes,Former
+P1074,,94,140/90,36.2,86,fatigue,Thyroid,,Low Iron,259,102,No,Current
+P1075,179,59,125/82,37.1,82,dizziness,,Heart Disease,,282,80,Yes,Never
+P1076,165,97,135/88,37.1,87,palpitations,Hypertension,Coronary Artery Disease,High Cholesterol,261,105,No,Former
+P1077,154,81,145/92,37,83,nausea,High Cholesterol,Arrhythmia,High Blood Sugar,186,83,Yes,Current
+P1078,165,78,,37.5,,,,Stroke,Normal,153,68,,Never
+P1079,185,73,120/80,37.2,80,chest pain,,Hypertension,Low Iron,157,64,Yes,
+P1080,178,66,130/85,37.7,73,shortness of breath,Thyroid,,,132,146,,Current
+P1081,166,88,140/90,36.5,78,fatigue,Diabetes,Heart Disease,High Cholesterol,195,126,Yes,Never
+P1082,166,72,125/82,37.1,87,dizziness,Hypertension,Coronary Artery Disease,High Blood Sugar,264,151,No,Former
+P1083,166,40,135/88,37,,,High Cholesterol,Arrhythmia,Normal,194,,Yes,Current
+P1084,190,53,145/92,36.5,68,nausea,,,Low Iron,212,87,No,Never
+P1085,173,67,,37.5,71,,Asthma,Hypertension,,255,139,Yes,Former
+P1086,,74,120/80,38.2,53,chest pain,Thyroid,,High Cholesterol,183,99,No,Current
+P1087,180,69,130/85,37,76,shortness of breath,Diabetes,Heart Disease,High Blood Sugar,281,106,Yes,Never
+P1088,172,88,140/90,37.3,56,fatigue,,,Normal,279,98,No,Former
+P1089,167,40,125/82,37,75,dizziness,,Arrhythmia,Low Iron,,11,Yes,Current
+P1090,168,72,135/88,36.6,83,palpitations,,,,176,148,No,Never
+P1091,169,42,145/92,36.1,,nausea,Asthma,Hypertension,High Cholesterol,227,114,Yes,Former
+P1092,169,81,,36.6,91,,Thyroid,,High Blood Sugar,186,109,No,Current
+P1093,177,68,120/80,36.3,60,chest pain,Diabetes,Heart Disease,Normal,153,98,Yes,Never
+P1094,170,76,130/85,37.9,86,shortness of breath,Hypertension,Coronary Artery Disease,Low Iron,251,104,No,Former
+P1095,177,57,140/90,36.9,81,fatigue,High Cholesterol,Arrhythmia,,248,82,Yes,Current
+P1096,169,89,125/82,36.8,57,dizziness,,,High Cholesterol,206,118,No,Never
+P1097,170,85,135/88,,102,palpitations,Asthma,Hypertension,High Blood Sugar,149,60,,Former
+P1098,150,78,145/92,36.4,74,nausea,Thyroid,,Normal,150,105,,Current
+P1099,179,68,,36.6,66,,Diabetes,Heart Disease,Low Iron,204,116,Yes,Never
+P1100,173,78,120/80,37,60,chest pain,Hypertension,,,180,94,No,Former
+P1101,179,59,130/85,37.5,72,shortness of breath,,Arrhythmia,High Cholesterol,186,111,Yes,Current
+P1102,141,82,140/90,37.3,73,,,Stroke,High Blood Sugar,,,No,Never
+P1103,190,94,125/82,37.1,76,dizziness,Asthma,Hypertension,Normal,229,71,Yes,Former
+P1104,168,86,135/88,37,72,palpitations,Thyroid,,Low Iron,255,107,No,Current
+P1105,181,59,145/92,37.2,81,nausea,Diabetes,Heart Disease,,160,120,Yes,Never
+P1106,159,75,,37.1,71,,Hypertension,Coronary Artery Disease,High Cholesterol,186,43,No,Former
+P1107,176,50,120/80,36.5,55,chest pain,High Cholesterol,,High Blood Sugar,230,115,,Current
+P1108,159,78,130/85,37,73,shortness of breath,,Stroke,,217,83,No,Never
+P1109,163,76,140/90,36.5,,fatigue,Asthma,Hypertension,Low Iron,261,94,Yes,Former
+P1110,189,41,125/82,37,78,dizziness,,,,216,59,No,Current
+P1111,168,52,135/88,36.8,65,palpitations,Diabetes,Heart Disease,High Cholesterol,273,74,Yes,Never
+P1112,172,65,145/92,38.3,76,nausea,Hypertension,Coronary Artery Disease,High Blood Sugar,221,128,No,Former
+P1113,178,65,,37,88,,High Cholesterol,Arrhythmia,Normal,242,100,Yes,
+P1114,174,51,120/80,36.3,65,chest pain,,,Low Iron,187,88,No,Never
+P1115,171,75,130/85,36.9,85,shortness of breath,Asthma,Hypertension,,200,,Yes,Former
+P1116,173,73,140/90,37.3,,fatigue,Thyroid,,,236,114,No,Current
+P1117,194,67,125/82,37.8,92,dizziness,Diabetes,Heart Disease,High Blood Sugar,264,113,Yes,Never
+P1118,169,58,135/88,36.7,71,palpitations,,Coronary Artery Disease,Normal,229,97,,Former
+P1119,172,85,145/92,36.2,66,nausea,,Arrhythmia,Low Iron,196,132,Yes,Current
+P1120,180,94,,37.4,81,,,Stroke,,255,129,No,
+P1121,181,62,120/80,36.3,70,chest pain,Asthma,Hypertension,High Cholesterol,112,112,Yes,Former
+P1122,181,60,130/85,36.8,,shortness of breath,Thyroid,,High Blood Sugar,143,101,No,
+P1123,176,77,140/90,36.9,,fatigue,Diabetes,Heart Disease,Normal,,119,Yes,Never
+P1124,158,64,,37,74,dizziness,Hypertension,Coronary Artery Disease,Low Iron,200,,No,Former
+P1125,186,67,135/88,37.3,88,palpitations,High Cholesterol,Arrhythmia,,224,131,Yes,Current
+P1126,158,81,145/92,36.7,55,nausea,,Stroke,High Cholesterol,202,126,No,Never
+P1127,173,41,,,75,,Asthma,Hypertension,High Blood Sugar,222,69,,Former
+P1128,162,89,120/80,37,81,chest pain,Thyroid,,Normal,,67,No,
+P1129,169,71,130/85,37.1,76,shortness of breath,Diabetes,Heart Disease,Low Iron,222,78,Yes,Never
+P1130,173,,140/90,37,88,fatigue,,Coronary Artery Disease,,239,129,No,Former
+P1131,173,68,125/82,37.2,74,dizziness,High Cholesterol,Arrhythmia,High Cholesterol,248,52,Yes,Current
+P1132,174,69,135/88,37.4,,palpitations,,Stroke,High Blood Sugar,280,111,No,Never
+P1133,186,44,145/92,37.2,80,nausea,Asthma,Hypertension,Normal,209,110,Yes,Former
+P1134,174,92,,,75,,,,Low Iron,210,134,No,Current
+P1135,167,70,120/80,36.2,71,chest pain,Diabetes,Heart Disease,,,105,Yes,Never
+P1136,179,76,130/85,37,80,shortness of breath,Hypertension,Coronary Artery Disease,High Cholesterol,178,59,No,Former
+P1137,181,84,140/90,37.2,68,fatigue,High Cholesterol,Arrhythmia,High Blood Sugar,192,71,Yes,Current
+P1138,157,54,125/82,37.4,68,dizziness,,Stroke,Normal,242,64,No,
+P1139,175,77,135/88,36.7,69,palpitations,Asthma,Hypertension,Low Iron,175,83,Yes,Former
+P1140,177,65,145/92,36.7,88,nausea,Thyroid,,,231,94,No,Current
+P1141,167,82,,36.7,42,,Diabetes,Heart Disease,,199,65,Yes,Never
+P1142,183,,,37.3,78,chest pain,Hypertension,Coronary Artery Disease,High Blood Sugar,192,144,No,Former
+P1143,168,68,130/85,37.5,75,shortness of breath,High Cholesterol,Arrhythmia,Normal,209,60,Yes,Current
+P1144,171,60,140/90,36.8,58,fatigue,,Stroke,Low Iron,184,140,No,Never
+P1145,168,76,125/82,37.5,78,dizziness,Asthma,Hypertension,,182,135,Yes,Former
+P1146,170,77,135/88,37.1,79,palpitations,Thyroid,,High Cholesterol,131,126,No,Current
+P1147,159,59,145/92,36.9,80,nausea,Diabetes,Heart Disease,High Blood Sugar,190,79,Yes,Never
+P1148,155,,,36.9,48,,Hypertension,,Normal,180,110,No,Former
+P1149,185,68,120/80,,88,chest pain,High Cholesterol,Arrhythmia,Low Iron,,61,Yes,Current
+P1150,161,56,130/85,37.2,67,,,Stroke,,216,127,No,
+P1151,160,82,140/90,38.1,81,fatigue,Asthma,Hypertension,High Cholesterol,226,97,Yes,
+P1152,148,64,125/82,36.6,82,dizziness,Thyroid,,High Blood Sugar,209,87,No,Current
+P1153,163,26,135/88,37.3,66,palpitations,Diabetes,Heart Disease,Normal,239,63,Yes,Never
+P1154,156,64,145/92,36.7,81,nausea,Hypertension,Coronary Artery Disease,Low Iron,223,25,No,Former
+P1155,186,54,,36.6,71,,High Cholesterol,Arrhythmia,,188,68,Yes,Current
+P1156,180,45,120/80,37,54,chest pain,,Stroke,High Cholesterol,181,133,No,Never
+P1157,163,51,130/85,37.1,86,shortness of breath,Asthma,Hypertension,High Blood Sugar,212,87,Yes,Former
+P1158,192,71,140/90,38.5,67,fatigue,Thyroid,,Normal,222,94,No,Current
+P1159,179,89,125/82,36.9,66,,Diabetes,Heart Disease,,255,119,Yes,Never
+P1160,166,74,135/88,36.4,70,palpitations,Hypertension,Coronary Artery Disease,,247,154,,Former
+P1161,145,60,145/92,37.1,77,nausea,High Cholesterol,Arrhythmia,,178,139,Yes,Current
+P1162,192,76,,36,74,,,Stroke,High Blood Sugar,195,70,No,Never
+P1163,156,63,120/80,37,80,chest pain,Asthma,Hypertension,Normal,226,41,Yes,Former
+P1164,153,59,130/85,,61,shortness of breath,Thyroid,,Low Iron,242,170,No,Current
+P1165,180,52,140/90,37.4,67,fatigue,Diabetes,Heart Disease,,237,168,,Never
+P1166,194,43,125/82,37.5,,dizziness,Hypertension,Coronary Artery Disease,High Cholesterol,197,105,No,Former
+P1167,183,64,135/88,36.7,93,palpitations,High Cholesterol,Arrhythmia,High Blood Sugar,149,61,Yes,Current
+P1168,175,72,145/92,36.9,73,nausea,,Stroke,Normal,160,128,No,Never
+P1169,175,68,,36.6,85,,Asthma,Hypertension,Low Iron,210,96,Yes,Former
+P1170,178,63,120/80,36.4,75,chest pain,Thyroid,,,213,96,No,
+P1171,177,55,130/85,37.2,70,shortness of breath,Diabetes,,,156,126,Yes,Never
+P1172,172,79,140/90,36.4,72,fatigue,Hypertension,Coronary Artery Disease,High Blood Sugar,,110,No,Former
+P1173,171,50,125/82,36.8,73,dizziness,High Cholesterol,Arrhythmia,Normal,225,64,Yes,Current
+P1174,169,81,135/88,36.5,81,palpitations,,Stroke,Low Iron,153,90,No,Never
+P1175,162,54,145/92,,88,nausea,Asthma,,,244,119,Yes,Former
+P1176,167,58,,37.9,78,,Thyroid,,High Cholesterol,184,115,No,Current
+P1177,153,47,,36.3,86,chest pain,Diabetes,Heart Disease,High Blood Sugar,250,107,Yes,Never
+P1178,169,62,130/85,36.1,65,shortness of breath,Hypertension,Coronary Artery Disease,Normal,178,128,No,Former
+P1179,160,84,140/90,36.9,70,fatigue,High Cholesterol,Arrhythmia,Low Iron,158,,,Current
+P1180,158,77,125/82,37,67,dizziness,,Stroke,,181,105,No,
+P1181,171,84,135/88,37.1,78,palpitations,Asthma,Hypertension,High Cholesterol,196,-1,Yes,Former
+P1182,183,77,145/92,36.8,71,nausea,Thyroid,,High Blood Sugar,184,86,No,Current
+P1183,179,53,,36.9,,,Diabetes,Heart Disease,Normal,191,122,Yes,Never
+P1184,154,,120/80,37.2,65,chest pain,Hypertension,Coronary Artery Disease,Low Iron,213,88,No,Former
+P1185,,58,130/85,37.5,,shortness of breath,High Cholesterol,Arrhythmia,,,86,Yes,Current
+P1186,179,89,140/90,36,81,fatigue,,Stroke,High Cholesterol,197,68,No,Never
+P1187,160,52,125/82,36.8,54,dizziness,Asthma,,High Blood Sugar,131,130,Yes,Former
+P1188,167,83,135/88,37.1,96,palpitations,Thyroid,,Normal,215,116,No,Current
+P1189,175,83,145/92,36.5,72,nausea,Diabetes,Heart Disease,,196,124,,Never
+P1190,160,97,,37.9,54,,Hypertension,Coronary Artery Disease,,264,48,No,Former
+P1191,171,63,120/80,36.7,76,chest pain,High Cholesterol,Arrhythmia,High Cholesterol,162,95,Yes,Current
+P1192,156,80,130/85,37,75,shortness of breath,,Stroke,High Blood Sugar,127,91,No,Never
+P1193,163,104,140/90,37.3,74,fatigue,Asthma,Hypertension,Normal,224,91,Yes,Former
+P1194,,60,125/82,36.7,84,dizziness,Thyroid,,Low Iron,213,81,No,Current
+P1195,154,46,135/88,36.1,82,palpitations,Diabetes,Heart Disease,,159,89,Yes,Never
+P1196,174,41,145/92,36.8,77,nausea,Hypertension,Coronary Artery Disease,,138,125,No,Former
+P1197,169,80,,37.5,79,,High Cholesterol,Arrhythmia,High Blood Sugar,261,42,Yes,Current
+P1198,175,41,120/80,36.8,73,chest pain,,Stroke,,256,153,No,Never
+P1199,172,64,130/85,36.6,92,shortness of breath,Asthma,Hypertension,Low Iron,100,114,Yes,Former
+P1200,,76,140/90,37.5,60,fatigue,Thyroid,,,,98,No,Current
+P1201,171,72,125/82,36.8,76,dizziness,Diabetes,Heart Disease,High Cholesterol,266,127,Yes,Never
+P1202,165,76,135/88,36.7,75,palpitations,Hypertension,Coronary Artery Disease,High Blood Sugar,180,56,No,Former
+P1203,171,73,145/92,37.1,83,nausea,High Cholesterol,Arrhythmia,Normal,180,80,Yes,Current
+P1204,175,89,,37.4,66,,,Stroke,Low Iron,188,96,No,Never
+P1205,170,,120/80,38.2,57,chest pain,Asthma,Hypertension,,155,140,Yes,Former
+P1206,170,59,130/85,37.4,76,shortness of breath,Thyroid,,High Cholesterol,131,98,No,Current
+P1207,162,58,,37.6,77,fatigue,Diabetes,Heart Disease,High Blood Sugar,242,113,,Never
+P1208,163,82,125/82,36.7,89,dizziness,Hypertension,Coronary Artery Disease,Normal,126,82,No,Former
+P1209,155,83,135/88,36.5,62,palpitations,High Cholesterol,Arrhythmia,Low Iron,209,114,Yes,Current
+P1210,187,76,145/92,37,86,nausea,,Stroke,,235,150,No,Never
+P1211,157,87,,37.1,98,,Asthma,Hypertension,High Cholesterol,141,129,Yes,Former
+P1212,163,52,120/80,36.5,71,chest pain,Thyroid,,High Blood Sugar,163,97,No,Current
+P1213,162,95,130/85,,62,shortness of breath,Diabetes,Heart Disease,Normal,248,120,Yes,Never
+P1214,178,92,140/90,37.2,70,fatigue,,,Low Iron,221,117,,Former
+P1215,167,81,125/82,37.2,75,dizziness,,Arrhythmia,,,115,Yes,Current
+P1216,182,96,135/88,37.3,80,palpitations,,Stroke,High Cholesterol,248,133,No,Never
+P1217,163,45,145/92,37.1,69,nausea,Asthma,Hypertension,,248,133,Yes,Former
+P1218,172,62,,36.7,90,,,,Normal,210,96,No,Current
+P1219,161,58,120/80,36.7,63,chest pain,,Heart Disease,Low Iron,163,,Yes,Never
+P1220,191,80,130/85,36.4,,shortness of breath,Hypertension,Coronary Artery Disease,,183,88,No,Former
+P1221,158,54,140/90,37.9,86,fatigue,High Cholesterol,Arrhythmia,High Cholesterol,211,72,Yes,Current
+P1222,173,81,125/82,37,52,dizziness,,Stroke,High Blood Sugar,,91,,Never
+P1223,176,90,135/88,36.9,,palpitations,Asthma,Hypertension,Normal,237,97,,Former
+P1224,174,80,145/92,36.5,106,,Thyroid,,Low Iron,138,50,No,Current
+P1225,168,74,,38.5,74,,Diabetes,Heart Disease,,140,125,,Never
+P1226,168,55,120/80,36.5,63,chest pain,,Coronary Artery Disease,High Cholesterol,207,16,No,Former
+P1227,170,57,130/85,36.8,74,shortness of breath,High Cholesterol,Arrhythmia,High Blood Sugar,180,181,Yes,Current
+P1228,168,88,140/90,,74,fatigue,,Stroke,Normal,,145,No,Never
+P1229,179,81,,37.3,76,dizziness,,Hypertension,Low Iron,129,92,Yes,Former
+P1230,192,69,135/88,37.5,81,palpitations,Thyroid,,,200,100,No,Current
+P1231,164,63,145/92,37.9,64,nausea,,Heart Disease,High Cholesterol,197,109,Yes,Never
+P1232,156,39,,37.3,91,,Hypertension,,High Blood Sugar,226,82,No,Former
+P1233,169,53,120/80,36.5,77,chest pain,,Arrhythmia,Normal,202,105,Yes,Current
+P1234,195,98,130/85,36.9,82,shortness of breath,,Stroke,Low Iron,194,95,No,Never
+P1235,161,,140/90,37.2,68,fatigue,Asthma,Hypertension,,247,97,Yes,Former
+P1236,186,72,125/82,38,87,dizziness,Thyroid,,High Cholesterol,147,105,No,Current
+P1237,186,85,135/88,36.3,72,palpitations,Diabetes,,High Blood Sugar,221,,Yes,Never
+P1238,164,51,145/92,37.6,,nausea,Hypertension,Coronary Artery Disease,Normal,133,101,No,Former
+P1239,175,72,,,65,,High Cholesterol,Arrhythmia,Low Iron,166,104,Yes,Current
+P1240,186,84,120/80,37.4,65,chest pain,,Stroke,,151,103,No,Never
+P1241,,70,130/85,36.9,81,shortness of breath,Asthma,Hypertension,High Cholesterol,231,93,Yes,Former
+P1242,167,113,140/90,36.6,70,fatigue,Thyroid,,High Blood Sugar,197,134,No,Current
+P1243,164,44,125/82,37.4,66,dizziness,Diabetes,Heart Disease,Normal,199,89,Yes,Never
+P1244,159,85,135/88,,68,palpitations,Hypertension,Coronary Artery Disease,Low Iron,155,106,No,
+P1245,163,67,145/92,37.5,81,nausea,High Cholesterol,Arrhythmia,,188,138,Yes,Current
+P1246,157,81,,37,68,,,,,169,97,No,Never
+P1247,170,76,120/80,36.7,73,,Asthma,Hypertension,High Blood Sugar,215,106,Yes,Former
+P1248,162,59,130/85,36.2,75,shortness of breath,Thyroid,,Normal,160,97,No,Current
+P1249,172,73,140/90,37.4,55,fatigue,,Heart Disease,,253,137,Yes,Never
+P1250,154,42,125/82,37.2,60,dizziness,Hypertension,Coronary Artery Disease,,132,92,No,Former
+P1251,173,79,135/88,36.5,78,palpitations,,Arrhythmia,High Cholesterol,167,138,Yes,Current
+P1252,178,74,145/92,36.7,67,nausea,,,,267,96,No,Never
+P1253,150,79,,36.8,85,,Asthma,,Normal,182,74,Yes,Former
+P1254,173,85,120/80,36.3,84,chest pain,Thyroid,,Low Iron,147,120,No,Current
+P1255,182,75,130/85,36.6,82,,Diabetes,Heart Disease,,208,90,,Never
+P1256,157,72,140/90,36.4,93,fatigue,Hypertension,Coronary Artery Disease,High Cholesterol,180,118,No,Former
+P1257,186,56,125/82,36.8,74,dizziness,High Cholesterol,Arrhythmia,High Blood Sugar,166,18,Yes,Current
+P1258,174,59,135/88,36.6,81,,,Stroke,Normal,156,,No,Never
+P1259,162,87,145/92,36.2,69,nausea,Asthma,Hypertension,Low Iron,310,86,Yes,Former
+P1260,169,91,,38,99,,Thyroid,,,189,68,No,Current
+P1261,175,66,120/80,37.6,94,chest pain,Diabetes,Heart Disease,High Cholesterol,122,83,Yes,Never
+P1262,,70,130/85,36.6,75,shortness of breath,,,High Blood Sugar,,82,No,Former
+P1263,175,56,140/90,37.1,78,fatigue,,Arrhythmia,Normal,224,98,Yes,Current
+P1264,160,87,125/82,37.2,88,dizziness,,Stroke,,169,58,No,Never
+P1265,171,79,135/88,37.6,73,palpitations,Asthma,Hypertension,,162,109,Yes,Former
+P1266,155,99,145/92,36.6,68,nausea,Thyroid,,High Cholesterol,,140,,
+P1267,168,56,,37.5,83,,Diabetes,Heart Disease,High Blood Sugar,190,108,Yes,Never
+P1268,160,64,120/80,36.7,75,chest pain,,Coronary Artery Disease,Normal,122,124,No,Former
+P1269,162,73,130/85,36.3,76,shortness of breath,High Cholesterol,Arrhythmia,Low Iron,271,132,Yes,Current
+P1270,182,79,140/90,,66,fatigue,,Stroke,,182,137,No,Never
+P1271,180,66,125/82,37.6,57,dizziness,Asthma,Hypertension,High Cholesterol,259,156,Yes,Former
+P1272,176,56,135/88,,77,,Thyroid,,High Blood Sugar,,85,No,Current
+P1273,159,83,145/92,36.4,84,nausea,Diabetes,Heart Disease,Normal,159,78,Yes,Never
+P1274,166,80,,37.3,72,,Hypertension,Coronary Artery Disease,Low Iron,241,123,No,Former
+P1275,182,56,120/80,36.8,89,chest pain,High Cholesterol,,,173,121,Yes,Current
+P1276,171,90,,37.4,67,shortness of breath,,Stroke,High Cholesterol,125,123,No,Never
+P1277,193,87,140/90,36.3,64,fatigue,Asthma,Hypertension,High Blood Sugar,183,156,Yes,Former
+P1278,173,72,125/82,36.4,74,dizziness,Thyroid,,Normal,215,100,No,Current
+P1279,171,71,135/88,36.6,74,,Diabetes,Heart Disease,Low Iron,181,112,Yes,Never
+P1280,166,,145/92,37,82,,Hypertension,Coronary Artery Disease,,187,70,No,Former
+P1281,171,57,,36.7,67,,High Cholesterol,Arrhythmia,,245,164,Yes,Current
+P1282,,70,120/80,37.3,88,chest pain,,Stroke,High Blood Sugar,204,,No,Never
+P1283,177,37,130/85,37.5,94,shortness of breath,,Hypertension,Normal,166,90,Yes,
+P1284,179,83,140/90,37.3,74,fatigue,Thyroid,,Low Iron,228,89,No,Current
+P1285,162,46,125/82,37.8,87,,Diabetes,,,207,80,Yes,Never
+P1286,156,92,135/88,37.2,64,palpitations,Hypertension,Coronary Artery Disease,High Cholesterol,99,78,No,Former
+P1287,151,65,145/92,36.4,85,nausea,High Cholesterol,Arrhythmia,High Blood Sugar,217,84,Yes,Current
+P1288,175,66,,37.7,85,,,Stroke,Normal,215,59,No,Never
+P1289,158,60,120/80,36.7,83,chest pain,Asthma,Hypertension,Low Iron,200,76,Yes,Former
+P1290,148,65,130/85,37.5,74,shortness of breath,Thyroid,,,235,158,No,Current
+P1291,173,91,140/90,37.8,,fatigue,Diabetes,Heart Disease,High Cholesterol,173,122,Yes,Never
+P1292,194,32,125/82,37.2,68,dizziness,Hypertension,Coronary Artery Disease,High Blood Sugar,213,127,No,Former
+P1293,169,,135/88,36.3,68,palpitations,High Cholesterol,Arrhythmia,Normal,137,135,Yes,Current
+P1294,178,75,145/92,36.5,65,nausea,,Stroke,Low Iron,216,155,No,Never
+P1295,170,51,,37.7,76,,Asthma,Hypertension,,278,46,Yes,Former
+P1296,169,53,120/80,36.9,70,chest pain,Thyroid,,High Cholesterol,160,63,,Current
+P1297,179,95,130/85,37,66,shortness of breath,Diabetes,Heart Disease,High Blood Sugar,169,75,Yes,Never
+P1298,167,55,140/90,37.4,64,fatigue,Hypertension,Coronary Artery Disease,Normal,171,,No,Former
+P1299,172,52,125/82,37.3,67,dizziness,High Cholesterol,Arrhythmia,Low Iron,205,,Yes,Current
+P1300,173,87,135/88,37.1,86,palpitations,,Stroke,,157,86,No,Never
+P1301,163,75,145/92,36.9,68,nausea,Asthma,,High Cholesterol,216,106,Yes,Former
+P1302,179,55,,36.8,69,,Thyroid,,High Blood Sugar,233,101,No,Current
+P1303,168,73,120/80,37.4,70,chest pain,,Heart Disease,Normal,221,78,Yes,
+P1304,162,54,130/85,37.3,78,shortness of breath,Hypertension,Coronary Artery Disease,Low Iron,129,34,No,Former
+P1305,175,86,140/90,36.9,79,fatigue,High Cholesterol,Arrhythmia,,239,70,Yes,Current
+P1306,161,85,125/82,37.5,44,,,Stroke,High Cholesterol,237,83,No,Never
+P1307,170,77,135/88,36.9,85,palpitations,Asthma,Hypertension,High Blood Sugar,233,92,Yes,Former
+P1308,169,75,145/92,36.6,89,nausea,,,Normal,214,66,No,Current
+P1309,180,96,,36.6,64,,Diabetes,Heart Disease,Low Iron,208,85,,Never
+P1310,174,69,120/80,36.5,65,chest pain,Hypertension,Coronary Artery Disease,,241,66,No,
+P1311,169,52,130/85,36.9,70,,High Cholesterol,Arrhythmia,High Cholesterol,276,96,Yes,Current
+P1312,178,76,140/90,37.6,67,fatigue,,Stroke,High Blood Sugar,161,67,No,Never
+P1313,183,101,125/82,36.6,77,dizziness,,,Normal,243,74,Yes,
+P1314,175,54,135/88,37.1,55,palpitations,,,Low Iron,196,60,No,Current
+P1315,170,64,,36.7,63,nausea,Diabetes,Heart Disease,,194,95,Yes,Never
+P1316,156,76,,36.9,90,,Hypertension,Coronary Artery Disease,High Cholesterol,138,74,No,Former
+P1317,,69,,36.2,65,,High Cholesterol,Arrhythmia,High Blood Sugar,188,127,Yes,Current
+P1318,166,55,130/85,36.9,87,shortness of breath,,Stroke,Normal,160,112,No,Never
+P1319,163,86,140/90,36.9,78,,Asthma,,Low Iron,,,Yes,Former
+P1320,168,104,125/82,37.3,56,dizziness,Thyroid,,,156,76,No,Current
+P1321,170,,135/88,37.1,81,palpitations,Diabetes,Heart Disease,High Cholesterol,182,111,Yes,Never
+P1322,175,56,145/92,36.4,73,nausea,Hypertension,Coronary Artery Disease,High Blood Sugar,183,120,No,Former
+P1323,169,46,,37.5,70,,High Cholesterol,Arrhythmia,Normal,203,104,Yes,Current
+P1324,174,73,120/80,37.1,,chest pain,,Stroke,Low Iron,135,148,No,Never
+P1325,170,86,,37.1,,shortness of breath,Asthma,Hypertension,,142,113,Yes,Former
+P1326,150,77,140/90,37,82,fatigue,Thyroid,,,214,127,No,Current
+P1327,160,69,125/82,36.7,86,dizziness,Diabetes,Heart Disease,High Blood Sugar,168,104,Yes,Never
+P1328,168,61,135/88,37.1,79,palpitations,Hypertension,Coronary Artery Disease,Normal,242,120,No,Former
+P1329,157,53,145/92,37.2,61,nausea,High Cholesterol,Arrhythmia,Low Iron,209,76,Yes,Current
+P1330,175,,,36.1,70,,,Stroke,,224,86,No,Never
+P1331,185,83,120/80,36.7,104,,Asthma,Hypertension,High Cholesterol,256,110,Yes,Former
+P1332,182,46,130/85,36.9,82,shortness of breath,Thyroid,,High Blood Sugar,187,110,No,Current
+P1333,167,93,140/90,37.1,98,fatigue,Diabetes,Heart Disease,Normal,177,115,Yes,Never
+P1334,184,78,125/82,37.6,88,dizziness,Hypertension,Coronary Artery Disease,Low Iron,234,133,No,Former
+P1335,171,90,135/88,36.6,77,palpitations,High Cholesterol,Arrhythmia,,220,57,Yes,Current
+P1336,166,49,,,78,nausea,,Stroke,High Cholesterol,192,,No,Never
+P1337,163,49,,36.7,74,,Asthma,Hypertension,High Blood Sugar,255,106,Yes,Former
+P1338,166,67,120/80,36.6,,chest pain,Thyroid,,Normal,191,78,No,Current
+P1339,166,77,130/85,36.8,75,shortness of breath,,Heart Disease,Low Iron,201,201,Yes,Never
+P1340,171,96,140/90,,87,fatigue,Hypertension,Coronary Artery Disease,,200,115,No,Former
+P1341,171,80,,36.5,69,dizziness,High Cholesterol,Arrhythmia,High Cholesterol,162,,Yes,Current
+P1342,170,66,135/88,37.2,79,palpitations,,Stroke,High Blood Sugar,203,84,No,Never
+P1343,174,54,145/92,36.1,83,nausea,Asthma,Hypertension,Normal,255,85,Yes,Former
+P1344,181,88,,36.7,65,,Thyroid,,Low Iron,217,100,No,Current
+P1345,179,55,120/80,36.8,70,chest pain,Diabetes,Heart Disease,,201,103,Yes,Never
+P1346,155,94,130/85,37.8,64,shortness of breath,Hypertension,Coronary Artery Disease,High Cholesterol,193,86,No,Former
+P1347,144,65,140/90,36.9,66,fatigue,,Arrhythmia,High Blood Sugar,213,91,Yes,Current
+P1348,179,93,125/82,35.9,,dizziness,,Stroke,Normal,229,140,No,Never
+P1349,156,80,,36,,palpitations,Asthma,,Low Iron,224,141,Yes,Former
+P1350,167,67,145/92,37,89,nausea,Thyroid,,,186,107,No,Current
+P1351,158,62,,37.3,65,,Diabetes,,High Cholesterol,212,59,Yes,Never
+P1352,151,64,120/80,37.2,76,chest pain,Hypertension,Coronary Artery Disease,High Blood Sugar,,,No,Former
+P1353,175,76,130/85,37.1,69,shortness of breath,High Cholesterol,Arrhythmia,Normal,159,146,Yes,Current
+P1354,177,71,140/90,37.6,86,fatigue,,Stroke,Low Iron,206,141,No,Never
+P1355,164,61,125/82,36.7,88,dizziness,,Hypertension,,,122,Yes,Former
+P1356,144,67,135/88,,83,palpitations,Thyroid,,High Cholesterol,219,142,No,Current
+P1357,164,71,145/92,36.2,78,nausea,,Heart Disease,High Blood Sugar,,101,Yes,Never
+P1358,173,38,,36.5,72,,Hypertension,Coronary Artery Disease,Normal,229,118,No,Former
+P1359,155,76,120/80,36.1,63,chest pain,High Cholesterol,,Low Iron,184,79,Yes,Current
+P1360,171,55,130/85,36.9,94,shortness of breath,,Stroke,,212,108,No,Never
+P1361,169,52,140/90,37,67,,,Hypertension,High Cholesterol,256,,Yes,Former
+P1362,175,44,125/82,37.1,81,dizziness,Thyroid,,High Blood Sugar,256,82,No,
+P1363,171,43,135/88,37,85,palpitations,Diabetes,Heart Disease,Normal,198,74,Yes,Never
+P1364,160,49,145/92,36.5,69,nausea,,Coronary Artery Disease,Low Iron,205,102,No,Former
+P1365,181,59,,36.9,85,,,Arrhythmia,,244,93,Yes,Current
+P1366,168,,120/80,36.3,82,chest pain,,Stroke,High Cholesterol,139,119,No,Never
+P1367,169,62,130/85,37.7,92,,Asthma,Hypertension,High Blood Sugar,187,86,Yes,Former
+P1368,160,72,140/90,36.8,70,fatigue,Thyroid,,Normal,253,151,No,Current
+P1369,165,76,125/82,36.8,62,,Diabetes,Heart Disease,Low Iron,239,61,Yes,
+P1370,161,71,135/88,37.8,69,palpitations,Hypertension,Coronary Artery Disease,,214,137,No,Former
+P1371,168,68,145/92,36.4,77,,High Cholesterol,Arrhythmia,High Cholesterol,139,77,Yes,Current
+P1372,187,52,,36.4,75,,,Stroke,High Blood Sugar,198,46,No,Never
+P1373,156,91,120/80,36.5,71,chest pain,Asthma,Hypertension,Normal,,,Yes,Former
+P1374,,97,130/85,37,55,shortness of breath,Thyroid,,Low Iron,213,92,No,Current
+P1375,,44,140/90,37.2,79,fatigue,Diabetes,Heart Disease,,167,66,Yes,Never
+P1376,167,54,125/82,37.4,94,dizziness,Hypertension,Coronary Artery Disease,High Cholesterol,158,49,,Former
+P1377,163,65,135/88,38.3,79,palpitations,High Cholesterol,Arrhythmia,High Blood Sugar,117,99,Yes,Current
+P1378,180,55,145/92,35.9,81,nausea,,Stroke,Normal,248,129,No,Never
+P1379,163,77,,37.3,80,,Asthma,Hypertension,Low Iron,184,117,Yes,Former
+P1380,188,59,120/80,,78,chest pain,Thyroid,,,206,101,No,Current
+P1381,176,102,130/85,36.7,84,shortness of breath,Diabetes,Heart Disease,High Cholesterol,199,114,Yes,Never
+P1382,165,87,140/90,36.7,78,fatigue,Hypertension,Coronary Artery Disease,High Blood Sugar,,99,No,Former
+P1383,191,73,125/82,36.5,71,dizziness,High Cholesterol,Arrhythmia,Normal,149,57,,
+P1384,163,85,135/88,37.8,67,palpitations,,,Low Iron,159,57,No,Never
+P1385,177,86,145/92,37.4,72,nausea,Asthma,Hypertension,,171,93,,Former
+P1386,172,61,,37,78,,Thyroid,,High Cholesterol,214,95,No,Current
+P1387,183,57,120/80,37.7,71,chest pain,Diabetes,Heart Disease,High Blood Sugar,168,125,Yes,Never
+P1388,185,71,130/85,36.2,78,shortness of breath,,Coronary Artery Disease,Normal,269,122,No,Former
+P1389,170,82,140/90,36.3,79,fatigue,High Cholesterol,Arrhythmia,Low Iron,241,118,Yes,Current
+P1390,162,72,125/82,35.9,83,dizziness,,Stroke,,232,91,No,Never
+P1391,174,46,135/88,36.7,87,palpitations,Asthma,Hypertension,High Cholesterol,195,58,Yes,Former
+P1392,,57,145/92,37.1,75,,Thyroid,,High Blood Sugar,260,112,No,Current
+P1393,190,68,,37.1,,,Diabetes,Heart Disease,Normal,191,115,Yes,Never
+P1394,171,68,120/80,37.1,71,chest pain,Hypertension,Coronary Artery Disease,Low Iron,198,28,No,Former
+P1395,166,99,130/85,,75,shortness of breath,High Cholesterol,,,206,74,Yes,Current
+P1396,171,49,140/90,37.4,56,fatigue,,Stroke,High Cholesterol,228,79,No,Never
+P1397,156,77,125/82,37.1,88,dizziness,Asthma,Hypertension,High Blood Sugar,225,103,Yes,Former
+P1398,160,92,135/88,37.4,76,palpitations,,,Normal,180,,,Current
+P1399,182,104,145/92,36.1,78,nausea,Diabetes,Heart Disease,Low Iron,178,98,Yes,Never
+P1400,163,63,,37.2,88,,Hypertension,Coronary Artery Disease,,225,,No,Former
+P1401,159,77,120/80,36.4,,chest pain,High Cholesterol,Arrhythmia,High Cholesterol,228,95,Yes,Current
+P1402,175,78,130/85,36.8,80,shortness of breath,,Stroke,High Blood Sugar,184,78,No,Never
+P1403,181,72,140/90,37.3,73,fatigue,Asthma,Hypertension,Normal,136,80,Yes,Former
+P1404,177,68,125/82,37,73,dizziness,Thyroid,,Low Iron,191,67,No,Current
+P1405,179,76,135/88,36.6,67,palpitations,Diabetes,Heart Disease,,224,111,Yes,Never
+P1406,162,32,145/92,37,,nausea,Hypertension,Coronary Artery Disease,High Cholesterol,272,117,No,Former
+P1407,155,80,,36.2,71,,High Cholesterol,Arrhythmia,High Blood Sugar,152,76,Yes,Current
+P1408,185,71,120/80,37.6,81,chest pain,,Stroke,Normal,182,145,No,Never
+P1409,166,66,130/85,36.9,56,shortness of breath,,Hypertension,Low Iron,184,90,Yes,Former
+P1410,167,100,140/90,37.6,86,fatigue,Thyroid,,,254,145,No,Current
+P1411,183,59,,36.7,85,dizziness,Diabetes,Heart Disease,High Cholesterol,,80,Yes,Never
+P1412,175,63,135/88,36.7,,palpitations,Hypertension,Coronary Artery Disease,High Blood Sugar,163,39,No,Former
+P1413,174,99,145/92,36.6,72,,High Cholesterol,Arrhythmia,Normal,222,112,Yes,Current
+P1414,191,57,,37.4,79,,,Stroke,Low Iron,183,107,No,Never
+P1415,163,61,120/80,36.6,97,chest pain,,,,151,101,Yes,Former
+P1416,179,67,130/85,37.3,57,,Thyroid,,High Cholesterol,164,80,No,Current
+P1417,170,82,140/90,,82,fatigue,Diabetes,Heart Disease,High Blood Sugar,269,,Yes,Never
+P1418,172,73,125/82,36,65,dizziness,Hypertension,Coronary Artery Disease,Normal,215,84,No,Former
+P1419,185,50,135/88,36.7,74,palpitations,High Cholesterol,Arrhythmia,Low Iron,204,90,Yes,Current
+P1420,,62,145/92,36.4,72,nausea,,,,190,125,No,Never
+P1421,175,60,,37,70,,,Hypertension,High Cholesterol,211,105,Yes,Former
+P1422,180,,120/80,36.4,74,chest pain,Thyroid,,High Blood Sugar,,118,No,Current
+P1423,166,76,130/85,37.5,63,shortness of breath,Diabetes,,Normal,211,93,Yes,Never
+P1424,161,76,140/90,37,85,fatigue,,Coronary Artery Disease,Low Iron,204,89,No,Former
+P1425,159,43,,36.9,57,dizziness,High Cholesterol,Arrhythmia,,234,65,,Current
+P1426,150,85,,37.3,80,palpitations,,Stroke,High Cholesterol,200,88,No,Never
+P1427,190,73,145/92,37.5,71,nausea,Asthma,Hypertension,High Blood Sugar,160,0,Yes,Former
+P1428,158,90,,37,63,,Thyroid,,Normal,175,82,No,Current
+P1429,167,,120/80,36.6,77,chest pain,Diabetes,Heart Disease,Low Iron,120,97,Yes,Never
+P1430,167,86,130/85,36.1,59,,Hypertension,Coronary Artery Disease,,281,116,No,Former
+P1431,173,76,140/90,36.7,75,fatigue,High Cholesterol,Arrhythmia,High Cholesterol,234,91,Yes,Current
+P1432,178,90,125/82,,60,dizziness,,Stroke,High Blood Sugar,166,110,No,Never
+P1433,178,77,135/88,,79,palpitations,Asthma,Hypertension,,188,34,Yes,Former
+P1434,164,68,145/92,36.8,65,nausea,Thyroid,,Low Iron,174,98,No,Current
+P1435,168,104,,37.3,70,,Diabetes,Heart Disease,,261,49,Yes,Never
+P1436,172,83,120/80,36.7,77,chest pain,Hypertension,Coronary Artery Disease,,143,63,No,Former
+P1437,167,78,130/85,37,67,shortness of breath,High Cholesterol,Arrhythmia,High Blood Sugar,204,94,Yes,Current
+P1438,,50,140/90,37.6,74,fatigue,,Stroke,Normal,195,138,No,Never
+P1439,174,,125/82,37.2,59,dizziness,Asthma,Hypertension,Low Iron,233,111,Yes,Former
+P1440,177,74,135/88,37,81,palpitations,Thyroid,,,195,100,No,Current
+P1441,176,72,145/92,36.7,92,,Diabetes,Heart Disease,High Cholesterol,129,99,Yes,Never
+P1442,181,60,,36.7,102,,Hypertension,Coronary Artery Disease,High Blood Sugar,189,78,No,Former
+P1443,171,72,120/80,36.6,75,chest pain,High Cholesterol,Arrhythmia,Normal,161,83,Yes,Current
+P1444,157,93,130/85,36.7,82,shortness of breath,,Stroke,Low Iron,203,112,No,Never
+P1445,173,80,140/90,37.4,57,,Asthma,Hypertension,,257,58,Yes,Former
+P1446,163,52,125/82,36.9,90,dizziness,,,High Cholesterol,130,117,No,Current
+P1447,,68,135/88,36.3,82,palpitations,Diabetes,Heart Disease,High Blood Sugar,167,88,Yes,Never
+P1448,175,57,145/92,,70,nausea,Hypertension,Coronary Artery Disease,Normal,177,124,No,Former
+P1449,182,64,,37.2,87,,High Cholesterol,Arrhythmia,Low Iron,184,128,Yes,Current
+P1450,170,63,120/80,36.3,72,chest pain,,Stroke,,229,,No,
+P1451,173,62,130/85,36.8,70,shortness of breath,Asthma,Hypertension,High Cholesterol,193,82,Yes,Former
+P1452,187,51,140/90,37.1,79,fatigue,Thyroid,,High Blood Sugar,216,74,No,Current
+P1453,172,68,125/82,37.9,64,dizziness,Diabetes,Heart Disease,Normal,174,45,Yes,Never
+P1454,196,61,135/88,36.4,,palpitations,Hypertension,Coronary Artery Disease,Low Iron,209,69,No,Former
+P1455,175,26,145/92,37.5,64,nausea,High Cholesterol,Arrhythmia,,231,173,Yes,Current
+P1456,152,100,,37.7,64,,,Stroke,High Cholesterol,170,118,No,Never
+P1457,177,86,120/80,36.7,65,chest pain,Asthma,Hypertension,High Blood Sugar,231,157,Yes,Former
+P1458,173,64,130/85,36.9,82,shortness of breath,Thyroid,,Normal,202,124,No,Current
+P1459,182,70,140/90,36.5,68,fatigue,Diabetes,Heart Disease,Low Iron,241,77,Yes,Never
+P1460,176,52,125/82,36.9,61,dizziness,Hypertension,Coronary Artery Disease,,191,88,No,Former
+P1461,168,95,135/88,37,68,palpitations,High Cholesterol,Arrhythmia,High Cholesterol,215,117,Yes,Current
+P1462,157,98,145/92,37.3,74,nausea,,Stroke,High Blood Sugar,198,113,No,Never
+P1463,167,72,,37.5,63,,Asthma,Hypertension,Normal,196,82,Yes,Former
+P1464,161,85,120/80,36.6,63,chest pain,Thyroid,,Low Iron,210,54,No,Current
+P1465,164,72,130/85,36,96,shortness of breath,Diabetes,Heart Disease,,221,198,Yes,Never
+P1466,175,49,140/90,,66,fatigue,Hypertension,Coronary Artery Disease,High Cholesterol,150,95,No,Former
+P1467,186,63,125/82,37.1,71,dizziness,High Cholesterol,Arrhythmia,High Blood Sugar,257,90,Yes,Current
+P1468,173,71,135/88,37.1,71,palpitations,,Stroke,Normal,125,103,No,Never
+P1469,158,63,145/92,36.8,70,nausea,Asthma,Hypertension,Low Iron,172,92,Yes,Former
+P1470,174,,,37.1,81,,Thyroid,,,196,103,No,Current
+P1471,181,68,120/80,37.8,84,chest pain,Diabetes,Heart Disease,High Cholesterol,216,138,Yes,Never
+P1472,163,68,130/85,37.2,,shortness of breath,Hypertension,Coronary Artery Disease,High Blood Sugar,263,96,No,Former
+P1473,168,70,140/90,36.8,62,fatigue,High Cholesterol,Arrhythmia,Normal,125,65,Yes,Current
+P1474,170,54,125/82,36.7,87,,,Stroke,Low Iron,179,95,No,Never
+P1475,162,59,135/88,36.9,74,palpitations,Asthma,Hypertension,,114,86,Yes,Former
+P1476,176,50,145/92,,92,nausea,Thyroid,,High Cholesterol,201,142,No,Current
+P1477,168,84,,36.9,52,,Diabetes,Heart Disease,High Blood Sugar,,135,,Never
+P1478,174,38,120/80,37,76,chest pain,Hypertension,Coronary Artery Disease,Normal,263,103,No,Former
+P1479,161,87,130/85,36.8,94,shortness of breath,High Cholesterol,Arrhythmia,Low Iron,204,61,Yes,Current
+P1480,165,90,,37.5,71,fatigue,,,,241,63,No,Never
+P1481,177,65,125/82,38,72,dizziness,Asthma,Hypertension,High Cholesterol,,100,Yes,Former
+P1482,166,30,135/88,,77,palpitations,Thyroid,,High Blood Sugar,182,110,No,Current
+P1483,,64,145/92,37,69,nausea,Diabetes,Heart Disease,Normal,143,88,Yes,Never
+P1484,166,69,,37,71,,Hypertension,Coronary Artery Disease,Low Iron,211,85,No,Former
+P1485,172,54,120/80,35.8,71,chest pain,High Cholesterol,Arrhythmia,,140,82,Yes,Current
+P1486,179,62,130/85,37.4,68,shortness of breath,,Stroke,High Cholesterol,251,99,No,Never
+P1487,155,92,140/90,37.1,87,fatigue,Asthma,Hypertension,,193,28,Yes,
+P1488,152,79,125/82,37.2,79,dizziness,Thyroid,,Normal,247,66,No,Current
+P1489,154,56,135/88,36.6,77,palpitations,Diabetes,Heart Disease,Low Iron,180,81,Yes,Never
+P1490,182,46,145/92,36.8,83,nausea,Hypertension,Coronary Artery Disease,,210,136,No,Former
+P1491,164,65,,36.8,72,,High Cholesterol,Arrhythmia,High Cholesterol,208,75,Yes,Current
+P1492,195,66,120/80,37.5,67,chest pain,,Stroke,High Blood Sugar,198,105,No,Never
+P1493,164,77,130/85,36.8,68,shortness of breath,Asthma,Hypertension,Normal,182,106,Yes,Former
+P1494,171,61,140/90,38,75,fatigue,,,Low Iron,215,138,No,Current
+P1495,185,77,125/82,37.2,64,dizziness,Diabetes,Heart Disease,,162,137,Yes,Never
+P1496,190,99,135/88,36.4,69,palpitations,Hypertension,Coronary Artery Disease,High Cholesterol,151,98,No,Former
+P1497,,82,145/92,36.9,69,nausea,High Cholesterol,Arrhythmia,High Blood Sugar,249,85,Yes,Current
+P1498,182,,,36.7,96,,,Stroke,,229,80,No,Never
+P1499,180,67,120/80,35.9,47,chest pain,Asthma,Hypertension,Low Iron,202,92,Yes,Former
+P1500,175,64,130/85,37.8,73,shortness of breath,,,,266,86,No,Current
+P1501,177,87,,37.4,92,fatigue,Diabetes,Heart Disease,High Cholesterol,189,116,Yes,Never
+P1502,164,,125/82,37.3,76,,Hypertension,Coronary Artery Disease,High Blood Sugar,252,112,No,Former
+P1503,161,70,135/88,37.1,82,palpitations,High Cholesterol,,Normal,207,117,Yes,Current
+P1504,169,70,145/92,36.3,75,nausea,,Stroke,Low Iron,159,137,No,Never
+P1505,168,62,,36.8,68,,Asthma,Hypertension,,273,155,Yes,Former
+P1506,165,49,120/80,37.4,52,chest pain,Thyroid,,High Cholesterol,239,103,No,Current
+P1507,176,74,130/85,36.5,77,shortness of breath,Diabetes,Heart Disease,High Blood Sugar,195,132,Yes,Never
+P1508,179,69,140/90,,67,fatigue,Hypertension,Coronary Artery Disease,Normal,229,89,No,Former
+P1509,170,77,125/82,36.9,66,dizziness,,Arrhythmia,Low Iron,183,135,Yes,Current
+P1510,184,61,135/88,36.9,70,palpitations,,Stroke,,233,131,No,Never
+P1511,158,88,145/92,37.1,92,nausea,Asthma,Hypertension,High Cholesterol,104,130,Yes,Former
+P1512,168,56,,37.4,99,,Thyroid,,High Blood Sugar,159,102,No,Current
+P1513,162,95,120/80,37.3,77,chest pain,Diabetes,,Normal,239,79,Yes,Never
+P1514,151,43,130/85,37.1,70,shortness of breath,Hypertension,Coronary Artery Disease,Low Iron,190,,No,Former
+P1515,169,76,,37.6,63,fatigue,High Cholesterol,Arrhythmia,,208,98,Yes,Current
+P1516,168,77,125/82,36.2,79,dizziness,,Stroke,High Cholesterol,146,,No,Never
+P1517,185,58,135/88,37.3,92,palpitations,Asthma,Hypertension,High Blood Sugar,273,90,Yes,Former
+P1518,176,,145/92,37.3,72,nausea,Thyroid,,Normal,247,123,No,Current
+P1519,159,89,,36.4,51,,Diabetes,Heart Disease,,191,125,Yes,Never
+P1520,188,36,120/80,,81,chest pain,,Coronary Artery Disease,,183,91,No,Former
+P1521,182,77,130/85,36.6,84,shortness of breath,High Cholesterol,Arrhythmia,High Cholesterol,241,139,,Current
+P1522,175,32,140/90,36.7,,fatigue,,Stroke,High Blood Sugar,279,12,No,Never
+P1523,167,55,125/82,37.4,76,dizziness,Asthma,Hypertension,Normal,238,63,Yes,Former
+P1524,160,94,135/88,36.7,,palpitations,Thyroid,,Low Iron,286,72,No,Current
+P1525,166,61,145/92,36.6,,nausea,Diabetes,Heart Disease,,163,75,Yes,Never
+P1526,180,52,,36.7,67,,Hypertension,,High Cholesterol,167,110,No,Former
+P1527,188,67,120/80,37.6,85,chest pain,High Cholesterol,Arrhythmia,High Blood Sugar,152,108,Yes,Current
+P1528,185,,130/85,37,70,shortness of breath,,Stroke,Normal,217,111,No,Never
+P1529,165,42,140/90,36.9,60,fatigue,Asthma,Hypertension,Low Iron,207,117,,Former
+P1530,158,54,125/82,36.9,54,dizziness,Thyroid,,,193,71,No,Current
+P1531,171,92,135/88,37.6,87,,Diabetes,Heart Disease,High Cholesterol,232,63,Yes,Never
+P1532,152,97,145/92,36.6,81,nausea,Hypertension,Coronary Artery Disease,High Blood Sugar,249,111,No,Former
+P1533,173,68,,37.7,75,,High Cholesterol,Arrhythmia,Normal,138,81,Yes,Current
+P1534,168,51,120/80,37.1,70,chest pain,,,Low Iron,176,52,No,Never
+P1535,165,101,130/85,36.9,69,shortness of breath,Asthma,Hypertension,,232,129,Yes,Former
+P1536,154,93,140/90,,64,fatigue,Thyroid,,High Cholesterol,181,141,No,Current
+P1537,175,80,125/82,36.5,70,dizziness,Diabetes,Heart Disease,High Blood Sugar,168,146,Yes,Never
+P1538,164,57,135/88,36.8,53,,Hypertension,Coronary Artery Disease,Normal,240,105,No,Former
+P1539,,69,145/92,36.4,67,nausea,High Cholesterol,Arrhythmia,Low Iron,148,118,Yes,Current
+P1540,141,67,,37.5,71,,,Stroke,,187,141,No,Never
+P1541,169,74,120/80,37.8,81,chest pain,Asthma,Hypertension,,213,80,Yes,Former
+P1542,187,91,130/85,37.8,74,shortness of breath,Thyroid,,High Blood Sugar,177,133,No,Current
+P1543,186,83,140/90,,82,fatigue,Diabetes,Heart Disease,Normal,231,108,Yes,Never
+P1544,,53,125/82,36.9,88,dizziness,Hypertension,Coronary Artery Disease,Low Iron,177,127,No,Former
+P1545,163,,135/88,36.8,85,palpitations,High Cholesterol,Arrhythmia,,256,105,Yes,Current
+P1546,174,74,145/92,36.2,79,nausea,,Stroke,High Cholesterol,194,138,No,Never
+P1547,160,80,,38,75,,Asthma,Hypertension,High Blood Sugar,226,106,Yes,Former
+P1548,173,91,120/80,37.2,65,chest pain,Thyroid,,Normal,229,55,No,Current
+P1549,177,53,130/85,36.8,82,shortness of breath,Diabetes,Heart Disease,Low Iron,174,143,,Never
+P1550,182,69,140/90,37.7,91,fatigue,Hypertension,Coronary Artery Disease,,117,71,,Former
+P1551,168,62,125/82,36.5,78,,High Cholesterol,Arrhythmia,High Cholesterol,214,137,Yes,Current
+P1552,167,46,135/88,37.2,94,,,,High Blood Sugar,202,97,No,Never
+P1553,161,75,145/92,36.9,59,nausea,Asthma,Hypertension,Normal,222,,Yes,Former
+P1554,161,107,,37.3,63,,Thyroid,,Low Iron,190,134,,Current
+P1555,167,42,,37,83,chest pain,Diabetes,Heart Disease,,182,112,Yes,Never
+P1556,173,69,130/85,36.3,77,shortness of breath,,,High Cholesterol,280,115,No,Former
+P1557,179,79,140/90,37,88,fatigue,High Cholesterol,Arrhythmia,High Blood Sugar,141,112,Yes,Current
+P1558,161,71,125/82,,74,,,Stroke,Normal,229,39,,Never
+P1559,184,68,135/88,37,66,palpitations,Asthma,Hypertension,Low Iron,177,103,Yes,
+P1560,167,50,145/92,37.4,72,nausea,Thyroid,,,,66,No,Current
+P1561,169,73,,36.5,59,,Diabetes,Heart Disease,High Cholesterol,187,105,Yes,Never
+P1562,162,58,120/80,37,63,chest pain,Hypertension,,High Blood Sugar,167,65,No,Former
+P1563,145,37,130/85,36.7,84,shortness of breath,,Arrhythmia,Normal,222,64,Yes,Current
+P1564,178,87,140/90,37.4,83,fatigue,,Stroke,Low Iron,255,148,No,Never
+P1565,177,84,125/82,37,78,dizziness,Asthma,Hypertension,,218,132,Yes,Former
+P1566,167,70,135/88,37.3,57,palpitations,Thyroid,,High Cholesterol,204,99,No,Current
+P1567,170,73,145/92,37.5,71,nausea,Diabetes,,High Blood Sugar,160,105,Yes,Never
+P1568,175,86,,37.3,,,Hypertension,Coronary Artery Disease,Normal,220,92,No,Former
+P1569,154,73,120/80,37.1,86,chest pain,High Cholesterol,,Low Iron,286,117,Yes,Current
+P1570,164,83,130/85,36.5,69,shortness of breath,,Stroke,,184,79,No,Never
+P1571,177,65,140/90,37,64,fatigue,,Hypertension,High Cholesterol,184,129,,Former
+P1572,157,89,125/82,36.7,75,dizziness,Thyroid,,High Blood Sugar,177,92,No,Current
+P1573,172,74,135/88,36.8,68,palpitations,Diabetes,,Normal,180,,Yes,
+P1574,156,72,145/92,36.8,89,nausea,Hypertension,Coronary Artery Disease,Low Iron,90,100,No,Former
+P1575,174,50,,36.5,67,,High Cholesterol,,,216,82,Yes,Current
+P1576,169,74,120/80,36,61,chest pain,,,High Cholesterol,,109,No,Never
+P1577,153,57,130/85,36.7,53,shortness of breath,Asthma,Hypertension,High Blood Sugar,135,,Yes,Former
+P1578,181,60,140/90,37.1,74,,Thyroid,,Normal,230,114,No,Current
+P1579,162,57,125/82,36.3,69,dizziness,Diabetes,,Low Iron,156,136,Yes,Never
+P1580,161,54,135/88,37,60,palpitations,Hypertension,Coronary Artery Disease,,186,78,No,Former
+P1581,172,101,145/92,38,86,nausea,High Cholesterol,Arrhythmia,High Cholesterol,258,96,Yes,Current
+P1582,181,89,,37.5,81,,,Stroke,High Blood Sugar,143,113,No,Never
+P1583,,98,120/80,37.8,74,chest pain,Asthma,Hypertension,Normal,138,86,Yes,Former
+P1584,170,51,130/85,37.2,88,shortness of breath,Thyroid,,Low Iron,210,113,No,Current
+P1585,174,71,140/90,37.6,,fatigue,Diabetes,Heart Disease,,245,,Yes,Never
+P1586,176,50,125/82,36.6,66,dizziness,Hypertension,Coronary Artery Disease,High Cholesterol,137,,No,Former
+P1587,171,59,135/88,36.7,64,palpitations,High Cholesterol,Arrhythmia,High Blood Sugar,216,81,Yes,Current
+P1588,166,56,145/92,35.6,83,nausea,,Stroke,Normal,223,71,No,Never
+P1589,161,88,,37.6,78,,Asthma,Hypertension,Low Iron,117,90,Yes,Former
+P1590,170,64,120/80,37.8,76,chest pain,Thyroid,,,231,,No,Current
+P1591,159,86,130/85,,66,shortness of breath,Diabetes,Heart Disease,High Cholesterol,235,,Yes,Never
+P1592,140,79,140/90,36.9,81,fatigue,Hypertension,Coronary Artery Disease,High Blood Sugar,187,65,No,Former
+P1593,174,104,125/82,36.6,67,dizziness,High Cholesterol,Arrhythmia,Normal,250,169,Yes,Current
+P1594,179,47,135/88,37.2,73,palpitations,,Stroke,Low Iron,245,138,No,Never
+P1595,146,88,145/92,37.6,89,nausea,Asthma,Hypertension,,204,100,Yes,Former
+P1596,159,87,,36.1,68,,Thyroid,,High Cholesterol,181,126,No,Current
+P1597,176,55,120/80,37.2,59,chest pain,Diabetes,Heart Disease,High Blood Sugar,161,50,Yes,Never
+P1598,190,85,130/85,36.9,64,shortness of breath,Hypertension,Coronary Artery Disease,,198,175,No,Former
+P1599,170,75,140/90,37.1,84,fatigue,High Cholesterol,Arrhythmia,Low Iron,222,82,Yes,Current
+P1600,162,66,125/82,37.2,77,dizziness,,Stroke,,187,96,No,Never
+P1601,168,57,,,73,palpitations,Asthma,Hypertension,High Cholesterol,112,44,Yes,Former
+P1602,183,59,145/92,36.9,69,nausea,Thyroid,,High Blood Sugar,250,114,No,Current
+P1603,163,100,,36.9,,,,Heart Disease,Normal,207,66,Yes,Never
+P1604,162,70,120/80,37.5,66,chest pain,Hypertension,Coronary Artery Disease,Low Iron,184,103,No,Former
+P1605,165,81,,37.2,78,shortness of breath,High Cholesterol,Arrhythmia,,234,83,Yes,Current
+P1606,160,58,140/90,37.1,67,fatigue,,Stroke,High Cholesterol,260,67,No,Never
+P1607,171,58,125/82,36.4,66,dizziness,Asthma,Hypertension,High Blood Sugar,87,75,Yes,Former
+P1608,186,86,135/88,36.8,68,palpitations,Thyroid,,Normal,217,106,No,Current
+P1609,173,49,145/92,37.4,71,nausea,Diabetes,Heart Disease,Low Iron,,61,Yes,Never
+P1610,167,63,,37,74,,Hypertension,,,219,77,No,Former
+P1611,167,70,120/80,37.3,77,,High Cholesterol,Arrhythmia,,205,119,Yes,Current
+P1612,154,71,130/85,37.9,38,shortness of breath,,,High Blood Sugar,225,178,No,
+P1613,178,67,140/90,37.5,66,fatigue,Asthma,Hypertension,Normal,180,114,Yes,Former
+P1614,169,75,125/82,37,71,dizziness,Thyroid,,Low Iron,125,72,No,Current
+P1615,168,80,135/88,36.7,,palpitations,Diabetes,Heart Disease,,181,88,,Never
+P1616,201,81,145/92,35.7,64,nausea,Hypertension,,High Cholesterol,216,100,No,Former
+P1617,172,55,,36.9,76,,High Cholesterol,Arrhythmia,High Blood Sugar,240,89,Yes,Current
+P1618,162,65,120/80,36.8,89,chest pain,,Stroke,Normal,153,127,No,Never
+P1619,165,87,130/85,37.2,61,shortness of breath,Asthma,Hypertension,Low Iron,241,106,Yes,Former
+P1620,181,83,140/90,,78,fatigue,Thyroid,,,174,127,No,Current
+P1621,171,49,125/82,36.8,66,dizziness,Diabetes,Heart Disease,High Cholesterol,214,90,Yes,Never
+P1622,155,75,135/88,36.1,69,palpitations,Hypertension,Coronary Artery Disease,High Blood Sugar,179,139,No,Former
+P1623,179,40,145/92,36.5,66,,High Cholesterol,Arrhythmia,,207,,Yes,Current
+P1624,163,70,,37.2,67,,,Stroke,Low Iron,235,70,No,Never
+P1625,,98,,37.9,102,chest pain,Asthma,Hypertension,,150,165,Yes,
+P1626,180,55,130/85,37,83,shortness of breath,Thyroid,,,172,45,No,Current
+P1627,165,57,140/90,37.2,86,fatigue,Diabetes,Heart Disease,High Blood Sugar,207,77,Yes,Never
+P1628,182,81,125/82,37.5,79,dizziness,Hypertension,Coronary Artery Disease,Normal,296,81,No,Former
+P1629,170,46,,36.6,58,palpitations,High Cholesterol,Arrhythmia,Low Iron,165,175,Yes,Current
+P1630,178,60,145/92,37.2,78,nausea,,Stroke,,281,154,,Never
+P1631,174,78,,36.6,85,,Asthma,Hypertension,High Cholesterol,280,144,Yes,Former
+P1632,161,60,120/80,37.4,66,chest pain,Thyroid,,High Blood Sugar,196,90,No,Current
+P1633,163,66,130/85,37.1,84,shortness of breath,Diabetes,Heart Disease,Normal,188,172,Yes,Never
+P1634,180,81,140/90,37.1,82,,,Coronary Artery Disease,Low Iron,172,111,No,Former
+P1635,166,76,125/82,36.6,93,dizziness,,Arrhythmia,,197,129,Yes,Current
+P1636,165,74,135/88,37.4,70,palpitations,,Stroke,High Cholesterol,143,105,No,Never
+P1637,160,64,145/92,38,64,nausea,Asthma,Hypertension,High Blood Sugar,196,98,Yes,Former
+P1638,174,75,,36.5,71,,Thyroid,,Normal,,92,No,Current
+P1639,190,68,120/80,36.8,89,chest pain,Diabetes,Heart Disease,Low Iron,175,,Yes,Never
+P1640,159,76,130/85,37.1,56,shortness of breath,Hypertension,,,190,118,No,Former
+P1641,170,62,140/90,37.4,54,fatigue,High Cholesterol,Arrhythmia,High Cholesterol,131,111,Yes,Current
+P1642,184,67,125/82,36.7,75,dizziness,,Stroke,High Blood Sugar,214,99,No,Never
+P1643,,55,135/88,35.6,70,palpitations,Asthma,Hypertension,Normal,210,145,Yes,Former
+P1644,174,69,,37.7,75,nausea,Thyroid,,Low Iron,202,,No,Current
+P1645,159,57,,37.4,84,,Diabetes,Heart Disease,,191,115,Yes,Never
+P1646,174,53,120/80,36.1,69,chest pain,Hypertension,Coronary Artery Disease,High Cholesterol,188,121,No,Former
+P1647,168,73,130/85,36.7,56,shortness of breath,,Arrhythmia,High Blood Sugar,220,134,Yes,
+P1648,179,73,140/90,37.8,95,fatigue,,Stroke,Normal,198,98,No,Never
+P1649,181,81,125/82,37.7,65,dizziness,Asthma,Hypertension,Low Iron,212,106,Yes,Former
+P1650,195,63,135/88,37.5,64,palpitations,Thyroid,,,208,129,No,Current
+P1651,175,76,145/92,36.9,86,nausea,Diabetes,Heart Disease,High Cholesterol,244,144,Yes,Never
+P1652,173,78,,37,71,,,Coronary Artery Disease,High Blood Sugar,227,90,No,Former
+P1653,171,76,120/80,36.9,74,chest pain,High Cholesterol,Arrhythmia,Normal,207,108,Yes,Current
+P1654,166,57,130/85,37.6,79,shortness of breath,,Stroke,Low Iron,260,150,No,Never
+P1655,173,72,140/90,36.6,85,fatigue,Asthma,Hypertension,,216,36,Yes,Former
+P1656,167,75,125/82,,71,dizziness,Thyroid,,High Cholesterol,,79,No,Current
+P1657,171,70,135/88,37.5,90,palpitations,Diabetes,Heart Disease,High Blood Sugar,224,143,Yes,Never
+P1658,,38,145/92,37,53,nausea,Hypertension,Coronary Artery Disease,Normal,126,132,No,Former
+P1659,159,72,,37.7,82,,High Cholesterol,Arrhythmia,Low Iron,252,115,Yes,Current
+P1660,181,103,120/80,36.7,66,chest pain,,Stroke,,205,86,No,Never
+P1661,183,64,130/85,37,88,shortness of breath,Asthma,Hypertension,High Cholesterol,197,73,Yes,Former
+P1662,168,59,140/90,36.5,76,fatigue,Thyroid,,High Blood Sugar,211,82,No,Current
+P1663,148,75,125/82,37,68,dizziness,,Heart Disease,Normal,186,146,Yes,Never
+P1664,163,74,135/88,36.3,81,palpitations,Hypertension,Coronary Artery Disease,Low Iron,209,81,No,Former
+P1665,182,87,145/92,36.8,83,nausea,High Cholesterol,Arrhythmia,,176,103,Yes,Current
+P1666,169,51,,36.3,81,,,Stroke,High Cholesterol,,77,No,
+P1667,160,80,,37.3,64,chest pain,Asthma,Hypertension,High Blood Sugar,195,125,Yes,Former
+P1668,164,78,130/85,37.4,70,shortness of breath,,,Normal,184,83,No,Current
+P1669,178,67,140/90,36.1,74,fatigue,Diabetes,Heart Disease,Low Iron,163,97,Yes,Never
+P1670,175,75,125/82,37.7,74,dizziness,Hypertension,,,210,49,No,Former
+P1671,167,85,135/88,38.2,82,palpitations,,,High Cholesterol,207,,Yes,Current
+P1672,166,83,145/92,37,54,nausea,,Stroke,High Blood Sugar,215,100,No,Never
+P1673,166,52,,36.7,78,,Asthma,,Normal,158,,Yes,Former
+P1674,160,82,120/80,38.4,72,chest pain,Thyroid,,Low Iron,135,,No,Current
+P1675,186,69,130/85,36.3,66,shortness of breath,Diabetes,Heart Disease,,225,38,Yes,Never
+P1676,166,71,140/90,37,67,fatigue,Hypertension,Coronary Artery Disease,High Cholesterol,259,75,No,Former
+P1677,182,71,125/82,37.1,72,dizziness,High Cholesterol,Arrhythmia,High Blood Sugar,158,100,Yes,Current
+P1678,185,67,135/88,37.7,38,palpitations,,Stroke,Normal,,,No,Never
+P1679,179,87,145/92,37.2,67,nausea,,Hypertension,Low Iron,211,66,Yes,Former
+P1680,165,68,,36.8,66,,,,,199,71,No,Current
+P1681,174,53,120/80,36.5,80,chest pain,Diabetes,Heart Disease,High Cholesterol,184,70,Yes,Never
+P1682,169,64,130/85,36.8,66,,Hypertension,Coronary Artery Disease,High Blood Sugar,144,91,No,Former
+P1683,160,72,140/90,36.5,72,fatigue,High Cholesterol,Arrhythmia,,239,158,Yes,Current
+P1684,173,88,125/82,37,90,dizziness,,Stroke,Low Iron,168,102,No,Never
+P1685,158,79,135/88,36.7,84,palpitations,Asthma,Hypertension,,168,135,Yes,Former
+P1686,181,57,,36.3,84,,Thyroid,,High Cholesterol,239,115,No,Current
+P1687,165,107,,37.6,70,,,,High Blood Sugar,124,133,Yes,Never
+P1688,172,73,120/80,36.8,80,chest pain,,Coronary Artery Disease,Normal,139,16,No,
+P1689,172,89,130/85,36.4,72,shortness of breath,High Cholesterol,Arrhythmia,Low Iron,199,90,Yes,Current
+P1690,167,67,140/90,36.9,73,fatigue,,Stroke,,211,139,No,Never
+P1691,175,78,125/82,37,79,dizziness,Asthma,Hypertension,High Cholesterol,219,82,Yes,Former
+P1692,165,82,135/88,36.1,69,palpitations,,,High Blood Sugar,,152,No,Current
+P1693,178,88,145/92,37.2,89,nausea,Diabetes,Heart Disease,Normal,301,144,Yes,Never
+P1694,156,85,,36.5,73,,,Coronary Artery Disease,Low Iron,190,85,No,Former
+P1695,171,83,120/80,37.9,81,chest pain,High Cholesterol,Arrhythmia,,190,84,Yes,Current
+P1696,,65,130/85,37.3,89,shortness of breath,,,High Cholesterol,,69,No,Never
+P1697,159,61,140/90,36.8,85,fatigue,Asthma,Hypertension,High Blood Sugar,,81,Yes,Former
+P1698,163,74,125/82,36.6,60,,Thyroid,,Normal,224,63,No,Current
+P1699,175,83,135/88,36.9,79,palpitations,Diabetes,Heart Disease,Low Iron,248,112,Yes,Never
+P1700,171,66,,37.3,83,,Hypertension,Coronary Artery Disease,,140,56,No,Former
+P1701,173,85,,37,83,,High Cholesterol,Arrhythmia,High Cholesterol,190,118,Yes,Current
+P1702,174,,120/80,36.9,63,chest pain,,Stroke,High Blood Sugar,217,,No,Never
+P1703,176,56,130/85,37,68,shortness of breath,Asthma,Hypertension,Normal,223,50,Yes,Former
+P1704,181,57,140/90,36.7,,fatigue,Thyroid,,Low Iron,200,146,No,Current
+P1705,174,67,125/82,36.8,67,dizziness,Diabetes,Heart Disease,,221,115,Yes,Never
+P1706,167,74,135/88,36,72,palpitations,Hypertension,Coronary Artery Disease,High Cholesterol,167,122,No,Former
+P1707,176,62,145/92,37.5,90,nausea,High Cholesterol,Arrhythmia,High Blood Sugar,262,77,Yes,Current
+P1708,188,90,,37.1,,,,Stroke,Normal,239,118,No,Never
+P1709,168,76,120/80,36.6,67,chest pain,Asthma,Hypertension,Low Iron,146,133,Yes,Former
+P1710,160,70,130/85,37.9,66,shortness of breath,Thyroid,,,156,97,No,Current
+P1711,181,48,140/90,37,78,fatigue,Diabetes,Heart Disease,High Cholesterol,158,160,Yes,Never
+P1712,168,50,125/82,36.5,,dizziness,Hypertension,,High Blood Sugar,227,101,No,Former
+P1713,148,,135/88,37.4,72,palpitations,High Cholesterol,Arrhythmia,Normal,148,134,Yes,Current
+P1714,178,38,145/92,37.2,78,nausea,,Stroke,Low Iron,186,108,No,
+P1715,164,85,,37.2,87,,Asthma,,,218,117,,Former
+P1716,169,67,120/80,36.8,81,chest pain,Thyroid,,High Cholesterol,197,49,No,Current
+P1717,173,118,130/85,37.2,67,shortness of breath,Diabetes,Heart Disease,High Blood Sugar,210,111,Yes,Never
+P1718,171,104,,36.9,86,fatigue,Hypertension,Coronary Artery Disease,Normal,157,77,No,Former
+P1719,177,67,125/82,,72,dizziness,High Cholesterol,Arrhythmia,Low Iron,223,74,Yes,Current
+P1720,165,68,135/88,36,,palpitations,,Stroke,,175,152,No,Never
+P1721,175,84,145/92,36.8,73,nausea,Asthma,Hypertension,High Cholesterol,187,,Yes,Former
+P1722,,95,,37.9,89,,Thyroid,,High Blood Sugar,209,69,No,Current
+P1723,177,45,120/80,36.6,76,chest pain,,Heart Disease,Normal,,89,Yes,Never
+P1724,176,43,130/85,36.7,75,shortness of breath,Hypertension,Coronary Artery Disease,Low Iron,200,60,No,Former
+P1725,160,60,140/90,36.8,91,fatigue,High Cholesterol,Arrhythmia,,169,143,Yes,Current
+P1726,180,78,125/82,36.4,60,,,Stroke,High Cholesterol,188,79,No,Never
+P1727,164,77,135/88,,62,palpitations,,Hypertension,,200,115,Yes,Former
+P1728,178,86,145/92,36.9,58,nausea,Thyroid,,Normal,144,140,No,Current
+P1729,173,52,,37.1,78,,Diabetes,,Low Iron,181,84,Yes,Never
+P1730,188,35,120/80,37,76,chest pain,Hypertension,Coronary Artery Disease,,215,115,No,Former
+P1731,167,82,130/85,36.9,90,shortness of breath,High Cholesterol,,High Cholesterol,148,69,Yes,Current
+P1732,166,57,140/90,,77,fatigue,,Stroke,High Blood Sugar,246,173,No,Never
+P1733,169,39,125/82,37.5,,,Asthma,Hypertension,Normal,250,128,Yes,Former
+P1734,166,72,135/88,36.9,75,palpitations,,,Low Iron,150,94,No,Current
+P1735,177,81,,36.7,76,nausea,Diabetes,Heart Disease,,254,76,Yes,Never
+P1736,153,68,,36.9,58,,Hypertension,Coronary Artery Disease,High Cholesterol,194,96,No,Former
+P1737,159,63,120/80,37.3,102,chest pain,High Cholesterol,Arrhythmia,High Blood Sugar,216,89,Yes,Current
+P1738,159,67,130/85,37.7,80,shortness of breath,,Stroke,Normal,180,158,No,Never
+P1739,,64,140/90,36.7,77,fatigue,Asthma,Hypertension,Low Iron,236,63,Yes,Former
+P1740,187,,125/82,37,81,dizziness,Thyroid,,,216,104,No,Current
+P1741,168,,135/88,37.2,82,palpitations,Diabetes,Heart Disease,High Cholesterol,167,99,Yes,Never
+P1742,168,77,145/92,36.5,73,nausea,Hypertension,Coronary Artery Disease,High Blood Sugar,153,96,No,Former
+P1743,170,74,,37,68,,High Cholesterol,,,141,96,Yes,Current
+P1744,181,72,120/80,36.3,80,chest pain,,Stroke,Low Iron,207,96,No,Never
+P1745,160,55,130/85,36.1,78,shortness of breath,Asthma,Hypertension,,222,126,Yes,Former
+P1746,172,67,140/90,37.2,66,fatigue,Thyroid,,High Cholesterol,226,118,No,Current
+P1747,179,37,125/82,36.8,89,dizziness,Diabetes,Heart Disease,High Blood Sugar,195,112,Yes,Never
+P1748,,72,135/88,37.1,77,palpitations,Hypertension,Coronary Artery Disease,,153,8,No,Former
+P1749,171,91,145/92,,82,nausea,High Cholesterol,Arrhythmia,Low Iron,172,,Yes,Current
+P1750,180,47,,,88,,,Stroke,,246,50,No,Never
+P1751,142,61,120/80,37,75,chest pain,Asthma,Hypertension,High Cholesterol,,119,Yes,Former
+P1752,176,74,130/85,36.4,78,shortness of breath,Thyroid,,High Blood Sugar,205,144,No,Current
+P1753,163,88,140/90,37.7,83,fatigue,Diabetes,Heart Disease,Normal,156,72,Yes,Never
+P1754,151,63,125/82,36.3,67,dizziness,Hypertension,Coronary Artery Disease,Low Iron,213,92,No,Former
+P1755,175,59,135/88,36.9,75,palpitations,High Cholesterol,Arrhythmia,,181,82,Yes,Current
+P1756,183,40,145/92,36.5,76,nausea,,Stroke,High Cholesterol,241,137,No,Never
+P1757,168,,,37.3,65,,Asthma,Hypertension,High Blood Sugar,230,102,Yes,Former
+P1758,179,,120/80,36.8,98,chest pain,Thyroid,,Normal,180,151,No,Current
+P1759,186,74,130/85,36.7,60,shortness of breath,Diabetes,,Low Iron,194,112,Yes,Never
+P1760,183,69,140/90,37.4,62,fatigue,Hypertension,Coronary Artery Disease,,177,107,No,Former
+P1761,186,74,125/82,37,88,,High Cholesterol,Arrhythmia,High Cholesterol,143,102,Yes,Current
+P1762,177,69,135/88,37.3,82,palpitations,,Stroke,High Blood Sugar,165,124,No,Never
+P1763,170,57,145/92,36.5,64,nausea,,,Normal,207,47,Yes,Former
+P1764,153,82,,36.3,81,,Thyroid,,Low Iron,213,102,No,Current
+P1765,167,73,120/80,37.1,89,chest pain,,Heart Disease,,205,97,Yes,Never
+P1766,161,70,130/85,36.8,74,shortness of breath,Hypertension,Coronary Artery Disease,High Cholesterol,187,121,No,Former
+P1767,191,55,140/90,37.3,100,fatigue,High Cholesterol,Arrhythmia,High Blood Sugar,237,,Yes,Current
+P1768,168,89,125/82,37,57,dizziness,,Stroke,Normal,,68,No,Never
+P1769,171,79,135/88,37.1,81,palpitations,Asthma,,Low Iron,228,100,Yes,Former
+P1770,175,61,145/92,36.2,86,nausea,Thyroid,,,,67,No,Current
+P1771,170,85,,37.9,83,,Diabetes,Heart Disease,High Cholesterol,43,42,Yes,Never
+P1772,186,62,120/80,36.9,72,chest pain,Hypertension,,High Blood Sugar,211,121,No,Former
+P1773,163,58,130/85,37.3,72,shortness of breath,High Cholesterol,,Normal,143,117,Yes,Current
+P1774,171,58,140/90,36.6,79,fatigue,,Stroke,Low Iron,191,114,No,Never
+P1775,162,43,125/82,37.2,83,dizziness,Asthma,,,187,139,,
+P1776,156,77,135/88,36.3,81,palpitations,Thyroid,,High Cholesterol,263,80,No,Current
+P1777,163,42,145/92,37.2,85,nausea,Diabetes,,High Blood Sugar,215,57,Yes,Never
+P1778,169,51,,36.8,64,,Hypertension,Coronary Artery Disease,Normal,206,97,No,Former
+P1779,165,38,120/80,37,72,chest pain,High Cholesterol,Arrhythmia,Low Iron,233,89,Yes,Current
+P1780,163,,130/85,37.3,65,shortness of breath,,Stroke,,214,74,,Never
+P1781,155,67,140/90,36.4,71,fatigue,Asthma,Hypertension,High Cholesterol,181,97,Yes,Former
+P1782,169,65,125/82,36.7,,dizziness,Thyroid,,High Blood Sugar,242,81,No,Current
+P1783,154,54,135/88,37.2,76,palpitations,Diabetes,Heart Disease,Normal,155,44,Yes,Never
+P1784,177,52,145/92,38,101,,Hypertension,Coronary Artery Disease,Low Iron,212,86,No,Former
+P1785,170,76,,36.9,76,,High Cholesterol,,,138,65,Yes,Current
+P1786,155,61,120/80,37.3,75,chest pain,,Stroke,High Cholesterol,208,106,No,Never
+P1787,166,74,130/85,36.9,76,,Asthma,Hypertension,,,80,Yes,Former
+P1788,162,56,140/90,38,68,fatigue,Thyroid,,Normal,267,133,No,Current
+P1789,173,72,125/82,36.1,74,dizziness,Diabetes,Heart Disease,Low Iron,137,148,Yes,Never
+P1790,183,89,135/88,37,86,palpitations,Hypertension,Coronary Artery Disease,,175,120,No,Former
+P1791,151,78,,36.2,76,nausea,High Cholesterol,Arrhythmia,High Cholesterol,232,53,,Current
+P1792,171,63,,35.7,67,,,Stroke,High Blood Sugar,213,145,No,Never
+P1793,168,73,120/80,37.1,65,,Asthma,Hypertension,Normal,207,147,Yes,Former
+P1794,176,66,130/85,37.1,70,shortness of breath,Thyroid,,Low Iron,161,100,No,Current
+P1795,172,70,140/90,36.9,,fatigue,,Heart Disease,,,139,Yes,Never
+P1796,162,65,125/82,36.9,86,dizziness,Hypertension,Coronary Artery Disease,High Cholesterol,249,83,No,Former
+P1797,166,67,135/88,38.5,61,palpitations,High Cholesterol,Arrhythmia,,,44,,Current
+P1798,162,73,145/92,36.9,71,nausea,,,Normal,215,77,No,Never
+P1799,180,55,,37.3,76,,Asthma,Hypertension,,195,151,Yes,Former
+P1800,170,54,120/80,36.7,56,chest pain,,,,152,55,No,
+P1801,189,49,130/85,37.1,66,shortness of breath,Diabetes,Heart Disease,High Cholesterol,237,99,Yes,
+P1802,169,45,140/90,36.9,68,,Hypertension,Coronary Artery Disease,High Blood Sugar,220,101,No,Former
+P1803,162,51,125/82,36.8,67,dizziness,,Arrhythmia,Normal,292,84,Yes,Current
+P1804,154,72,135/88,37.9,76,palpitations,,Stroke,Low Iron,,86,No,Never
+P1805,151,56,,37.6,73,nausea,Asthma,Hypertension,,232,102,Yes,Former
+P1806,154,77,,37.1,,,Thyroid,,High Cholesterol,147,83,No,Current
+P1807,172,70,120/80,35.8,79,,Diabetes,Heart Disease,High Blood Sugar,206,57,Yes,Never
+P1808,,40,,36.8,92,shortness of breath,Hypertension,,Normal,239,106,No,Former
+P1809,154,79,140/90,38.4,91,fatigue,High Cholesterol,Arrhythmia,Low Iron,117,132,Yes,Current
+P1810,178,82,125/82,36.9,,dizziness,,Stroke,,191,126,No,Never
+P1811,165,55,135/88,37.6,80,,Asthma,Hypertension,High Cholesterol,177,75,Yes,Former
+P1812,171,76,145/92,37.7,73,,Thyroid,,High Blood Sugar,171,62,No,Current
+P1813,186,57,,37.1,,,Diabetes,,Normal,215,91,Yes,Never
+P1814,178,71,120/80,36.6,71,chest pain,Hypertension,Coronary Artery Disease,Low Iron,244,147,No,Former
+P1815,167,51,130/85,35.8,76,shortness of breath,High Cholesterol,Arrhythmia,,194,119,Yes,Current
+P1816,161,43,140/90,37.3,76,fatigue,,Stroke,High Cholesterol,208,121,No,Never
+P1817,148,64,125/82,36.6,69,dizziness,Asthma,Hypertension,High Blood Sugar,204,126,Yes,Former
+P1818,162,68,135/88,37.1,66,palpitations,Thyroid,,Normal,200,112,No,Current
+P1819,167,64,145/92,36.4,70,nausea,Diabetes,Heart Disease,Low Iron,156,103,Yes,Never
+P1820,,52,,36.9,77,,Hypertension,Coronary Artery Disease,,244,119,No,Former
+P1821,168,64,120/80,37,80,chest pain,High Cholesterol,,High Cholesterol,211,83,Yes,Current
+P1822,170,74,130/85,37.1,83,shortness of breath,,Stroke,High Blood Sugar,215,57,No,Never
+P1823,167,69,140/90,36.4,70,fatigue,Asthma,Hypertension,Normal,167,121,,Former
+P1824,163,72,125/82,37.6,77,dizziness,Thyroid,,Low Iron,,137,No,Current
+P1825,171,59,135/88,36.7,84,palpitations,Diabetes,Heart Disease,,192,66,Yes,Never
+P1826,174,,145/92,,86,nausea,Hypertension,Coronary Artery Disease,High Cholesterol,138,124,No,Former
+P1827,159,,,36.9,74,,High Cholesterol,Arrhythmia,High Blood Sugar,132,150,Yes,Current
+P1828,184,77,120/80,37,72,chest pain,,Stroke,Normal,175,99,No,Never
+P1829,169,87,130/85,37.1,76,shortness of breath,Asthma,Hypertension,Low Iron,220,75,Yes,Former
+P1830,170,77,140/90,37.7,63,fatigue,Thyroid,,,173,103,No,Current
+P1831,177,66,125/82,36.9,73,dizziness,Diabetes,,High Cholesterol,159,,Yes,Never
+P1832,172,62,135/88,36.9,82,palpitations,Hypertension,,High Blood Sugar,167,81,No,Former
+P1833,179,85,145/92,36.4,81,nausea,High Cholesterol,Arrhythmia,Normal,181,112,Yes,Current
+P1834,172,48,,37.4,72,,,Stroke,Low Iron,185,51,No,Never
+P1835,163,55,120/80,37.1,77,chest pain,Asthma,Hypertension,,286,56,Yes,Former
+P1836,173,64,130/85,36.8,66,shortness of breath,Thyroid,,High Cholesterol,242,100,No,Current
+P1837,,88,140/90,36,82,fatigue,Diabetes,Heart Disease,High Blood Sugar,240,99,Yes,Never
+P1838,171,75,125/82,37.7,74,dizziness,Hypertension,Coronary Artery Disease,Normal,246,,No,Former
+P1839,169,55,135/88,36.4,72,palpitations,High Cholesterol,Arrhythmia,Low Iron,160,156,Yes,Current
+P1840,167,65,145/92,36.7,71,nausea,,Stroke,,151,103,No,Never
+P1841,168,60,,37.2,74,,Asthma,Hypertension,High Cholesterol,155,117,Yes,Former
+P1842,151,59,120/80,36.4,70,,Thyroid,,High Blood Sugar,253,70,No,Current
+P1843,164,84,130/85,36.3,81,shortness of breath,Diabetes,Heart Disease,Normal,178,123,Yes,Never
+P1844,170,49,140/90,,71,fatigue,Hypertension,Coronary Artery Disease,Low Iron,149,84,No,Former
+P1845,171,94,125/82,37.4,90,dizziness,High Cholesterol,Arrhythmia,,182,102,Yes,Current
+P1846,159,82,135/88,36.7,89,,,Stroke,High Cholesterol,190,96,No,Never
+P1847,182,86,145/92,38.5,66,nausea,Asthma,Hypertension,High Blood Sugar,210,130,Yes,Former
+P1848,161,63,,36.5,,,Thyroid,,Normal,210,60,No,Current
+P1849,179,67,120/80,36.5,68,,Diabetes,Heart Disease,Low Iron,166,31,Yes,Never
+P1850,174,48,130/85,36.7,71,shortness of breath,Hypertension,Coronary Artery Disease,,227,93,No,Former
+P1851,163,62,140/90,37.1,95,fatigue,High Cholesterol,Arrhythmia,High Cholesterol,174,114,Yes,Current
+P1852,187,77,125/82,36.8,71,dizziness,,Stroke,High Blood Sugar,193,104,No,Never
+P1853,158,89,135/88,37.3,78,palpitations,Asthma,Hypertension,Normal,227,136,Yes,Former
+P1854,179,53,145/92,36.5,80,nausea,Thyroid,,Low Iron,174,113,No,Current
+P1855,180,64,,36.3,64,,Diabetes,Heart Disease,,177,83,Yes,Never
+P1856,163,67,120/80,36.1,,,Hypertension,Coronary Artery Disease,High Cholesterol,223,30,No,Former
+P1857,183,49,130/85,35.9,62,shortness of breath,High Cholesterol,Arrhythmia,High Blood Sugar,165,92,Yes,Current
+P1858,167,78,140/90,,66,fatigue,,Stroke,Normal,184,,No,Never
+P1859,172,59,125/82,36.8,46,dizziness,,Hypertension,Low Iron,222,88,Yes,Former
+P1860,172,67,135/88,,80,palpitations,Thyroid,,,282,100,No,Current
+P1861,168,63,145/92,37.6,95,nausea,Diabetes,Heart Disease,High Cholesterol,224,,Yes,Never
+P1862,178,58,,37.6,76,,Hypertension,,High Blood Sugar,218,69,No,Former
+P1863,,69,120/80,36.8,60,chest pain,High Cholesterol,Arrhythmia,Normal,221,118,Yes,Current
+P1864,152,66,130/85,36.1,68,shortness of breath,,,Low Iron,157,149,No,Never
+P1865,183,64,140/90,,70,fatigue,Asthma,Hypertension,,204,94,Yes,Former
+P1866,153,,125/82,36.7,64,dizziness,Thyroid,,High Cholesterol,198,66,No,Current
+P1867,180,74,135/88,36.7,83,palpitations,,Heart Disease,High Blood Sugar,212,98,Yes,Never
+P1868,181,94,145/92,36.7,83,nausea,Hypertension,Coronary Artery Disease,Normal,204,33,No,Former
+P1869,159,72,,36.7,63,,High Cholesterol,Arrhythmia,Low Iron,215,110,Yes,Current
+P1870,165,84,120/80,,82,chest pain,,Stroke,,187,113,No,Never
+P1871,158,49,130/85,36.7,90,shortness of breath,Asthma,Hypertension,High Cholesterol,202,150,Yes,
+P1872,167,72,140/90,37.1,94,fatigue,Thyroid,,High Blood Sugar,150,94,No,Current
+P1873,166,53,125/82,37.2,103,dizziness,Diabetes,Heart Disease,Normal,187,112,Yes,Never
+P1874,177,47,135/88,36.5,65,palpitations,Hypertension,Coronary Artery Disease,Low Iron,255,74,No,Former
+P1875,,58,145/92,37.6,103,nausea,High Cholesterol,Arrhythmia,,212,89,Yes,Current
+P1876,183,87,,36.5,71,,,Stroke,High Cholesterol,199,54,No,Never
+P1877,164,84,120/80,36.2,69,chest pain,Asthma,Hypertension,High Blood Sugar,275,,Yes,Former
+P1878,,73,130/85,37.2,78,,Thyroid,,Normal,145,90,No,Current
+P1879,153,47,140/90,36.6,69,fatigue,Diabetes,Heart Disease,Low Iron,155,108,Yes,Never
+P1880,161,67,125/82,37.2,78,dizziness,Hypertension,Coronary Artery Disease,,268,,No,Former
+P1881,179,74,135/88,35.8,61,palpitations,High Cholesterol,Arrhythmia,High Cholesterol,201,102,Yes,Current
+P1882,186,72,145/92,37.7,72,nausea,,Stroke,High Blood Sugar,190,89,No,Never
+P1883,157,42,,37.3,87,,Asthma,Hypertension,Normal,152,90,Yes,Former
+P1884,164,56,120/80,36.2,74,,Thyroid,,Low Iron,217,102,No,Current
+P1885,169,69,130/85,36.3,76,shortness of breath,Diabetes,Heart Disease,,221,101,Yes,
+P1886,172,78,140/90,37.8,79,fatigue,Hypertension,Coronary Artery Disease,High Cholesterol,156,122,No,Former
+P1887,161,37,125/82,36.6,86,dizziness,High Cholesterol,Arrhythmia,High Blood Sugar,194,96,Yes,Current
+P1888,174,67,135/88,36.6,58,palpitations,,,Normal,186,89,No,Never
+P1889,165,72,145/92,35.9,80,nausea,,Hypertension,Low Iron,210,94,Yes,Former
+P1890,169,82,,36.8,72,,Thyroid,,,155,78,No,Current
+P1891,175,80,120/80,36.9,76,chest pain,Diabetes,Heart Disease,High Cholesterol,250,89,Yes,Never
+P1892,170,78,130/85,,85,shortness of breath,Hypertension,Coronary Artery Disease,High Blood Sugar,236,160,No,Former
+P1893,165,58,140/90,36.3,63,fatigue,High Cholesterol,Arrhythmia,Normal,185,72,Yes,Current
+P1894,168,41,125/82,36.2,64,dizziness,,,Low Iron,191,91,No,Never
+P1895,169,64,135/88,37.2,,palpitations,Asthma,Hypertension,,194,88,Yes,Former
+P1896,166,85,145/92,37.5,69,,Thyroid,,High Cholesterol,168,92,No,Current
+P1897,167,90,,36.2,88,,Diabetes,,High Blood Sugar,182,90,Yes,Never
+P1898,185,80,120/80,37.5,,,Hypertension,Coronary Artery Disease,Normal,189,108,No,Former
+P1899,175,76,130/85,37,61,shortness of breath,High Cholesterol,Arrhythmia,Low Iron,264,48,Yes,Current
+P1900,167,75,140/90,37.5,70,fatigue,,Stroke,,237,131,No,Never
+P1901,176,61,125/82,37,60,dizziness,Asthma,Hypertension,High Cholesterol,237,118,Yes,Former
+P1902,166,68,135/88,35.7,63,palpitations,Thyroid,,High Blood Sugar,214,62,No,Current
+P1903,181,95,,36.9,78,nausea,Diabetes,Heart Disease,Normal,155,31,Yes,Never
+P1904,173,55,,37.5,63,,,Coronary Artery Disease,Low Iron,198,70,No,Former
+P1905,168,94,120/80,,86,chest pain,High Cholesterol,Arrhythmia,,238,92,Yes,Current
+P1906,174,65,130/85,36.8,74,shortness of breath,,Stroke,High Cholesterol,149,177,No,Never
+P1907,154,89,140/90,36.9,75,,Asthma,,High Blood Sugar,225,116,Yes,Former
+P1908,158,48,125/82,35.6,72,dizziness,Thyroid,,Normal,292,45,No,Current
+P1909,158,78,135/88,37.8,82,palpitations,Diabetes,Heart Disease,Low Iron,242,79,Yes,Never
+P1910,171,58,145/92,,82,nausea,Hypertension,Coronary Artery Disease,,256,98,No,Former
+P1911,187,48,,37.3,78,,High Cholesterol,Arrhythmia,High Cholesterol,208,107,Yes,Current
+P1912,192,73,120/80,37,,chest pain,,Stroke,High Blood Sugar,238,60,No,Never
+P1913,176,85,130/85,37.6,72,shortness of breath,,Hypertension,Normal,171,95,Yes,Former
+P1914,175,57,140/90,37.2,80,fatigue,Thyroid,,,,78,No,Current
+P1915,151,47,125/82,36.9,71,dizziness,Diabetes,,,226,66,Yes,Never
+P1916,164,68,135/88,36.6,75,palpitations,Hypertension,Coronary Artery Disease,High Cholesterol,211,,No,Former
+P1917,162,68,145/92,37.4,72,nausea,High Cholesterol,Arrhythmia,High Blood Sugar,252,123,Yes,
+P1918,163,78,,36.1,70,,,Stroke,Normal,178,125,No,Never
+P1919,168,84,120/80,37.3,68,chest pain,Asthma,Hypertension,Low Iron,192,117,Yes,Former
+P1920,165,69,130/85,36.5,79,shortness of breath,Thyroid,,,203,85,No,Current
+P1921,150,97,140/90,37.6,88,fatigue,Diabetes,Heart Disease,High Cholesterol,158,121,Yes,Never
+P1922,177,73,125/82,,86,dizziness,Hypertension,Coronary Artery Disease,High Blood Sugar,209,109,No,Former
+P1923,159,64,135/88,37.3,62,palpitations,High Cholesterol,,Normal,131,104,Yes,Current
+P1924,172,45,145/92,37,87,nausea,,Stroke,Low Iron,241,81,No,Never
+P1925,,66,,36.1,71,,,Hypertension,,201,85,Yes,Former
+P1926,160,64,120/80,36.6,81,chest pain,Thyroid,,High Cholesterol,179,102,No,Current
+P1927,144,84,130/85,37.3,65,shortness of breath,Diabetes,Heart Disease,High Blood Sugar,166,173,Yes,Never
+P1928,167,76,140/90,37.1,76,fatigue,Hypertension,,Normal,190,109,No,
+P1929,181,52,125/82,37.6,78,dizziness,High Cholesterol,,Low Iron,227,81,Yes,Current
+P1930,189,72,135/88,37.2,60,palpitations,,Stroke,,221,75,No,Never
+P1931,157,80,145/92,36.5,81,nausea,Asthma,Hypertension,High Cholesterol,171,85,Yes,Former
+P1932,174,92,,36.6,88,,Thyroid,,High Blood Sugar,166,165,No,Current
+P1933,165,83,120/80,37.1,73,chest pain,Diabetes,Heart Disease,Normal,226,88,,Never
+P1934,168,81,130/85,35.8,88,shortness of breath,Hypertension,Coronary Artery Disease,Low Iron,171,127,No,Former
+P1935,,70,140/90,37.8,73,fatigue,High Cholesterol,Arrhythmia,,202,88,Yes,Current
+P1936,154,75,125/82,37.2,83,dizziness,,Stroke,High Cholesterol,204,107,No,Never
+P1937,172,88,135/88,37.6,52,,Asthma,Hypertension,High Blood Sugar,212,123,,Former
+P1938,174,50,145/92,36.2,99,nausea,Thyroid,,Normal,234,82,No,Current
+P1939,180,64,,,89,,Diabetes,Heart Disease,Low Iron,149,80,Yes,Never
+P1940,,58,120/80,38.1,72,,Hypertension,Coronary Artery Disease,,123,149,,Former
+P1941,173,75,130/85,36.3,55,shortness of breath,High Cholesterol,Arrhythmia,High Cholesterol,177,129,,Current
+P1942,166,88,140/90,37.4,77,fatigue,,,High Blood Sugar,272,123,No,Never
+P1943,172,61,125/82,37,60,dizziness,Asthma,Hypertension,Normal,280,123,Yes,Former
+P1944,166,34,135/88,36.2,79,palpitations,Thyroid,,Low Iron,273,113,No,Current
+P1945,176,63,145/92,37.2,79,nausea,Diabetes,Heart Disease,,192,160,Yes,Never
+P1946,166,83,,37.4,65,,Hypertension,Coronary Artery Disease,High Cholesterol,128,101,No,Former
+P1947,173,78,,36.7,86,chest pain,High Cholesterol,Arrhythmia,High Blood Sugar,,,Yes,Current
+P1948,169,76,130/85,37.6,83,shortness of breath,,Stroke,Normal,175,56,No,Never
+P1949,181,65,140/90,36.2,84,fatigue,Asthma,Hypertension,Low Iron,192,75,Yes,Former
+P1950,169,50,125/82,36.3,75,dizziness,Thyroid,,,252,63,No,Current
+P1951,152,77,135/88,37.1,60,palpitations,Diabetes,Heart Disease,High Cholesterol,234,138,Yes,Never
+P1952,182,57,145/92,37,84,nausea,Hypertension,Coronary Artery Disease,High Blood Sugar,209,23,No,Former
+P1953,160,102,,36.6,72,,High Cholesterol,,Normal,164,87,Yes,Current
+P1954,163,78,120/80,37.4,61,chest pain,,,Low Iron,161,10,No,Never
+P1955,164,61,130/85,37.3,88,shortness of breath,,Hypertension,,210,75,Yes,Former
+P1956,183,60,140/90,37.4,95,fatigue,Thyroid,,High Cholesterol,227,85,No,Current
+P1957,148,68,125/82,36.9,,dizziness,Diabetes,Heart Disease,High Blood Sugar,215,141,Yes,Never
+P1958,201,66,135/88,37.3,96,palpitations,Hypertension,Coronary Artery Disease,Normal,158,111,No,Former
+P1959,180,,145/92,36.8,75,nausea,High Cholesterol,Arrhythmia,Low Iron,226,75,Yes,Current
+P1960,172,72,,38,,,,Stroke,,217,131,No,Never
+P1961,169,59,120/80,36.6,,chest pain,Asthma,Hypertension,High Cholesterol,157,100,Yes,Former
+P1962,172,98,130/85,38.1,91,shortness of breath,Thyroid,,High Blood Sugar,168,101,No,
+P1963,,70,140/90,37,67,fatigue,,Heart Disease,Normal,227,63,Yes,Never
+P1964,176,81,125/82,36.3,82,dizziness,Hypertension,Coronary Artery Disease,Low Iron,190,70,No,Former
+P1965,175,60,135/88,37.7,69,palpitations,High Cholesterol,Arrhythmia,,263,75,Yes,Current
+P1966,170,75,145/92,37.1,70,nausea,,Stroke,High Cholesterol,220,101,No,Never
+P1967,168,,,37.4,85,,Asthma,Hypertension,High Blood Sugar,180,102,Yes,Former
+P1968,168,41,120/80,37.6,71,chest pain,Thyroid,,Normal,199,,No,Current
+P1969,168,100,130/85,37.2,70,shortness of breath,,Heart Disease,Low Iron,202,111,Yes,Never
+P1970,181,89,140/90,36.7,86,fatigue,Hypertension,Coronary Artery Disease,,170,18,No,Former
+P1971,175,64,125/82,37.5,90,dizziness,High Cholesterol,Arrhythmia,,163,107,Yes,Current
+P1972,140,53,135/88,,81,palpitations,,Stroke,High Blood Sugar,228,56,,Never
+P1973,176,75,145/92,37.3,,nausea,Asthma,Hypertension,Normal,233,71,Yes,Former
+P1974,171,71,,35.9,69,,Thyroid,,Low Iron,224,75,No,Current
+P1975,169,75,120/80,37.2,75,chest pain,Diabetes,Heart Disease,,260,80,Yes,Never
+P1976,166,72,130/85,36.7,,,Hypertension,Coronary Artery Disease,High Cholesterol,178,58,,Former
+P1977,181,77,140/90,37.8,65,,,Arrhythmia,High Blood Sugar,266,106,Yes,Current
+P1978,179,91,125/82,37.3,82,dizziness,,Stroke,Normal,163,57,No,Never
+P1979,162,78,135/88,37.1,75,palpitations,Asthma,Hypertension,Low Iron,159,110,Yes,Former
+P1980,174,54,145/92,37.2,57,nausea,Thyroid,,,129,167,No,Current
+P1981,160,90,,36.5,65,,Diabetes,Heart Disease,High Cholesterol,182,60,Yes,Never
+P1982,156,94,120/80,37.8,,chest pain,Hypertension,Coronary Artery Disease,High Blood Sugar,179,91,No,Former
+P1983,163,117,130/85,,74,shortness of breath,High Cholesterol,,Normal,221,24,Yes,Current
+P1984,178,53,140/90,,93,fatigue,,Stroke,Low Iron,209,90,No,Never
+P1985,179,73,125/82,37.8,77,dizziness,Asthma,Hypertension,,152,119,Yes,Former
+P1986,175,38,135/88,36.7,66,palpitations,Thyroid,,High Cholesterol,184,121,No,Current
+P1987,177,78,145/92,36.6,77,nausea,Diabetes,Heart Disease,High Blood Sugar,185,102,Yes,Never
+P1988,175,61,,37,71,,Hypertension,,,128,126,No,Former
+P1989,163,98,120/80,37.2,78,chest pain,High Cholesterol,Arrhythmia,Low Iron,160,176,Yes,Current
+P1990,174,58,130/85,36.8,80,shortness of breath,,Stroke,,169,151,No,Never
+P1991,178,44,140/90,37.3,87,fatigue,Asthma,Hypertension,High Cholesterol,257,84,Yes,Former
+P1992,177,62,125/82,37.2,74,dizziness,Thyroid,,High Blood Sugar,207,56,No,Current
+P1993,181,40,135/88,36.5,91,palpitations,Diabetes,,Normal,226,,Yes,Never
+P1994,177,81,145/92,37.3,84,nausea,Hypertension,Coronary Artery Disease,Low Iron,140,71,No,Former
+P1995,173,,,37.4,67,,High Cholesterol,Arrhythmia,,247,113,,Current
+P1996,180,70,120/80,37.1,97,chest pain,,Stroke,High Cholesterol,252,64,,Never
+P1997,169,38,130/85,37.6,78,,Asthma,Hypertension,High Blood Sugar,120,97,Yes,Former
+P1998,161,65,140/90,,66,fatigue,Thyroid,,Normal,171,125,No,Current
+P1999,168,94,125/82,37.2,91,dizziness,Diabetes,Heart Disease,Low Iron,219,96,Yes,Never
+P2000,162,75,135/88,36.4,95,palpitations,Hypertension,Coronary Artery Disease,,225,71,No,Former
