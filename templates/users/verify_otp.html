@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #F6F8FA, #E0F7FA);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333333;
+        }
+
+        /* Container Styling */
+        .container {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* Heading */
+        h2 {
+            font-size: 1.8rem;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        /* Error Styling */
+        .error {
+            background: #FFEBEE;
+            color: #E57373;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #E57373;
+            border-radius: 8px;
+        }
+
+        /* Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        label {
+            font-size: 0.95rem;
+            color: #666666;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            padding: 12px 15px;
+            font-size: 1rem;
+            border: 2px solid #E0E0E0;
+            border-radius: 8px;
+            outline: none;
+            transition: all 0.3s ease;
+            background: #FAFAFA;
+        }
+
+        input[type="text"]:focus {
+            border-color: #56C596;
+            box-shadow: 0 0 8px rgba(86, 197, 150, 0.3);
+        }
+
+        /* Button */
+        button {
+            background: linear-gradient(135deg, #56C596, #89CFF0);
+            color: #ffffff;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #89CFF0, #56C596);
+            box-shadow: 0 4px 10px rgba(86, 197, 150, 0.4);
+        }
+
+        /* Resend OTP */
+        p {
+            font-size: 0.9rem;
+            color: #666666;
+            margin-top: 15px;
+        }
+
+        p a {
+            color: #56C596;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        p a:hover {
+            color: #89CFF0;
+            text-decoration: underline;
+        }
+
+        /* Animation */
+        .container {
+            animation: slideIn 0.8s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Verify OTP</h2>
+
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+
+        <form method="POST">
+            {% csrf_token %}
+            <label for="otp">OTP:</label>
+            <input type="text" id="otp" name="otp" placeholder="Enter OTP here" required>
+            <button type="submit">Verify OTP</button>
+        </form>
+        
+        <p>Didn't receive the OTP? <a href="{% url 'resend_otp' %}">Resend OTP</a></p>
+    </div>
+</body>
+</html>

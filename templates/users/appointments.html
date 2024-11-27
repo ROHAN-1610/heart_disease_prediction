@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Appointments</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #007bff;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #0056b3;
+            border-radius: 5px;
+        }
+
+        /* Container Styling */
+        .container {
+            padding: 5px;
+        }
+
+        h2, h3 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Appointment Form Styling */
+        .appointment-form {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .appointment-form input, 
+        .appointment-form select,
+        .appointment-form button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .appointment-form input:focus,
+        .appointment-form select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .appointment-form button {
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .appointment-form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Table Styling */
+        .appointments-table {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-top: 30px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .appointments-table th, .appointments-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .appointments-table th {
+            background-color: #007bff;
+            color: white;
+            font-weight: 600;
+        }
+
+        .appointments-table tr:hover {
+            background-color: #f1f1f1;
+            transition: background-color 0.3s ease;
+        }
+
+        .appointments-table td {
+            color: #555;
+        }
+
+        /* Action Buttons Styling */
+        .action-btns {
+            text-align: center;
+        }
+
+        .action-btns a {
+            padding: 3px 25px;
+            margin: 10px;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .action-btns a:hover {
+            background-color: #218838;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 10px 0;
+            }
+
+            .appointments-table th, .appointments-table td {
+                padding: 10px;
+            }
+
+            .appointment-form {
+                padding: 15px;
+                max-width: 100%;
+            }
+
+            .appointment-form input,
+            .appointment-form select {
+                font-size: 14px;
+            }
+
+            .appointment-form button {
+                font-size: 14px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Appointments</a>
+        <div class="collapse navbar-collapse">
+            
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Left Column: Add New Appointment Form -->
+            <div class="col-md-6">
+                <div class="appointment-form">
+                    <h3>Add New Appointment</h3>
+                    <form method="POST">
+                        {% csrf_token %}
+                        <label for="patient_name">Patient Name:</label>
+                        <input type="text" id="patient_name" name="patient_name" required>
+
+                        <label for="doctor_name">Doctor Name:</label>
+                        <input type="text" id="doctor_name" name="doctor_name" required>
+
+                        <label for="appointment_date">Appointment Date:</label>
+                        <input type="date" id="appointment_date" name="appointment_date" required>
+
+                        <label for="appointment_time">Appointment Time:</label>
+                        <input type="time" id="appointment_time" name="appointment_time" required>
+
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location" required>
+
+                        <button type="submit" class="btn btn-primary">Add Appointment</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right Column: Upcoming Appointments Table -->
+            <div class="col-md-6">
+                <h2>Your Upcoming Appointments</h2>
+                <table class="appointments-table table">
+                    <thead>
+                        <tr>
+                            <th>Patient</th>
+                            <th>Doctor</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Location</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for appointment in appointments %}
+                            <tr>
+                                <td>{{ appointment.patient_name }}</td>
+                                <td>{{ appointment.doctor_name }}</td>
+                                <td>{{ appointment.appointment_date }}</td>
+                                <td>{{ appointment.appointment_time }}</td>
+                                <td>{{ appointment.location }}</td>
+                                <td class="action-btns">
+                                    <a href="{% url 'cancel_appointment' appointment.id %}">Cancel</a>
+                                    <a href="{% url 'reschedule_appointment' appointment.id %}">Reschedule</a>
+                                </td>
+                            </tr>
+                        {% empty %}
+                            <tr>
+                                <td colspan="6">No appointments found</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

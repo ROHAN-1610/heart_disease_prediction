@@ -10,6 +10,17 @@ class UserProfile(models.Model):
     hospital_name=models.CharField(blank=True,max_length=100)
 
 
+class Appointment(models.Model):
+    patient_name = models.CharField(max_length=100, default="Unknown")
+    doctor_name = models.CharField(max_length=100)
+    appointment_date = models.DateField()
+    appointment_time = models.TimeField()
+    location = models.CharField(max_length=255)
+    
+    def __str__(self):
+        return f"{self.doctor_name} - {self.appointment_date} at {self.appointment_time}"    
+
+
 class Patient(models.Model):
     name = models.CharField(max_length=100)
     age = models.IntegerField()

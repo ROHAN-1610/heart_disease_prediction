@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction Form</title>
+    <!-- Include Bootstrap for base styling -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f8ff;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        padding: 40px 30px;
+        margin-top: 50px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 32px;
+        color: #333;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        padding: 12px 15px;
+        font-size: 16px;
+        color: #333;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .form-control:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+
+    label {
+        font-weight: 600;
+        color: #555;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    /* Styling for select dropdown */
+    select.form-control {
+        background-color: #f8f9fa;
+        color: #333;
+        background-image: url('https://img.icons8.com/ios/452/chevron-down.png');
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 18px;
+        padding-right: 40px;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        padding: 12px;
+        font-size: 16px;
+        width: 100%;
+        transition: all 0.3s ease;
+    }
+
+    select.form-control:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+        outline: none;
+        background-color: #ffffff;
+    }
+
+    /* Smaller font for options */
+    select.form-control option {
+        font-size: 14px;
+    }
+
+    .form-row {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form-row .col-md-6 {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    label {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    .form-group text-center {
+        margin-top: 30px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        padding: 12px 30px;
+        font-size: 18px;
+        border-radius: 5px;
+        width: 100%;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+        transform: translateY(-2px);
+    }
+
+    .btn-primary:active {
+        background-color: #003f7f;
+        border-color: #003f7f;
+        transform: translateY(0);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .container {
+            padding: 30px 20px;
+        }
+
+        .form-row {
+            flex-direction: column;
+        }
+
+        .btn-primary {
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+    }
+
+    .form-row input[type="text"]:hover,
+    .form-row select:hover {
+        border-color: #007bff;
+        background-color: #f0f8ff;
+    }
+
+    /* Subtle animations for form elements */
+    .form-control {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+</style>
+
+
+</head>
+<body>
+    <div class="container">
+        <h2>Heart Disease Prediction</h2>
+
+        <!-- Form Start -->
+        <form method="post">
+            {% csrf_token %}
+
+            <!-- File Upload -->
+            <div class="form-row">
+                <div class="col-md-12 mb-3">
+                    <label for="csv_upload">Upload CSV</label>
+                    <div class="custom-file">
+                        <input type="file" class="form-control" id="csv_upload" name="csv_upload" accept=".csv">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Height and Weight -->
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="height">Height (cm)</label>
+                    <input type="text" name="height" class="form-control" id="height" placeholder="Enter height" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="weight">Weight (kg)</label>
+                    <input type="text" name="weight" class="form-control" id="weight" placeholder="Enter weight" required>
+                </div>
+            </div>
+
+            <!-- Temperature and Heart Rate -->
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="temperature">Temperature (°C)</label>
+                    <input type="text" name="temperature" class="form-control" id="temperature" placeholder="Enter temperature" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="heart_rate">Heart Rate (bpm)</label>
+                    <input type="text" name="heart_rate" class="form-control" id="heart_rate" placeholder="Enter heart rate" required>
+                </div>
+            </div>
+
+            <!-- Cholesterol and Blood Sugar -->
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="cholesterol">Cholesterol (mg/dL)</label>
+                    <input type="text" name="cholesterol" class="form-control" id="cholesterol" placeholder="Enter cholesterol level" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="blood_sugar">Blood Sugar (mg/dL)</label>
+                    <input type="text" name="blood_sugar" class="form-control" id="blood_sugar" placeholder="Enter blood sugar level" required>
+                </div>
+            </div>
+
+            <!-- Systolic and Diastolic Pressure -->
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="systolic">Systolic Pressure</label>
+                    <input type="text" name="systolic" class="form-control" id="systolic" placeholder="Enter systolic pressure" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="diastolic">Diastolic Pressure</label>
+                    <input type="text" name="diastolic" class="form-control" id="diastolic" placeholder="Enter diastolic pressure" required>
+                </div>
+            </div>
+
+            <!-- Family History of Heart Disease -->
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="family_history_heart_disease">Family History of Heart Disease</label>
+                    <select name="family_history_heart_disease" id="family_history_heart_disease" class="form-control" required>
+                        <option value="">Select option</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Existing Conditions -->
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="existing_conditions">Existing Conditions</label>
+                    <select name="existing_conditions" id="existing_conditions" class="form-control" required>
+                        <option value="">Select condition</option>
+                        <option value="Hypertension">Hypertension</option>
+                        <option value="Diabetes">Diabetes</option>
+                        <option value="Asthma">Asthma</option>
+                        <option value="None">None</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Smoking Status -->
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="smoking_status">Smoking Status</label>
+                    <select name="smoking_status" id="smoking_status" class="form-control" required>
+                        <option value="">Select status</option>
+                        <option value="Never">Never</option>
+                        <option value="Former">Former</option>
+                        <option value="Current">Current</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-row">
+                <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-primary">Analyze</button>
+                </div>
+            </div>
+
+        </form>
+        <!-- Form End -->
+
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
