@@ -152,14 +152,14 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Doctor Dashboard</a>
+            <a class="navbar-brand" href="#">Dashboard</a>
             <button id="logoutBtn" class="btn btn-danger ms-auto">Log Out</button>
         </div>
     </nav>
 
     <!-- Dashboard Content -->
     <div class="container dashboard-section">
-        <h2 class="mt-4">Welcome, Dr. {{ doctor_name }}</h2>
+        <h2 class="mt-4">Welcome, {{ doctor_name }}</h2>
         <p>Manage your patients and health predictions easily.</p>
 
         <div class="row mt-4">
@@ -197,19 +197,7 @@
             </div>
         </div>
 
-        <div class="row mt-4">
-            <!-- Card: Reports -->
-            <div class="col-md-4">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h5 class="card-title">Reports & Analytics</h5>
-                        <p class="card-text">View patient statistics and trends.</p>
-                        <a href="{% url 'reports' %}" class="btn btn-custom">View Reports</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        
 
     <!-- External JavaScript -->
     <script src="{% static 'js/dashboard.js' %}"></script>

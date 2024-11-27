@@ -115,6 +115,10 @@ def login_view(request):
 
     return render(request, 'login.html')
 
+def user_logout(request):
+    logout(request)
+    return redirect('home') 
+
 @login_required
 def doctor_dashboard(request):
     # Any context or logic related to the doctor dashboard can be added here
