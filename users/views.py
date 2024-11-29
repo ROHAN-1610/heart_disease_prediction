@@ -315,76 +315,85 @@ def download_patient_records(request, search_query, gender=None):
     return response
 
 # Load pre-trained models
+import joblib
+# Load pre-trained models
 def load_models():
-    model = None
-    scaler = None
-    one_hot_encoder = None
-    label_encoder = None
+    try:
+        model = joblib.load(r'D:\python AC\heart_disease_prediction\heart_disease_prediction\hdp_knn_model.pkl')
+        scaler = joblib.load(r'D:\python AC\heart_disease_prediction\heart_disease_prediction\scaler.pkl')
+        one_hot_encoder = joblib.load(r'D:\python AC\heart_disease_prediction\heart_disease_prediction\encoder.pkl')
+        label_encoder = joblib.load(r'D:\python AC\heart_disease_prediction\heart_disease_prediction\label_encoder.pkl')
+        return model, scaler, one_hot_encoder, label_encoder
+    except Exception as e:
+        print(f"Error loading models: {e}")
+        return None, None, None, None
 
-    # Loading the model, scaler, and encoders
-    with open('path_to_model/hdp_knn_model.pkl', 'rb') as model_file:
-        model = pickle.load(model_file)
-
-    with open('path_to_model/scaler.pkl', 'rb') as scaler_file:
-        scaler = pickle.load(scaler_file)
-
-    with open('path_to_model/encoder.pkl', 'rb') as encoder_file:
-        one_hot_encoder = pickle.load(encoder_file)
-
-    with open('path_to_model/label_encoder.pkl', 'rb') as label_encoder_file:
-        label_encoder = pickle.load(label_encoder_file)
-
-    return model, scaler, one_hot_encoder, label_encoder
-
-# Prediction view
+# Prediction form and logic
 def health_prediction(request):
     model, scaler, one_hot_encoder, label_encoder = load_models()
 
+    if not model or not scaler or not one_hot_encoder or not label_encoder:
+        return HttpResponse("Error loading models. Please check the server logs for details.", status=500)
+
     if request.method == 'POST':
         form = Health_Prediction_form(request.POST)
-
         if form.is_valid():
-            # Get form data
+            # Get cleaned data from form
             height = form.cleaned_data['height']
             weight = form.cleaned_data['weight']
             temperature = form.cleaned_data['temperature']
             heart_rate = form.cleaned_data['heart_rate']
             cholesterol = form.cleaned_data['cholesterol']
             blood_sugar = form.cleaned_data['blood_sugar']
-            systolic = form.cleaned_data['systolic']
-            diastolic = form.cleaned_data['diastolic']
+            blood_pressure = form.cleaned_data['blood_pressure']
             existing_conditions = form.cleaned_data['existing_conditions']
             family_history = form.cleaned_data['family_history']
             smoking_status = form.cleaned_data['smoking_status']
 
-            # Process the data
-            input_data = [[height, weight, temperature, heart_rate, cholesterol, blood_sugar, systolic, diastolic]]
+            # Prepare the numerical data for scaling
+            input_data_numerical = [[height, weight, temperature, heart_rate, cholesterol, blood_sugar, blood_pressure]]
 
-            # Scale the input data using the pre-loaded scaler
-            input_data_scaled = scaler.transform(input_data)
+            # Scale the numerical data
+            input_data_scaled = scaler.transform(input_data_numerical)
 
-            # Encode categorical features
-            input_data_encoded = one_hot_encoder.transform([[existing_conditions, family_history, smoking_status]])
+            # Prepare the categorical data for encoding
+            input_data_categorical = [[existing_conditions, family_history, smoking_status]]
 
-            # Combine the scaled and encoded features
+            # One-hot encode the categorical data
+            input_data_encoded = one_hot_encoder.transform(input_data_categorical)
+
+            # Combine the scaled numerical data and encoded categorical data
             final_input_data = np.hstack((input_data_scaled, input_data_encoded.toarray()))
 
             # Make prediction
             prediction = model.predict(final_input_data)
-
-            # Decode the prediction if necessary
             predicted_label = label_encoder.inverse_transform(prediction)[0]
 
-            # Render the result in the new template
-            return render(request, 'users/health_predictions_result.html', {
-                'prediction': predicted_label
-            })
+            # Prepare the context with the patient's details and prediction result
+            context = {
+                'prediction_result': predicted_label,
+                'height': height,
+                'weight': weight,
+                'temperature': temperature,
+                'heart_rate': heart_rate,
+                'cholesterol': cholesterol,
+                'blood_sugar': blood_sugar,
+                'blood_pressure': blood_pressure,
+                'existing_conditions': existing_conditions,
+                'family_history': family_history,
+                'smoking_status': smoking_status,
+            }
+
+            # Pass the prediction to the result page
+            return render(request, 'users/health_predictions_result.html', context)
+
         else:
-            return render(request, 'users/health_prediction_form.html', {
-                'form': form
-            })
+            return render(request, 'users/health_prediction_form.html', {'form': form})
     else:
+        # Render the empty form for GET request
         form = Health_Prediction_form()
-        return render(request, 'users/health_prediction_form.html', {
-            'form': form
-        })
+        return render(request, 'users/health_prediction_form.html', {'form': form})
+
+# View to display the prediction result
+def health_predictions_result(request):
+    return render(request, 'users/health_predictions_result.html')
