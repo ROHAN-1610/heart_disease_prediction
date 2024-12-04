@@ -18,18 +18,25 @@ from django.core.mail import send_mail
 from django.conf import settings
 from .models import Appointment
 from .forms import AppointmentForm
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import OneHotEncoder
+
 
 
 def choose_role(request):
     if request.method == "POST":
         selected_role = request.POST.get('role')  # Get the selected role
-        if selected_role:  # Ensure a role was selected
-            # Save the selected role in the session (optional)
-            request.session['user_role'] = selected_role
-            return redirect('home')  # Redirect to the home page
+        if selected_role:
+            request.session['user_role'] = selected_role  # Save role in session
+            messages.success(request, f"Role '{selected_role}' selected successfully!")
+            return redirect('home')  # Redirect to home after role selection
     return render(request, 'choose_role.html')  # Render the role selection page
 
 def home(request):
+    # Check if user role is selected
+    if 'user_role' not in request.session:
+        return redirect('choose_role')  # Redirect to choose_role view if no role is set
+
     # Render the home page
     return render(request, 'home.html')
 
@@ -266,6 +273,11 @@ class CustomLogoutView(View):
     def get(self, request):
         logout(request)
         return redirect(reverse_lazy('login'))
+    
+# Logout view
+def logout_view(request):
+    logout(request)
+    return redirect('login') 
 
 def reset_password(request):
     if request.method == 'POST':
@@ -315,11 +327,15 @@ def download_patient_records(request, search_query, gender=None):
     return response
 
 # Load pre-trained models
+# Health prediction logic
+from django.http import JsonResponse
+import pandas as pd
 import joblib
+
 # Load pre-trained models
 def load_models():
     try:
-        model = joblib.load(r'D:\python AC\heart_disease_prediction\heart_disease_prediction\hdp_knn_model.pkl')
+        model = joblib.load(r'D:\python AC\heart_disease_prediction\heart_disease_prediction\knn_model.pkl')
         scaler = joblib.load(r'D:\python AC\heart_disease_prediction\heart_disease_prediction\scaler.pkl')
         one_hot_encoder = joblib.load(r'D:\python AC\heart_disease_prediction\heart_disease_prediction\encoder.pkl')
         label_encoder = joblib.load(r'D:\python AC\heart_disease_prediction\heart_disease_prediction\label_encoder.pkl')
@@ -328,72 +344,136 @@ def load_models():
         print(f"Error loading models: {e}")
         return None, None, None, None
 
-# Prediction form and logic
 def health_prediction(request):
+    # Load models at the beginning
     model, scaler, one_hot_encoder, label_encoder = load_models()
-
-    if not model or not scaler or not one_hot_encoder or not label_encoder:
-        return HttpResponse("Error loading models. Please check the server logs for details.", status=500)
-
+    
+    if not model:
+        return JsonResponse({'error': 'Model loading failed'}, status=500)
+    
     if request.method == 'POST':
         form = Health_Prediction_form(request.POST)
         if form.is_valid():
-            # Get cleaned data from form
+            # Capture the form data
             height = form.cleaned_data['height']
             weight = form.cleaned_data['weight']
             temperature = form.cleaned_data['temperature']
             heart_rate = form.cleaned_data['heart_rate']
-            cholesterol = form.cleaned_data['cholesterol']
+            cholestrol = form.cleaned_data['cholestrol']
             blood_sugar = form.cleaned_data['blood_sugar']
-            blood_pressure = form.cleaned_data['blood_pressure']
+            systolic = form.cleaned_data['systolic']
+            diastolic = form.cleaned_data['diastolic']
             existing_conditions = form.cleaned_data['existing_conditions']
             family_history = form.cleaned_data['family_history']
             smoking_status = form.cleaned_data['smoking_status']
+            lab_status = form.cleaned_data['lab_status']
+            symptoms = form.cleaned_data['symptom']
+            
+            categorical_columns = [
+                'Symptoms_chest pain', 'Symptoms_dizziness', 'Symptoms_fatigue', 
+                'Symptoms_nausea', 'Symptoms_palpitations', 'Symptoms_shortness of breath',
+                'Existing_Conditions_Asthma', 'Existing_Conditions_Diabetes', 
+                'Existing_Conditions_High Cholesterol', 'Existing_Conditions_Hypertension', 
+                'Existing_Conditions_Thyroid', 'Laboratory_Test_Results_High Blood Sugar', 
+                'Laboratory_Test_Results_High Cholesterol', 'Laboratory_Test_Results_Low Iron', 
+                'Laboratory_Test_Results_Normal', 'Smoking_Status_Current', 
+                'Smoking_Status_Former', 'Smoking_Status_Never', 
+                'Family_History_Heart_Disease_No', 'Family_History_Heart_Disease_Yes'
+            ]
+            
+            input_data = {col: [False] for col in categorical_columns}
 
-            # Prepare the numerical data for scaling
-            input_data_numerical = [[height, weight, temperature, heart_rate, cholesterol, blood_sugar, blood_pressure]]
+            # Setting the appropriate columns to True based on user selection
+            if 'chest pain' in symptoms:
+                input_data['Symptoms_chest pain'] = [True]
+            if 'dizziness' in symptoms:
+                input_data['Symptoms_dizziness'] = [True]
+            if 'fatigue' in symptoms:
+                input_data['Symptoms_fatigue'] = [True]
+            if 'nausea' in symptoms:
+                input_data['Symptoms_nausea'] = [True]
+            if 'palpitations' in symptoms:
+                input_data['Symptoms_palpitations'] = [True]
+            if 'shortness of breath' in symptoms:
+                input_data['Symptoms_shortness of breath'] = [True]
+            
+            if 'Asthma' in existing_conditions:
+                input_data['Existing_Conditions_Asthma'] = [True]
+            if 'Diabetes' in existing_conditions:
+                input_data['Existing_Conditions_Diabetes'] = [True]
+            if 'High Cholesterol' in existing_conditions:
+                input_data['Existing_Conditions_High Cholesterol'] = [True]
+            if 'Hypertension' in existing_conditions:
+                input_data['Existing_Conditions_Hypertension'] = [True]
+            if 'Thyroid' in existing_conditions:
+                input_data['Existing_Conditions_Thyroid'] = [True]
+            
+            if 'High Blood Sugar' in lab_status:
+                input_data['Laboratory_Test_Results_High Blood Sugar'] = [True]
+            if 'High Cholesterol' in lab_status:
+                input_data['Laboratory_Test_Results_High Cholesterol'] = [True]
+            if 'Low Iron' in lab_status:
+                input_data['Laboratory_Test_Results_Low Iron'] = [True]
+            if 'Normal' in lab_status:
+                input_data['Laboratory_Test_Results_Normal'] = [True]
+            
+            if smoking_status == 'Current':
+                input_data['Smoking_Status_Current'] = [True]
+            if smoking_status == 'Former':
+                input_data['Smoking_Status_Former'] = [True]
+            if smoking_status == 'Never':
+                input_data['Smoking_Status_Never'] = [True]
+            
+            if family_history == 'Yes':
+                input_data['Family_History_Heart_Disease_Yes'] = [True]
+            else:
+                input_data['Family_History_Heart_Disease_No'] = [True]
+            
+            input_data['Height_cm'] = [height]
+            input_data['Weight_kg'] = [weight]
+            input_data['Temperature_C'] = [temperature]
+            input_data['Heart_Rate'] = [heart_rate]
+            input_data['Cholesterol_mg_dL'] = [cholestrol]
+            input_data['Blood_Sugar_mg_dL'] = [blood_sugar]
+            input_data['Systolic_BP'] = [systolic]
+            input_data['Diastolic_BP'] = [diastolic]
+            
+            # Create DataFrame for the input data
+            input_df = pd.DataFrame(input_data)
+            
+            # Define the columns order from the training data
+            model_columns = [
+                'Height_cm', 'Weight_kg', 'Temperature_C', 'Heart_Rate', 'Cholesterol_mg_dL', 
+                'Blood_Sugar_mg_dL', 'Symptoms_chest pain', 'Symptoms_dizziness', 'Symptoms_fatigue', 
+                'Symptoms_nausea', 'Symptoms_palpitations', 'Symptoms_shortness of breath',
+                'Existing_Conditions_Asthma', 'Existing_Conditions_Diabetes', 
+                'Existing_Conditions_High Cholesterol', 'Existing_Conditions_Hypertension', 
+                'Existing_Conditions_Thyroid', 'Laboratory_Test_Results_High Blood Sugar', 
+                'Laboratory_Test_Results_High Cholesterol', 'Laboratory_Test_Results_Low Iron', 
+                'Laboratory_Test_Results_Normal', 'Smoking_Status_Current', 
+                'Smoking_Status_Former', 'Smoking_Status_Never', 
+                'Family_History_Heart_Disease_No', 'Family_History_Heart_Disease_Yes', 
+                'Systolic_BP', 'Diastolic_BP'
+            ]
+            
+            for col in model_columns:
+                if col not in input_df.columns:
+                    input_df[col] = 0  # Adding missing columns with value 0
+            
+            input_df = input_df[model_columns]
 
-            # Scale the numerical data
-            input_data_scaled = scaler.transform(input_data_numerical)
-
-            # Prepare the categorical data for encoding
-            input_data_categorical = [[existing_conditions, family_history, smoking_status]]
-
-            # One-hot encode the categorical data
-            input_data_encoded = one_hot_encoder.transform(input_data_categorical)
-
-            # Combine the scaled numerical data and encoded categorical data
-            final_input_data = np.hstack((input_data_scaled, input_data_encoded.toarray()))
-
-            # Make prediction
-            prediction = model.predict(final_input_data)
-            predicted_label = label_encoder.inverse_transform(prediction)[0]
-
-            # Prepare the context with the patient's details and prediction result
-            context = {
-                'prediction_result': predicted_label,
-                'height': height,
-                'weight': weight,
-                'temperature': temperature,
-                'heart_rate': heart_rate,
-                'cholesterol': cholesterol,
-                'blood_sugar': blood_sugar,
-                'blood_pressure': blood_pressure,
-                'existing_conditions': existing_conditions,
-                'family_history': family_history,
-                'smoking_status': smoking_status,
-            }
-
-            # Pass the prediction to the result page
-            return render(request, 'users/health_predictions_result.html', context)
-
+            # Make the prediction
+            prediction = model.predict(input_df)
+            
+            # Get the disease name using label encoding 
+            disease_name = label_encoder.inverse_transform(prediction)
+            
+            # Render the result page with the prediction
+            return render(request, 'users/health_predictions_result.html', {'prediction': disease_name[0]})
+        
         else:
-            return render(request, 'users/health_prediction_form.html', {'form': form})
+            return JsonResponse({'error': 'Invalid form input'}, status=400)
+
     else:
-        # Render the empty form for GET request
         form = Health_Prediction_form()
         return render(request, 'users/health_prediction_form.html', {'form': form})
-
-# View to display the prediction result
-def health_predictions_result(request):
-    return render(request, 'users/health_predictions_result.html')

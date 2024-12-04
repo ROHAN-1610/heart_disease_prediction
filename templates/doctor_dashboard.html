@@ -133,18 +133,23 @@
             text-align: center;
             padding: 10px;
         }
-        
+
         /* Custom styling for the logout button */
         #logoutBtn {
-            font-weight: bold;
-            padding: 10px 20px;
-            border-radius: 30px;
-            transition: background-color 0.3s ease;
-        }
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    position: fixed; /* Fixes the button to the top right */
+    top: 20px; /* Adjusts distance from the top */
+    right: 20px; /* Adjusts distance from the right */
+    z-index: 1000; /* Makes sure it stays on top of other elements */
+}
 
-        #logoutBtn:hover {
-            background-color: #c0392b;
-        }
+#logoutBtn:hover {
+    background-color: #c0392b;
+}
+
 
     </style>
 </head>
@@ -153,9 +158,14 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Dashboard</a>
-            <button id="logoutBtn" class="btn btn-danger ms-auto">Log Out</button>
         </div>
     </nav>
+
+    <!-- Logout Button -->
+    <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button id="logoutBtn" class="btn btn-danger ms-auto" type="submit">Log Out</button>
+    </form>
 
     <!-- Dashboard Content -->
     <div class="container dashboard-section">
@@ -180,7 +190,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Health Predictions</h5>
                         <p class="card-text">Analyze patient health and predict risks.</p>
-                        <a href="{% url 'health_predictions_form' %}" class="btn btn-custom">Start Analysis</a>
+                        <a href="{% url 'health_prediction_form' %}" class="btn btn-custom">Start Analysis</a>
                     </div>
                 </div>
             </div>
@@ -196,10 +206,10 @@
                 </div>
             </div>
         </div>
-
-        
+    </div>
 
     <!-- External JavaScript -->
-    <script src="{% static 'js/dashboard.js' %}"></script>
+    <script src="{% static 'js/dashboard.js' %}">
+    </script>
 </body>
 </html>

@@ -33,7 +33,6 @@
                 {% if gender_filter %}
                     <a href="{% url 'download_patient_records' search_query gender_filter %}" class="btn btn-primary">Download Patient Records</a>
                 {% else %}
-                    <a href="{% url 'download_patient_records_no_gender' search_query %}" class="btn btn-primary">Download Patient Records</a>
                 {% endif %}
             {% endif %}
         </div>
