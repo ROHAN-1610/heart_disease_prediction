@@ -112,7 +112,6 @@ Once the project is set up, follow these steps to use the application:
 4. **View Results**:
    - The result will show the probability of heart disease, and you can choose to enter new data or log out.
 
----
 
 ## Future Enhancements 🔮
 
@@ -121,7 +120,6 @@ We plan to improve the application by:
 - **Including a data visualization dashboard** to help users better understand the results.
 - **Adding multi-language support** for wider accessibility.
 
----
 
 ## License 📄
 
