@@ -71,6 +71,7 @@ The model's performance was evaluated using:
 - **NumPy**: Used for numerical computations and data manipulation.
 - **Matplotlib/Seaborn**: For visualizing the dataset and evaluation metrics.
 
+installation_text = """
 ## Installation ⚙️
 
 To get the project up and running locally, follow these steps:
@@ -91,7 +92,8 @@ python manage.py migrate
 python manage.py runserver
 
 # Step 5: Access the application in your browser
-# Open the application at http://127.0.0.1:8000 or any server you want to run.
+Open the application at http://127.0.0.1:8000 or any server you want to run.
+
 
 
 ## How to Use 📝
