@@ -1,8 +1,8 @@
-#**Heart Disease Prediction**
+# Heart Disease Prediction
 
 This Django web application predicts the likelihood of heart disease based on patient health data using a machine learning model. Designed to be user-friendly, it provides real-time predictions to help with early diagnosis and better decision-making.
 
-## **Why This Model?**🤖
+## Why This Model?🤖
 
 We chose the **K-Nearest Neighbors (KNN)** algorithm for the following reasons:
 
