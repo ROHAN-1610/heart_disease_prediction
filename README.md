@@ -39,7 +39,7 @@ The model was trained using a dataset that includes various health metrics such 
 - **Age**, **Gender**, **Chest Pain Type**
 - **Cholesterol levels**, **Blood pressure**
 - **blood sugar**, **Heart rate**
--**and more**
+**and more**
 
 These variables are critical for determining heart disease risk, and the model analyzes patterns within the data to make predictions.
 
