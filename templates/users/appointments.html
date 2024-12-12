@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Appointments</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Security Headers for CSP (Content Security Policy) -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://code.jquery.com; style-src 'self' https://stackpath.bootstrapcdn.com;">
-
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -186,9 +182,6 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">Appointments</a>
-        <div class="collapse navbar-collapse">
-            <!-- Optional navbar items could go here -->
-        </div>
     </nav>
 
     <!-- Main Content -->
@@ -200,6 +193,8 @@
                     <h3>Add New Appointment</h3>
                     <form method="POST">
                         {% csrf_token %}
+                        <!-- The CSRF token is included here to prevent Cross-Site Request Forgery (CSRF) attacks. This is a Django security measure. -->
+                        
                         <label for="patient_name">Patient Name:</label>
                         <input type="text" id="patient_name" name="patient_name" required>
 
@@ -235,6 +230,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <!-- Loop through appointments passed from the Django view -->
                         {% for appointment in appointments %}
                             <tr>
                                 <td>{{ appointment.patient_name }}</td>
@@ -243,6 +239,7 @@
                                 <td>{{ appointment.appointment_time }}</td>
                                 <td>{{ appointment.location }}</td>
                                 <td class="action-btns">
+                                    <!-- Links to cancel or reschedule appointments using Django URLs -->
                                     <a href="{% url 'cancel_appointment' appointment.id %}">Cancel</a>
                                     <a href="{% url 'reschedule_appointment' appointment.id %}">Reschedule</a>
                                 </td>
