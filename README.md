@@ -76,7 +76,7 @@ The model's performance was evaluated using:
 
 To get the project up and running locally, follow these steps:
 
-
+```bash
 # Step 1: Clone the repository
 git clone https://github.com/your-username/heart-disease-prediction.git
 cd heart-disease-prediction
@@ -92,7 +92,8 @@ python manage.py migrate
 python manage.py runserver
 
 # Step 5: Access the application in your browser
-# Open the application at http://127.0.0.1:8000 or any server you want to run.
+Open the application at http://127.0.0.1:8000 or any server you want to run.
+
 
 
 ## How to Use 📝
