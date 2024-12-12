@@ -71,7 +71,7 @@ The model's performance was evaluated using:
 - **NumPy**: Used for numerical computations and data manipulation.
 - **Matplotlib/Seaborn**: For visualizing the dataset and evaluation metrics.
 
-installation_text = """
+
 ## Installation ⚙️
 
 To get the project up and running locally, follow these steps:
@@ -95,7 +95,6 @@ python manage.py runserver
 Open the application at http://127.0.0.1:8000 or any server you want to run.
 
 
-
 ## How to Use 📝
 
 Once the project is set up, follow these steps to use the application:
@@ -112,7 +111,6 @@ Once the project is set up, follow these steps to use the application:
 4. **View Results**:
    - The result will show the probability of heart disease, and you can choose to enter new data or log out.
 
-
 ## Future Enhancements 🔮
 
 We plan to improve the application by:
@@ -120,9 +118,9 @@ We plan to improve the application by:
 - **Including a data visualization dashboard** to help users better understand the results.
 - **Adding multi-language support** for wider accessibility.
 
-
 ## License 📄
 
 This project is licensed under the **[MIT License]**.
 
 **Built with passion 💻❤️ using Django and Machine Learning 🤖**
+
