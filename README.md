@@ -95,10 +95,9 @@ python manage.py runserver
 Open the application at http://127.0.0.1:8000 or any server you want to run.
 
 
-
+```
 ## How to Use 📝
 
-```
 Once the project is set up, follow these steps to use the application:
 
 1. **Login or Register**: 
