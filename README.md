@@ -35,11 +35,13 @@ We choose the **K-Nearest Neighbors (KNN)** algorithm for the following reasons:
 This project integrates a machine learning model to predict the likelihood of heart disease based on medical data. Below are the details of the approach:
 
 ### 1. Dataset 📅
-The model was trained using a dataset that includes various health metrics such as:
-- **Age**, **Gender**, **Chest Pain Type**
-- **Cholesterol levels**, **Blood pressure**
-- **blood sugar**, **Heart rate**
-**and more**
+TThe model was trained using a dataset that includes various health metrics such as:
+- **Chest Pain**
+- **Cholesterol levels**
+- **Blood pressure**
+- **Blood sugar**
+- **Heart rate**
+- **And more**
 
 These variables are critical for determining heart disease risk, and the model analyzes patterns within the data to make predictions.
 
@@ -90,6 +92,7 @@ python manage.py runserver
 
 # Step 5: Access the application in your browser
 # Open the application at http://127.0.0.1:8000 or any server you want to run.
+
 
 ## How to Use 📝
 
