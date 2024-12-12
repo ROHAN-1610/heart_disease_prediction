@@ -4,9 +4,9 @@ This Django web application predicts the likelihood of heart disease based on pa
 
 ## Why This Model?🤖
 
-We chose the **K-Nearest Neighbors (KNN)** algorithm for the following reasons:
+We choose the **K-Nearest Neighbors (KNN)** algorithm for the following reasons:
 
-```text
+```markdown
 1. Easy to implement and interpret.
    - KNN is straightforward and doesn't require complex parameter tuning.
    
@@ -17,8 +17,8 @@ We chose the **K-Nearest Neighbors (KNN)** algorithm for the following reasons:
    - Unlike some other models, KNN does not make assumptions about the underlying distribution of the data, making it flexible for various types of datasets.
 
 
-##Features 🔑
-**A bullet-point list of key functionalities your project provides, like:**
+## Features 🔑
+**A list of key functionalities our project provides:**
 - User-friendly interface to input health data.
 - Real-time predictions powered by a trained KNN model.
 - Secure user authentication and admin dashboard.
@@ -30,7 +30,7 @@ We chose the **K-Nearest Neighbors (KNN)** algorithm for the following reasons:
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap 💻
 - **Notebook Environment**: Jupyter Notebook(used for model development and analysis) 📓
 
-- ## Machine Learning 📊
+## Machine Learning 📊
 
 This project integrates a machine learning model to predict the likelihood of heart disease based on medical data. Below are the details of the approach:
 
