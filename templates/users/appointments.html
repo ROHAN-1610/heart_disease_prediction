@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Appointments</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Security Headers for CSP (Content Security Policy) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://code.jquery.com; style-src 'self' https://stackpath.bootstrapcdn.com;">
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -176,7 +180,6 @@
                 padding: 10px;
             }
         }
-
     </style>
 </head>
 <body>
@@ -184,7 +187,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">Appointments</a>
         <div class="collapse navbar-collapse">
-            
+            <!-- Optional navbar items could go here -->
         </div>
     </nav>
 
