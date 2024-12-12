@@ -76,7 +76,7 @@ The model's performance was evaluated using:
 
 To get the project up and running locally, follow these steps:
 
-```bash
+
 # Step 1: Clone the repository
 git clone https://github.com/your-username/heart-disease-prediction.git
 cd heart-disease-prediction
