@@ -6,7 +6,7 @@ This Django web application predicts the likelihood of heart disease based on pa
 
 We choose the **K-Nearest Neighbors (KNN)** algorithm for the following reasons:
 
-```markdown
+
 1. Easy to implement and interpret.
    - KNN is straightforward and doesn't require complex parameter tuning.
    
