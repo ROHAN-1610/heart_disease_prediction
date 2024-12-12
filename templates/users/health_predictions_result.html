@@ -99,8 +99,10 @@
         <h1>Health Prediction Result</h1>
         <div class="mt-4">
             {% if prediction %}
+                <!-- Safely render the prediction value -->
                 <h3 class="text-success">The prediction for your health condition is: <strong>{{ prediction }}</strong></h3>
             {% elif error %}
+                <!-- Safely render the error message -->
                 <h3 class="text-danger">Error: {{ error }}</h3>
             {% else %}
                 <h3>We couldn't determine the result. Please try again.</h3>
